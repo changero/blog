@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="../js/jquery.min.js"></script>
+    </head>
+    <body>
+        <div ha="yes">
+            <h1 ha="yes"></h1>
+            <h1 ha="yes"></h1>
+
+            <h1 ha="yes">
+                <h1 ha="yes"></h1>
+                <h1 ha="yes"></h1>
+                <h1 ha="yes">
+                    <ul>
+                    <li ha="yes"></li>
+                    <li ha="yes"></li>
+                    <li ha="yes"></li>
+                    <li ha="yes"></li>
+
+                        <li ha="yes"></li>
+
+                    </ul>
+                </h1>
+
+            </h1>
+        </div>
+        <p ha="yes"><h1 ha="yes">
+            <h1 ha="yes"></h1>
+            <h1 ha="yes"></h1>
+            <h1 ha="yes"></h1>
+
+        </h1></p>
+    </body>
+    <script>
+        document.getElementByHa = (function(window,document){
+
+            return function (obj,str) {
+                if(typeof obj == "string"){
+                    str = obj;
+                    obj = document.body
+                }
+                var a = [];
+                if(obj.nodeType == 1 ){
+                     if(obj.getAttribute("ha") == str){
+                        a.push(obj);
+                     }
+                    for(var j = 0 ; j < obj.childNodes.length;j++){
+                        if(obj.childNodes[j].nodeType == 1){
+                            var c = arguments.callee(obj.childNodes[j],str);
+                            c.forEach(function(d){
+                                a.push(d)
+                            })
+                        }
+                    } 
+                 }
+                return a;
+            }
+
+            
+        })(window,document);
+
+
+        ;(function(){
+            var Beauty =function(ele,opt){
+            this.ele = ele;
+            this.defaults={
+                    "color" : "white",
+                    "font-size" : "12px",
+                    "background" : "red",
+                    "text-decoration" : "underline"
+                };
+            this.o = $.extend({},this.defaults,opt);
+            this.hover = this.o.hover;
+            };
+            Beauty.prototype = {
+                 beau : function(){
+                    var _this = this;
+                    this.ele.each(function(i){
+                        $(this).text(i+1).css(_this.o).hover(function(){
+                            $(this).css(_this.hover);
+                        },function(){
+                            $(this).css(_this.o);
+                        });
+                    });
+                    return this.ele;
+                }
+            }
+            $.fn.extend({
+                myfun : function(opt){
+                    var B = new Beauty(this,opt);
+                    return B.beau();
+                }
+            });
+        })();
+        $('li').myfun({
+            "font-size" : "20px",
+            "width" : "200px",
+            "margin" : "10px",
+            "float" : "left",
+            "list-style" : "none",
+            "cursor" : "pointer",
+            "text-align" : 'center',
+            "hover" : {
+                "color" : "blue"
+            }
+        })
+    </script>
+</html>

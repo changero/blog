@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="../js/jquery.min.js"></script>
+        <script src="../js/myObject.js"></script>
     </head>
     <body>
         <div ha="yes">
@@ -34,6 +35,8 @@
         </h1></p>
     </body>
     <script>
+        console.log($("li"))
+        console.log(mQuery('li'));
         document.getElementByHa = (function(window,document){
 
             return function (obj,str) {
@@ -86,7 +89,7 @@
                     });
                     return this.ele;
                 }
-            }
+            };
             $.fn.extend({
                 myfun : function(opt){
                     var B = new Beauty(this,opt);

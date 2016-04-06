@@ -6,13 +6,50 @@
     <link rel="stylesheet" href="../css/scroll.css"/>
 
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/scroll.js"></script>
+    <script src="../js/jquery.scroll.js"></script>
+    <script src="../js/jquery.color.js"></script>
+    <script src="../js/AreaData_min.js"></script>
+    <script src="../js/jquery.Area.js"></script>
 </head>
 <body>
+    <div id="select"></div>
 
     <div class="test">
         <ul>
+            <li>123</li>
+            <li>123123123</li>
             <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li><li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li><li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li><li></li>
             <li></li>
             <li></li>
             <li></li>
@@ -26,18 +63,22 @@
 </body>
 
 <script>
+    $("#select").area({
+        city : 5120,
+        area : 512021
+    });
 
     $("li").each(function(i){
-//        $(this).html(i);
+        $(this).html(i);
     });
-    $(".test").scroll({
+    var color = $(".test").scroll({
         theme : "rgb(225,123,123)",
-        height : 100,
+        height : 400,
         content : {
             fontSize : '20px'
         }
     }).css({
         background:'red'
-    });
+    }).color();console.log(color)
 </script>
 </html>

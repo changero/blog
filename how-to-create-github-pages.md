@@ -14,7 +14,7 @@
 
 ### 3.自定义页面
 
-1. 1. 新建一个仓库，命名随意
+1. 新建一个仓库，命名随意
 2. 在setting中找到github pages。在source选择需要展示的分支，然后点击save
 3. 保存成功以后通过[username].github.io/[reponame]
 

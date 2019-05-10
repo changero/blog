@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^1.13.2"
+    "vuepress": "^0.14.11",
+    "webpack": "^4.31.0"
   }
 }

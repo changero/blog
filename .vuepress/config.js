@@ -9,28 +9,22 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
+    plugins: [
+        "@vuepress/back-to-top"
+    ],
     themeConfig: {
         // 配置导航
         nav: [
             { text: '首页', link: '/' },
-            // { text: '首页', link: '/' },
+            { text: '分享', link: '/share/' },
+            { text: '读书', link: '/read/' },
             {
-                text: '2019-05',
+                text: '前端',
                 items: [
-                    { text: '如何创建github pages', link: '/2019-05/how-to-create-github-pages.md' },
-                    { text: '常用的chrome扩展', link: '/2019-05/常用的chrome扩展.md' },
-                    {
-                        text: '测试分组',
-                        items: [
-                            { text: 'google', link: 'https://www.google.com.hk' }
-                        ]
-                    },
-                    {
-                        text: '测试分组2',
-                        items: [
-                            { text: 'youtube', link: 'https://www.youtube.com' }
-                        ]
-                    }
+                    { text: 'react', link: '/front/react/' },
+                    { text: 'vue', link: '/front/vue/' },
+                    { text: 'tools', link: '/front/tools/' },
+                    { text: 'rxjs', link: '/front/rxjs/' },
                 ]
             },
             {
@@ -38,25 +32,22 @@ module.exports = {
                 link: 'http://quan.changero.win'
             }
         ],
-        displayAllHeaders: true,
-        sidebar: 'auto',
-        // sidebar: [
-        //     {
-        //         title: '2019-05',
-        //         collapsable: false,
-        //         children: [
-        //             '/2019-05/how-to-create-github-pages.md',
-        //             "/2019-05/常用的chrome扩展.md",
-        //         ]
-        //     },
-        //     {
-        //         title: '2019-06',
-        //         collapsable: false,
-        //         children: [
-
-        //         ]
-        //     }
-        // ],
+        displayAllHeaders: false, // 这个选项开启将会在侧边栏上显示所有页面的标题链接
+        sidebar: {
+            "/share/": [
+                // 'how-to-create-github-pages.md',
+                // "常用的chrome扩展.md",
+                '/share/',
+                {
+                    title: '工具分享',
+                    collapsable: false,
+                    children: [
+                        "常用的chrome扩展.md",
+                        'how-to-create-github-pages.md',
+                    ]
+                },
+            ]
+        },
         lastUpdated: '最后更新于'
     }
 }

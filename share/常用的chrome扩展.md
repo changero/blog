@@ -5,7 +5,7 @@ title: 常用的一些chrome扩展
 
 # 常用的一些chrome扩展
 
-这里记录一下常用的chrome扩展，免得经常性的到处找。一下链接都是google商店地址，如果没有梯子，也可以到[crx4chrome](https://www.crx4chrome.com/)、[cnplugins](http://www.cnplugins.com/)、[chromecj](http://chromecj.com/)、[chrome666](https://www.chrome666.com/)、[extfans](https://extfans.com/)等商店上去寻找
+这里记录一下常用的chrome扩展，免得经常性的到处找。以下链接都是google商店地址，如果没有梯子，也可以到[crx4chrome](https://www.crx4chrome.com/)、[cnplugins](http://www.cnplugins.com/)、[chromecj](http://chromecj.com/)、[chrome666](https://www.chrome666.com/)、[extfans](https://extfans.com/)等商店上去寻找
 
 ## toby
 

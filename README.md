@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: 啊哒 →
-actionLink: /2019-05/how-to-create-github-pages.md
+actionLink: /aboutme.md
 features:
     - title: 前端
       details: 这里会记录一些在学习前端的过程中遇到的有意思的工具和库

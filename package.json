@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^0.14.11",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
+    "vuepress": "^1.0.0-alpha.48",
     "webpack": "^4.31.0"
   }
 }

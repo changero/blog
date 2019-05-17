@@ -19,12 +19,13 @@ module.exports = {
             { text: '分享', link: '/share/' },
             { text: '读书', link: '/read/' },
             {
-                text: '前端',
+                text: '编程',
                 items: [
-                    { text: 'react', link: '/front/react/' },
-                    { text: 'vue', link: '/front/vue/' },
-                    { text: 'tools', link: '/front/tools/' },
-                    { text: 'rxjs', link: '/front/rxjs/' },
+                    { text: 'react', link: '/code/react/' },
+                    { text: 'vue', link: '/code/vue/' },
+                    { text: 'tools', link: '/code/tools/' },
+                    { text: 'rxjs', link: '/code/rxjs/' },
+                    { text: '每日', link: '/code/daily/2019年5月18日.md' },
                 ]
             },
             {
@@ -35,8 +36,6 @@ module.exports = {
         displayAllHeaders: false, // 这个选项开启将会在侧边栏上显示所有页面的标题链接
         sidebar: {
             "/share/": [
-                // 'how-to-create-github-pages.md',
-                // "常用的chrome扩展.md",
                 '/share/',
                 {
                     title: '工具分享',
@@ -46,6 +45,22 @@ module.exports = {
                         'how-to-create-github-pages.md',
                     ]
                 },
+                {
+                    title: '编码工具',
+                    collapsable: false,
+                    children: [
+                        'node-commander.md'
+                    ]
+                }
+            ],
+            "/code/daily/": [
+                {
+                    title: "2019年5月",
+                    collapsable: false,
+                    children: [
+                        "2019年5月18日.md"
+                    ]
+                }
             ]
         },
         lastUpdated: '最后更新于'

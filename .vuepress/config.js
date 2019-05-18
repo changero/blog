@@ -31,6 +31,10 @@ module.exports = {
             {
                 text: '好有券',
                 link: 'http://quan.changero.win'
+            },
+            {
+                text: '联系我',
+                link: 'mailto://changero@126.com'
             }
         ],
         displayAllHeaders: false, // 这个选项开启将会在侧边栏上显示所有页面的标题链接

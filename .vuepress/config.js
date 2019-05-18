@@ -33,7 +33,7 @@ module.exports = {
                 link: 'http://quan.changero.win'
             },
             {
-                text: '联系我',
+                text: '📧 联系我',
                 link: 'mailto://changero@126.com'
             }
         ],
@@ -41,6 +41,7 @@ module.exports = {
         sidebar: {
             "/share/": [
                 '/share/',
+                'collect.md',
                 {
                     title: '工具分享',
                     collapsable: false,
@@ -55,6 +56,22 @@ module.exports = {
                     children: [
                         'node-commander.md'
                     ]
+                }
+            ],
+            "/code/rxjs/": [
+                "/code/rxjs/",
+                {
+                    title: '学习心得',
+                    collapsable: false,
+                    children: [
+                        "creator.md",
+                        "pipeable.md",
+                    ]
+                },
+                {
+                    title: "别人的资源",
+                    collapsable: true,
+                    children: []
                 }
             ],
             "/code/daily/": [

@@ -25,7 +25,7 @@ module.exports = {
                     { text: 'vue', link: '/code/vue/' },
                     { text: 'tools', link: '/code/tools/' },
                     { text: 'rxjs', link: '/code/rxjs/' },
-                    { text: '每日', link: '/code/daily/2019年5月18日.md' },
+                    { text: '每日', link: '/code/daily/' },
                 ]
             },
             {
@@ -54,6 +54,7 @@ module.exports = {
                 }
             ],
             "/code/daily/": [
+                "/code/daily/",
                 {
                     title: "2019年5月",
                     collapsable: false,

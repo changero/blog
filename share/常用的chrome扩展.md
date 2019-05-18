@@ -89,3 +89,11 @@ Tampermonkey的作用是使用脚本扩展访问的页面的功能，脚本使�
 免费的50G云盘，[商店地址](https://chrome.google.com/webstore/detail/mega/bigefpfhnfcobdlfbedofhhaibnlghod/related)
 
 ![mega](./assets/mega.png)
+
+## octolinker
+
+[商店地址](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp/related)
+
+查看github仓库代码的时候可以很方便的跳转到其依赖的库
+
+![](./assets/octolinker.png)

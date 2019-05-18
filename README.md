@@ -15,7 +15,7 @@ navbar: false
 ---
 
 ::: tip
-本站使用[`vuepress`](https://vuepress.vuejs.org/zh/)搭建，并实用[`github page`](http://pages.github.com)部署
+本站使用[`vuepress`](https://vuepress.vuejs.org/zh/)搭建，并使用[`github page`](http://pages.github.com)-[访问](https://git.io/fj8Wi)与[`coding`](https://coding.net)-[访问](http://cblog.changero.win)部署
 :::
 
 

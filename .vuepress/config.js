@@ -25,8 +25,11 @@ module.exports = {
                     { text: 'vue', link: '/code/vue/' },
                     { text: 'tools', link: '/code/tools/' },
                     { text: 'rxjs', link: '/code/rxjs/' },
-                    { text: '每日', link: '/code/daily/' },
                 ]
+            },
+            {
+                text: '日常',
+                link: '/daily/'
             },
             {
                 text: '好有券',
@@ -41,7 +44,7 @@ module.exports = {
         sidebar: {
             "/share/": [
                 '/share/',
-                'collect.md',
+                // 'collect.md',
                 {
                     title: '工具分享',
                     collapsable: false,
@@ -56,7 +59,15 @@ module.exports = {
                     children: [
                         'node-commander.md'
                     ]
+                },
+                {
+                    title: '趣味',
+                    collapsable: true,
+                    children: [
+                        'aboutearth.md'
+                    ]
                 }
+
             ],
             "/code/rxjs/": [
                 "/code/rxjs/",
@@ -74,13 +85,14 @@ module.exports = {
                     children: []
                 }
             ],
-            "/code/daily/": [
-                "/code/daily/",
+            "/daily/": [
+                "/daily/",
                 {
                     title: "2019年5月",
                     collapsable: false,
                     children: [
-                        "2019年5月18日.md"
+                        "2019年5月19日.md",
+                        "2019年5月18日.md",
                     ]
                 }
             ]

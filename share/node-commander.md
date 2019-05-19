@@ -1,8 +1,6 @@
 ---
-title: 是时候拥有一个你自己的命令行工具了
+title: node命令行工具
 ---
-
-# 是时候拥有一个你自己的命令行工具了
 
 本篇博客主要介绍了如何使用commander, inquirer以及chalk从零开始，创建属于自己的命令行工具。[原文链接](https://zhuanlan.zhihu.com/p/66130343)
 

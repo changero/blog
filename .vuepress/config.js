@@ -21,6 +21,7 @@ module.exports = {
             {
                 text: '编程',
                 items: [
+                    { text: 'javascript', link: '/code/javascript/' },
                     { text: 'react', link: '/code/react/' },
                     { text: 'vue', link: '/code/vue/' },
                     { text: 'tools', link: '/code/tools/' },
@@ -43,13 +44,19 @@ module.exports = {
         displayAllHeaders: false, // 这个选项开启将会在侧边栏上显示所有页面的标题链接
         sidebar: {
             "/share/": [
-                '/share/',
-                // 'collect.md',
+                {
+                    title: '分享',
+                    collapsable: false,
+                    children: [
+                        '/share/',
+                        'cookie、session和token.md',
+                        'tools.md',
+                    ]
+                },
                 {
                     title: '工具分享',
                     collapsable: false,
                     children: [
-                        "常用的chrome扩展.md",
                         'how-to-create-github-pages.md',
                     ]
                 },
@@ -68,6 +75,16 @@ module.exports = {
                     ]
                 }
 
+            ],
+            '/read/': [
+                {
+                    title: '读书',
+                    collapsable: false,
+                    children: [
+                        '/read/',
+                        '学习的方法.md'
+                    ]
+                }
             ],
             "/code/rxjs/": [
                 "/code/rxjs/",
@@ -91,8 +108,18 @@ module.exports = {
                     title: "2019年5月",
                     collapsable: false,
                     children: [
+                        "2019年5月20日.md",
                         "2019年5月19日.md",
                         "2019年5月18日.md",
+                    ]
+                }
+            ],
+            "/code/javascript/": [
+                {
+                    title: 'ES6+',
+                    collapsable: false,
+                    children: [
+                        "理解Unicode与UTF-8.md"
                     ]
                 }
             ]

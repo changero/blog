@@ -81,6 +81,16 @@ module.exports = {
                     ]
                 }
             ],
+            "/code/react/": [
+                {
+                    title: 'React学习之路',
+                    collapsable: false,
+                    children: [
+                        "/code/react/",
+                        "hooks.md"
+                    ]
+                }
+            ],
             "/code/rxjs/": [
                 "/code/rxjs/",
                 {

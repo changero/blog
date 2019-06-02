@@ -1,5 +1,6 @@
 ---
 title: 如何创建一个github pages仓库
+date: 2019-05-16
 meta:
     - name: author
       content: Changero

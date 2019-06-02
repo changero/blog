@@ -13,7 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.48",
     "vuepress": "^1.0.0-alpha.48",
+    "vuepress-theme-reco": "^1.0.0-alpha.22",
     "webpack": "^4.31.0"
   }
 }

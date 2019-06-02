@@ -10,26 +10,18 @@ module.exports = {
         lineNumbers: true
     },
     plugins: [
-        // "@vuepress/back-to-top", // reco中内置了
-        '@vuepress/medium-zoom', // A JavaScript library for zooming images like Medium
-    ],
-    theme: 'reco',
-    head: [
-        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+        "@vuepress/back-to-top"
     ],
     themeConfig: {
-        startYear: '2019',
-        author: 'Changero',
-        huawei: false,
+        // 配置导航
         nav: [
-            { text: '首页', link: '/', icon: 'reco-home' },
-            { text: '分享', link: '/share/', icon: 'reco-up' },
-            { text: '读书', link: '/read/', icon: 'reco-search' },
+            { text: '首页', link: '/' },
+            { text: '分享', link: '/share/' },
+            { text: '读书', link: '/read/' },
             {
                 text: '编程',
-                icon: 'reco-menu',
                 items: [
-                    { text: 'frontend', link: '/code/frontend/' },
+                    { text: 'javascript', link: '/code/javascript/' },
                     { text: 'react', link: '/code/react/' },
                     { text: 'vue', link: '/code/vue/' },
                     { text: 'tools', link: '/code/tools/' },
@@ -37,22 +29,19 @@ module.exports = {
                 ]
             },
             {
-                text: 'TimeLine',
-                link: '/daily/',
-                icon: 'reco-date'
+                text: '日常',
+                link: '/daily/'
             },
             {
                 text: '好有券',
-                link: 'http://quan.changero.win',
-                icon: 'reco-other'
+                link: 'http://quan.changero.win'
             },
             {
-                // text: '📧 联系我',
-                text: '联系我',
-                link: 'mailto://changero@126.com',
-                icon: 'reco-message'
+                text: '📧 联系我',
+                link: 'mailto://changero@126.com'
             }
         ],
+        displayAllHeaders: false, // 这个选项开启将会在侧边栏上显示所有页面的标题链接
         sidebar: {
             "/share/": [
                 {
@@ -62,11 +51,27 @@ module.exports = {
                         '/share/',
                         'cookie、session和token.md',
                         'tools.md',
-                        'aboutearth.md',
+                    ]
+                },
+                {
+                    title: '工具分享',
+                    collapsable: false,
+                    children: [
                         'how-to-create-github-pages.md',
-                        'node-commander.md',
-                        'partClub总结.md',
-
+                    ]
+                },
+                {
+                    title: '编码工具',
+                    collapsable: false,
+                    children: [
+                        'node-commander.md'
+                    ]
+                },
+                {
+                    title: '趣味',
+                    collapsable: true,
+                    children: [
+                        'aboutearth.md'
                     ]
                 }
 
@@ -97,7 +102,19 @@ module.exports = {
                     children: []
                 }
             ],
-            "/code/frontend/": [
+            "/daily/": [
+                "/daily/",
+                {
+                    title: "2019年5月",
+                    collapsable: false,
+                    children: [
+                        "2019年5月20日.md",
+                        "2019年5月19日.md",
+                        "2019年5月18日.md",
+                    ]
+                }
+            ],
+            "/code/javascript/": [
                 {
                     title: 'ES6+',
                     collapsable: false,
@@ -107,14 +124,6 @@ module.exports = {
                 }
             ]
         },
-        lastUpdated: '最后更新于',
-        blogConfig: {
-            category: {
-                location: 2,
-            },
-            tag: {
-                location: 3,     // 在导航栏菜单中所占的位置，默认3
-            }
-        },
+        lastUpdated: '最后更新于'
     }
 }

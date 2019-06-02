@@ -15,16 +15,5 @@ navbar: false
 ---
 
 ::: tip
-本站使用[`vuepress`](https://vuepress.vuejs.org/zh/)搭建，并使用[`github page`](http://pages.github.com)-[访问](https://git.io/fj8Wi)与[`coding`](https://coding.net)-[访问](http://cblog.changero.win)部署
+本站使用[`vuepress`](https://vuepress.vuejs.org/zh/)搭建，[主题](https://vuepress-theme-reco.recoluan.com/)配置。并使用[`github page`](http://pages.github.com)-[访问](https://git.io/fj8Wi)与[`coding`](https://coding.net)-[访问](http://cblog.changero.win)部署
 :::
-
-
-<!-- ### 按时间查看
-- [2019年5月](/2019-05/)
-    - [创建github pages](/2019-05/how-to-create-github-pages.md)
-    - [常用的chrome扩展](/2019-05/常用的chrome扩展.md)
-
-创建链接的时候，如果是一个文件夹，首位都要添加分隔符
-如果是另一个md文档，要以html或md结尾 
-
-[好有券](http://quan.changero.win) -->

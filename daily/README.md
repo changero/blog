@@ -1,5 +1,7 @@
 ---
 title: 每日阅读
+isTimeLine: true
+sidebar: false
 ---
 
 ## 可以每天查看的网站
@@ -13,3 +15,4 @@ title: 每日阅读
 - [D2日报](https://daily.fairyever.com/)
 - [别人的收藏夹](https://panjiachen.github.io/awesome-bookmarks/)
 - [浪里行舟](https://github.com/ljianshu/Blog)
+- [HelloGitHub](https://github.com/521xueweihan/HelloGitHub/blob/master/README.md)

@@ -1,0 +1,56 @@
+---
+title: 前端常用资源及文档、网站收藏
+---
+
+## 关注的博客
+
+- [Dan Abramov](https://overreacted.io/)React核心开发者、Redux作者
+- [张鑫旭](https://www.zhangxinxu.com/)专注CSS领域十多年的牛人
+- [每日早报](https://wubaiqing.github.io/zaobao/)
+- [阮一峰](http://www.ruanyifeng.com/home.html)
+- [阮一峰每周分享](https://github.com/ruanyf/weekly)
+- [天🐷阁](https://github.com/atian25/blog)
+- [sorrycc平时关注的前端库](https://github.com/sorrycc/awesome-f2e-libs)
+- [陈三](https://blog.zfanw.com/)
+- [D2日报](https://daily.fairyever.com/)
+- [别人的收藏夹](https://panjiachen.github.io/awesome-bookmarks/)
+- [浪里行舟](https://github.com/ljianshu/Blog)
+- [HelloGitHub](https://github.com/521xueweihan/HelloGitHub/blob/master/README.md)
+- [foru17](https://github.com/foru17/front-end-collect)
+- [前端九部](https://frontend9.com)
+- [goshakkk](https://goshakkk.name/)国外的一个博主
+
+## 社区
+
+- [前端网](https://www.qdfuns.com/portal.php)
+- [掘金](https://juejin.im/)
+
+## 文档
+
+- [MSDN](https://developer.mozilla.org/zh-CN/docs/Web)
+- [w3.org](https://www.w3.org/)
+- [印记中文](https://www.docschina.org/)丰富的中文文档资源
+- [前端文档工具](https://www.html.cn/nav/)跟上面一样，附带网站[文章](https://www.html.cn/archives/)
+- [typescript](https://www.runoob.com/manual/gitbook/TypeScript/_book/)、[typescript](https://zhongsp.gitbooks.io/typescript-handbook/doc/handbook/tutorials/React.html)
+- [webassembly](https://webassembly.org/)
+- [7天学会nodejs](http://nqdeng.github.io/7-days-nodejs/)
+- [javascript数据结构与算法](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
+- [NWjs](https://nwjs.io/)js开发桌面端应用
+
+## 前端组织
+
+- [淘宝FED](http://taobaofed.org/)
+- [AlloyTeam腾讯](http://alloyteam.com/)
+- [凹凸实验室](https://aotu.io/)
+- [美团技术团队](https://tech.meituan.com/)
+- [360奇舞团](https://75team.com/)
+
+## 面试
+
+- [面试题及答案](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
+- [国外](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+
+## RoadMap
+
+- [FKS Documention](http://html5ify.com/fks/index.html)
+

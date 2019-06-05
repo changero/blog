@@ -109,10 +109,12 @@ module.exports = {
             ],
             "/code/frontend/": [
                 {
-                    title: 'ES6+',
+                    title: '前端',
                     collapsable: false,
                     children: [
-                        "理解Unicode与UTF-8.md"
+                        "/code/frontend/",
+                        "理解Unicode与UTF-8.md",
+                        "babel7入门级指南"
                     ]
                 }
             ]

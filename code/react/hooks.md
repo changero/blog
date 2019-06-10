@@ -1,6 +1,11 @@
 ---
 title: React Hooks
 date: 2019-06-02
+categories:
+  - 编程
+tags:
+  - js
+  - react
 ---
 
 > *Hook 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。*
@@ -14,6 +19,8 @@ date: 2019-06-02
 3、**Hooks发布于`React>=16.8.0`**
 
 Hooks将使构建一个组件变得更加简单，无需再把逻辑写到`ComponentDidMount`、`ComponentDidUpdate`使逻辑变得难以理解。也不需要再在组件中大量的使用setState函数。我不喜欢setState的原因是，无法从概念上分离不同的变量，所有的变量都通过一个函数去更新UI。
+
+<!-- more -->
 
 而Hooks正是解决这些问题的，每一个变量都有自己的专属更新函数，使开发人员及维护人员使用的时候更加清楚的知道当前做的是什么操作。在Hooks以前，我会使用`recompose`库提供的`withState`方法，与`useState`相比，简直有异曲同工之妙
 

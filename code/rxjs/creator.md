@@ -1,5 +1,11 @@
 ---
 title: rxjs中的创建器
+date: 2019-05-19
+categories:
+  - 编程
+tags: 
+  - js
+  - rx
 ---
 
 ## 什么是冷热Observable
@@ -7,6 +13,8 @@ title: rxjs中的创建器
 在学习创建器以前，首先要明白一个概念，什么是冷热Observable。简单的解释，冷Observable在创建完成以后，每一次有下游需要接收数据的时候，都会产生一份与之前相同的数据。而热Observable，是在创建以后，下游在不同阶段获取到的数据是变化着的，也就是热Observable不会管是否有下游需要接收数据，而只是自顾自的一直在产出。[参考链接](https://rxjs-cn.github.io/RxJS-Ultimate-CN/content/hot-n-cold-observables.html)
 
 接下来就来看看具体有哪些内置的创建器。
+
+<!-- more -->
 
 ## 创建器
 

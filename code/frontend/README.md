@@ -19,15 +19,20 @@ title: 前端常用资源及文档、网站收藏
 - [foru17](https://github.com/foru17/front-end-collect)
 - [前端九部](https://frontend9.com)
 - [goshakkk](https://goshakkk.name/)国外的一个博主
+- [林鑫](http://blog.gdfengshuo.com/)
+- [html5rocks](https://www.html5rocks.com/zh/tutorials/)
+- [berwin](https://github.com/berwin/Blog)
 
 ## 社区
 
 - [前端网](https://www.qdfuns.com/portal.php)
 - [掘金](https://juejin.im/)
+- [jstips](http://www.jstips.co/)
 
 ## 文档
 
 - [MSDN](https://developer.mozilla.org/zh-CN/docs/Web)
+- [谷歌开发者](https://developers.google.com/web/)
 - [w3.org](https://www.w3.org/)
 - [印记中文](https://www.docschina.org/)丰富的中文文档资源
 - [前端文档工具](https://www.html.cn/nav/)跟上面一样，附带网站[文章](https://www.html.cn/archives/)
@@ -36,6 +41,7 @@ title: 前端常用资源及文档、网站收藏
 - [7天学会nodejs](http://nqdeng.github.io/7-days-nodejs/)
 - [javascript数据结构与算法](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
 - [NWjs](https://nwjs.io/)js开发桌面端应用
+- [gulp](https://gulpjs.com/)
 
 ## 前端组织
 
@@ -53,4 +59,13 @@ title: 前端常用资源及文档、网站收藏
 ## RoadMap
 
 - [FKS Documention](http://html5ify.com/fks/index.html)
+
+## 文章
+
+- [漫画：什么是架构师？](https://mp.weixin.qq.com/s/38RF3REJX8rF6Ejt1V-yXQ)
+- [关于移动端适配](https://mp.weixin.qq.com/s/J3sAnIsiZ1-2jwZcg9VVVw)
+
+## 网站
+
+- [图形化理解grid](https://cssgridgarden.com/)
 

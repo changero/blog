@@ -66,6 +66,7 @@ module.exports = {
                         'how-to-create-github-pages.md',
                         'node-commander.md',
                         'partClub总结.md',
+                        'git撤销操作.md',
 
                     ]
                 }

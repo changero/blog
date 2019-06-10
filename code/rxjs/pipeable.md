@@ -1,5 +1,11 @@
 ---
 title: pipeable
+date: 2019-05-19
+categories: 
+  - 编程
+tags:
+  - js
+  - rx
 ---
 
 在上一篇RxJs的创建器一文中，简单的说了一下pipeable的来历，和它的作用，在这里就结合我的思考简单的实现一个pipeable操作符，[参考](https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md#build-your-own-operators-easily)
@@ -13,6 +19,8 @@ pipe操作符作为Observable的属性，也就是说pipe所在的对象是吐�
         // ...
     }
 ```
+
+<!-- more -->
 
 pipe就接受我们的pipeable作为参数
 

@@ -28,12 +28,14 @@ title: 前端常用资源及文档、网站收藏
 - [前端网](https://www.qdfuns.com/portal.php)
 - [掘金](https://juejin.im/)
 - [jstips](http://www.jstips.co/)
+- [leetcode](https://leetcode.com/)、[leetcode中文](https://leetcode-cn.com/)
 
 ## 文档
 
 - [MSDN](https://developer.mozilla.org/zh-CN/docs/Web)
 - [谷歌开发者](https://developers.google.com/web/)
 - [w3.org](https://www.w3.org/)
+- [css标准制定](https://drafts.csswg.org/)
 - [印记中文](https://www.docschina.org/)丰富的中文文档资源
 - [前端文档工具](https://www.html.cn/nav/)跟上面一样，附带网站[文章](https://www.html.cn/archives/)
 - [typescript](https://www.runoob.com/manual/gitbook/TypeScript/_book/)、[typescript](https://zhongsp.gitbooks.io/typescript-handbook/doc/handbook/tutorials/React.html)

@@ -87,7 +87,9 @@ keys:
 |loom|bianqu@www.bccto.me|-3-
 |mega|bianqu@www.bccto.me|-3-|恢复密钥:yOTtekAjs0Hvk-bwQU0wSQ
 
+## vsCode插件
 
+[settings sync token](af01bf6a63868f4c0b7c6c058d8d34ef92ef54de)、[gistID](http://e03a9053f64c7bea7b520b11f5b408a1/)
 
 
 

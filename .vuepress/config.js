@@ -67,6 +67,8 @@ module.exports = {
                         'node-commander.md',
                         'partClub总结.md',
                         'git撤销操作.md',
+                        'gant-design小结.md',
+                        '记又一次重装系统的历程.md'
 
                     ]
                 }

@@ -89,7 +89,7 @@ keys:
 
 ## vsCode插件
 
-[settings sync token](af01bf6a63868f4c0b7c6c058d8d34ef92ef54de)、[gistID](http://e03a9053f64c7bea7b520b11f5b408a1/)
+[settings sync token](fba9f970a18e741e9c3839b48e72d573637c733f)、[gistID](http://e03a9053f64c7bea7b520b11f5b408a1/)
 
 
 

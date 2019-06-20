@@ -117,7 +117,8 @@ module.exports = {
                     children: [
                         "/code/frontend/",
                         "理解Unicode与UTF-8.md",
-                        "babel7入门级指南"
+                        "babel7入门级指南",
+                        "两种函数组合方式.md"
                     ]
                 }
             ]

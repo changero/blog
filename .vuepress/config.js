@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Changero',
-    description: "记录一些想法，前端技术学习",
+    description: "技术只是工具，不是目的",
     base: '', // base路径，用于将网站部署到非根目录下，在vue文件和md文件中通过$withBase函数访问
     configureWebpack: {
 
@@ -90,7 +90,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         "/code/react/",
-                        "hooks.md"
+                        "hooks.md",
+                        "stateless组件如何通过静态方法更新.md"
                     ]
                 }
             ],

@@ -57,9 +57,18 @@ function Example() {
 export default Example
 ```
 
-在这里，使用了useState函数，它接收一个值作为参数，这个参数表示返回的state的初始值。在返回值中，通过结构就可以得到一个count变量，以及修改count的方法，在jsx中，就可以像使用任何变量一样使用count
+在这里，使用了useState函数，它接收一个值作为参数，这个参数表示返回的state的初始值。在返回值中，通过解构就可以得到一个count变量，以及修改count的方法，在jsx中，就可以像使用任何变量一样使用count。
 
-setCount有2中调用方式，一种是直接传入要更新的值，另一种是传入一个update函数，函数将接收count当前值作为参数，并返回新的值
+setState还可以接受一个方法作为参数，组件第一次加载的时候会调用，相当于组件生命周期中的`componentDidMount`,返回值作为State的数据返回
+
+```js
+useState(()=>{
+  // some code
+  return 'initial data'
+})
+```
+
+setCount有2种调用方式，一种是直接传入要更新的值，另一种是传入一个update函数，函数将接收count当前值作为参数，并返回新的值
 
 ```js
 setCount(2)
@@ -96,6 +105,8 @@ function Example() {
 ```
 
 useEffect接收一个回调函数作为参数，将在每一次`render`之后适当的时候调用。在这一阶段不能取用其他Hooks，否则将引起死循环，但是可以去执行访问Dom，调用异步接口等等操作，所以才被称为副作用
+
+useEffect第二个接受一个数组，表示调用该Effect的依赖属性，当这些依赖属性发生变化的时候，就会调用当前effect。当然，依赖属性指的是props中的属性
 
 ## 自定义Hooks
 

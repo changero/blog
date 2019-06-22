@@ -22,6 +22,8 @@ title: 前端常用资源及文档、网站收藏
 - [林鑫](http://blog.gdfengshuo.com/)
 - [html5rocks](https://www.html5rocks.com/zh/tutorials/)
 - [berwin](https://github.com/berwin/Blog)
+- [love2](https://love2.io/)
+- [loveky](https://loveky.github.io/)
 
 ## 社区
 

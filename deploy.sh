@@ -25,7 +25,7 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git remote add origin git@github.com:changero/blog.git
-git push origin gh-pages
+git push -f origin master:gh-pages
 # git push -f git@github.com:changero/blog.git master:gh-pages
 # git push -f git@gitee.com:changero/blog.git master:gh-pages # gitee需要绑定手机号才能部署
 git push -f git@git.coding.net:changero/blog.git master # codeing只支持部署master分支

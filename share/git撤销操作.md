@@ -21,6 +21,8 @@ git init
 git add tsconfig.json
 ```
 
+<!-- more -->
+
 通过`git status`查看状态，得知现在暂存区中有一个新文件，并且提示
 
 > 使用 "git rm --cached <文件>..." 以取消暂存

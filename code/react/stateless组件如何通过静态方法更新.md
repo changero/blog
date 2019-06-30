@@ -14,6 +14,8 @@ tags:
 
 我们可以这样来定义我们的组件
 
+<!-- more -->
+
 ```jsx
 // DynamicAntIcon.js
 import React from 'react'

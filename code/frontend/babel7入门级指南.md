@@ -3,6 +3,7 @@ title: babel7入门级指南
 date: 2019-06-04
 categories:
   - 编程
+  - 前端
 tags:
   - js
   - babel 

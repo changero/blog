@@ -119,7 +119,8 @@ module.exports = {
                         "/code/frontend/",
                         "理解Unicode与UTF-8.md",
                         "babel7入门级指南",
-                        "两种函数组合方式.md"
+                        "两种函数组合方式.md",
+                        "理解commonJS模块加载以及循环依赖的问题.md"
                     ]
                 }
             ]

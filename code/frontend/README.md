@@ -9,6 +9,7 @@ title: 前端常用资源及文档、网站收藏
 - [每日早报](https://wubaiqing.github.io/zaobao/)
 - [阮一峰](http://www.ruanyifeng.com/home.html)
 - [阮一峰每周分享](https://github.com/ruanyf/weekly)
+- [阮一峰每周分享摘录](https://wanmaoor.github.io/ryfWeekly/)
 - [天🐷阁](https://github.com/atian25/blog)
 - [sorrycc平时关注的前端库](https://github.com/sorrycc/awesome-f2e-libs)
 - [陈三](https://blog.zfanw.com/)

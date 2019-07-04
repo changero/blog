@@ -31,3 +31,103 @@ sidebarDepth: 2
 - [octolinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp/related)查看github仓库代码的时候可以很方便的跳转到其依赖的库
 
 - [npmhub](https://chrome.google.com/webstore/detail/npmhub/kbbbjimdjbjclaebffknlabpogocablj/related)扫描出`package.json`文件中的依赖，显示在`README`下面
+
+## windows下软件
+
+大部分软件都是通过[chocolatey](http://chocolatey.org)来安装。首先要安装chocolatey，管理员身份打开CDM
+
+```bash
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
+
+在安装完成以前，要先在环境变量里面配置好PATH
+
+1、 `ChocolateyInstall`配置choco的安装路径。默认是在`C:\ProgramData\Chocolatey`
+
+2、 `ChocolateyToolsLocation`配置通过choco安装的软件的安装路径。不同的软件有软件自身的路径，所以这个路径不一定生效
+
+[chocolatey安装参考](https://www.jianshu.com/p/f5f4efd04cab)
+
+### 推荐软件
+
+- **cmder**，一款终端工具，支持大部分linux命令，配置透明度颜值能打。包括完整版和mini版，完成版里面包含了git工具
+安装命令：`choco install cmdermini`或者`choco install cmder`
+
+- **git-fork**，git图形化管理工具，类似的还有sourcetree，安装命令:`choco install git-fork`
+
+- **wox**，wox是一款类似MAC系统中Spotlight的工具，通过`ALT+SPACE`启动，内置了`everything`。还有其他非常多的功能，可以通过扩展来增加功能
+安装命令:`choco install wox`
+
+- **stickies**，一款便签软件，包含有日历功能。类似的还有`simple-sticky-notes`。安装命令`choco install stickies`，以及`choco install simple-sticky-notes`
+
+- **nvm**, node版本管理工具。安装命令`choco install nvm`
+
+- **ccleaner**，轻量级系统管理软件，包含垃圾清理，软件卸载等常用功能，占用内存小。支持中文，安装命令`choco install ccleaner`
+
+> 下面的软件还没有进行过实测
+
+- **potplayer**, 可播放4K视频，她的优点是启动速度快，内存占用小，无广告，功能强大。安装命令：`choco install potplayer`
+
+- **Bandizip**, Bandzizip是一款压缩工具，他轻巧，快捷、免费、无任何广告。它支持WinZip、7-Zip、WinRAR以及其他格式。安装命令：`choco install bandizip`
+
+- **Fastston capture**,一个Windows上滚动截图的神器，可以录像，以及截任何你想截的图。支持 BMP、JPG、JPEG、GIF、PNG、TIFF、WMF、ICO 和 TGA 在内的主流图片格式，提供缩放、旋转、剪切、颜色调整功能。安装命令：`choco install fscapture`
+
+- **WizTree**,Windows 磁盘分析工具，他可以用来查找占用大量分区的无用文件和文件夹，可以直接进行删除等操作。安装命令：`choco install wiztree`
+
+- **spotify**,音乐播放软件,安装命令：`choco install spotify`
+
+- **steam**,不解释了,安装命令：`choco install steam`
+
+- **rambox**,第三方聊天聚合起，内置了90多个聊天软件，包括了微信、叮叮。安装命令：`choco install rambox`
+
+- **Franz**，同上。安装命令：`choco install Franz`。[官网](https://meetfranz.com/)
+
+- **rainmeter**，Rainmeter可在桌面上显示可自定义的皮肤，如内存和电池电量，RSS源和天气预报。安装命令：`choco install rainmeter`。
+
+- **start10**，修改开始菜单样式。安装命令：`choco install start10`。
+
+- **listary**, 同everything。`choco install listary`。
+
+- **rocketdock**, 任务栏美化，类似MAC的dock。`choco install rocketdock`。
+
+- **aria2**, 多线程下载工具，应该可以配合百度云使用。`choco install aria2`。
+
+- **Seer**, 快速查看工具。`choco install seer`、相同的还有`choco install quicklook`。
+
+- **ditto**, 功能强大的剪切板，支持局域网内剪切板同步。`choco install ditto`。
+
+- **typora**, markdown编辑器。`choco install typora`。
+
+- **sharex**, 可以用它截图、录屏、拾取颜色、合并图像、生成视频缩略图、检查哈希值、生成二维码、捕捉网页和滚动窗口、对图片进行 OCR 文字识别，甚至还可以当做 FTP 客户端使用。`choco install sharex`。
+
+- **qdir**, 能够在同一界面同时打开多个窗口。。`choco install qdir`。
+
+- **eagleget**, 下载工具，配合tampermonkey下来百度云。`choco install eagleget`。
+
+- **Clover**, 下将Chrome样式选项卡带到Windows资源管理器。。`choco install clover`。
+
+- **totalcommander**, 两个文件窗口并排，增强的搜索功能，内置FTP客户端，支持FXP（服务器到服务器）和HTTP代理支持。`choco install totalcommander`。
+
+- **spacesniffer**, SpaceSniffer可以说是非常直观的磁盘分析清理软件了，用图形表格的形式帮助我们查看我们磁盘空间的占用情况。。`choco install spacesniffer`。
+
+- **foobar2000**, 音乐播放器。`choco install foobar2000`。
+
+- **Launchy**, 快速启动工具，类似everything。`choco install Launchy`。
+
+- **internet-download-manager**, IDM）是一种将下载速度提高最多5倍，恢复和计划下载的工具。`choco install internet-download-manager`。
+
+- **spacesniffer**, 只需轻轻一点，所有的文件都会通过大小不同的形状展示出来。`choco install spacesniffer`。
+
+
+
+
+其他的还有vscode、tim、teamviewer、firefox、googlechrome、googledrive、网易云音乐(netease-cloudmusic)、jdk、golang等软件
+
+- **snipaste**，小巧的截图软件，分厂轻量，喜欢他的截图贴纸功能，可以把截下来的图直接放到所有软件上面显示，而不需要保存
+
+- **BaiduPcs-go**, 命令行端百度云盘管理工具。[地址](https://github.com/iikira/BaiduPCS-Go)
+
+- **freedownloadmanager**, 下载工具。[地址](https://www.freedownloadmanager.org/zh/)
+
+- **quicker**, 多功能组合程序,[地址](https://getquicker.net/)
+

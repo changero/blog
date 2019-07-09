@@ -74,17 +74,17 @@ sidebarDepth: 2
 
 - **WizTree**,Windows 磁盘分析工具，他可以用来查找占用大量分区的无用文件和文件夹，可以直接进行删除等操作。安装命令：`choco install wiztree`
 
-- **spotify**,音乐播放软件,安装命令：`choco install spotify`
+~~- **spotify**,音乐播放软件,安装命令：`choco install spotify`。**速度慢**~~
 
 - **steam**,不解释了,安装命令：`choco install steam`
 
-- **rambox**,第三方聊天聚合起，内置了90多个聊天软件，包括了微信、叮叮。安装命令：`choco install rambox`
+~~- **rambox**,第三方聊天聚合起，内置了90多个聊天软件，包括了微信、叮叮。安装命令：`choco install rambox`,无法安装~~
 
-- **Franz**，同上。安装命令：`choco install Franz`。[官网](https://meetfranz.com/)
+~~- **Franz**，同上。安装命令：`choco install Franz`。[官网](https://meetfranz.com/),不好用~~
 
 - **rainmeter**，Rainmeter可在桌面上显示可自定义的皮肤，如内存和电池电量，RSS源和天气预报。安装命令：`choco install rainmeter`。
 
-- **start10**，修改开始菜单样式。安装命令：`choco install start10`。
+~~- **start10**，修改开始菜单样式。安装命令：`choco install start10`。收费~~
 
 - **listary**, 同everything。`choco install listary`。
 

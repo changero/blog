@@ -30,6 +30,7 @@ module.exports = {
                 icon: 'reco-menu',
                 items: [
                     { text: 'frontend', link: '/code/frontend/' },
+                    { text: 'typescript', link: '/code/typescript/' },
                     { text: 'react', link: '/code/react/' },
                     { text: 'vue', link: '/code/vue/' },
                     { text: 'tools', link: '/code/tools/' },
@@ -66,6 +67,7 @@ module.exports = {
                         'how-to-create-github-pages.md',
                         'node-commander.md',
                         'partClub总结.md',
+                        'git常用命令.md',
                         'git撤销操作.md',
                         'gant-design小结.md',
                         '记又一次重装系统的历程.md'
@@ -120,7 +122,17 @@ module.exports = {
                         "理解Unicode与UTF-8.md",
                         "babel7入门级指南",
                         "两种函数组合方式.md",
-                        "理解commonJS模块加载以及循环依赖的问题.md"
+                        "理解commonJS模块加载以及循环依赖的问题.md",
+                        "IFC.md"
+                    ]
+                }
+            ],
+            "/code/typescript/": [
+                {
+                    title: 'typescript',
+                    collapsable: false,
+                    children: [
+                        "收集的部分问题及解决方法.md"
                     ]
                 }
             ]

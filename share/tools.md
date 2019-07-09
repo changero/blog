@@ -92,7 +92,7 @@ sidebarDepth: 2
 
 - **aria2**, 多线程下载工具，应该可以配合百度云使用。`choco install aria2`。
 
-- **Seer**, 快速查看工具。`choco install seer`、相同的还有`choco install quicklook`。
+- **quicklook**, 快速查看工具。`choco install quicklook`
 
 - **ditto**, 功能强大的剪切板，支持局域网内剪切板同步。`choco install ditto`。
 
@@ -118,9 +118,6 @@ sidebarDepth: 2
 
 - **spacesniffer**, 只需轻轻一点，所有的文件都会通过大小不同的形状展示出来。`choco install spacesniffer`。
 
-
-
-
 其他的还有vscode、tim、teamviewer、firefox、googlechrome、googledrive、网易云音乐(netease-cloudmusic)、jdk、golang等软件
 
 - **snipaste**，小巧的截图软件，分厂轻量，喜欢他的截图贴纸功能，可以把截下来的图直接放到所有软件上面显示，而不需要保存
@@ -131,3 +128,162 @@ sidebarDepth: 2
 
 - **quicker**, 多功能组合程序,[地址](https://getquicker.net/)
 
+## 网站分享
+
+### 免费接码平台
+
+- [https://www.freeonlinephone.org/](https://www.freeonlinephone.org/)
+
+- [http://sms.sellaite.com/](http://sms.sellaite.com/)
+
+- [http://receivefreesms.com/](http://receivefreesms.com/)
+
+- [https://receive-a-sms.com/](https://receive-a-sms.com/)
+
+- [https://smsnumbersonline.com/](https://smsnumbersonline.com/)
+
+- [https://sms-online.co/receive-free-sms](https://sms-online.co/receive-free-sms)
+
+- [https://receive-sms.com/](https://receive-sms.com/)
+
+- [http://receive-sms-online.com/](http://receive-sms-online.com/)
+
+- [http://receive-sms-now.com/](http://receive-sms-now.com/)
+
+- [https://smsreceivefree.com](https://smsreceivefree.com)
+
+- [https://www.receive-sms-online.info/](https://www.receive-sms-online.info/  )
+
+- [https://www.textnow.com/](https://www.textnow.com/)
+
+- [https://www.pinger.com/text-free/](https://www.pinger.com/text-free/)
+
+- [https://www.twilio.com/](https://www.twilio.com/)
+
+- [http://www.heywire.com/](http://www.heywire.com/)
+
+- [http://www.lleida.net/en](http://www.lleida.net/en)
+
+- [https://www.pinger.com/content/home.html](https://www.pinger.com/content/home.html)
+
+- [http://sellaite.com/smsreceiver/](http://sellaite.com/smsreceiver/)
+
+- [http://receivesmsonline.com/](http://receivesmsonline.com/)
+
+- [http://www.receivefreesms.com/](http://www.receivefreesms.com/)
+
+- [https://www.virtualphoneline.com/login/](https://www.virtualphoneline.com/login/)
+
+- [http://sonetel.com/](http://sonetel.com/)
+
+- [http://pinger.com/tfw/](http://pinger.com/tfw/)
+
+### 搜索资源站
+
+- [史莱姆搜索](http://www.slimego.cn/)
+
+- [胖次](https://www.panc.cc/)
+
+- [西林街搜索](http://www.xilinjie.com/)
+
+- [资源猫](https://www.ziyuanmao.com)
+
+- [磁力云](http://www.clyun.cc)
+
+- [鸵鸟搜索](http://www.tuoniao.me/)
+
+- [特百度](http://www.tebaidu.com/)
+
+- [爱挖盘](http://www.iwapan.com/)
+
+- [BT奥修磁力](http://www.oshoh.com)
+
+- [呆木瓜](http://www.daimugua.com)
+
+- [麦库搜索](http://www.huisou.me/)
+
+[一行代码](https://www.alinecode.com/)
+
+### 网盘搜索汇总
+
+#### ★★★★★
+- [*盘多多](http://www.panduoduo.net/)
+
+- [*去转盘](http://www.quzhuanpan.com/)
+
+- [*Bdsola](http://www.3134.cc/)
+
+- [*西林街](http://www.xilinjie.com/)
+
+#### ★★★★
+
+- [*探索云盘搜索](http://tansuo233.com/)
+
+- [*BDY搜](http://www.bdysou.com)
+
+- [*盘窝窝](http://www.panww.com)
+
+- [*百度网盘搜索](http://uzi8.cn)
+
+- [*网盘007](https://wangpan007.com)
+
+#### ★★★
+- [*胖次](http://www.panc.cc)
+
+- [*盘搜搜](http://www.pansoso.com)
+
+- [*番茄搜索](https://www.fqsousou.com)
+
+- [*微友搜索](http://www.weiyoou.com)
+
+- [*凌风云](https://www.lingfengyun.com)
+
+- [*盘优搜](http://www.panuso.comsoso)
+
+- [*云盘](http://www.sosoyunpan.com)
+
+- [*特百度](http://www.tebaidu.com)
+
+- [*搜百度盘](http://www.sobaidupan.com)
+
+- [*pan115](http://www.pan115.com)
+
+- [*鸵鸟搜索](http://www.tuoniao.me)
+
+- [*我的盘](http://www.wodepan.com)
+
+- [*搜网盘](http://www.swangpan.com)
+
+- [*51菜场](http://wx01.51caichang.com)
+
+- [*网盘之家](http://www.wangpanzhijia.net)
+
+- [*及搜盘](http://www.jisoupan.com)
+
+- [*众人搜索](http://wangpan.renrensousuo.com)
+
+- [*行笑网](http://www.walksmile.com)
+
+- [*史莱姆搜索](http://www.slimego.cn)
+
+- [*百度云盘](http://www.baiduyunpan.com)
+
+- [*300搜](http://www.3bsou.com)
+
+- [*58网盘搜索](http://www.58wangpan.com)
+
+- [*56网盘搜索](http://www.56wangpan.com)
+
+- [*我搜云](http://www.wosouyun.com)
+
+- [*91百度盘](http://www.91baidupan.com)
+
+- [*坑搜](http://www.kengso.com)
+
+- [*搜盘吧](http://www.sopanba.com)
+
+- [*搜盘侠](http://www.sopanxia.com)
+
+<iframe src="https://www.gettoby.com/e/99d3rnacsjj8" width="690" height="350" frameBorder="0">Collection: VPS (62 tabs)<a href="https://www.gettoby.com/p/99d3rnacsjj8" target="_blank"></a></iframe>
+
+<iframe src="https://www.gettoby.com/e/76vggkacyvnl" width="690" height="350" frameBorder="0">Collection: 工具 (88 tabs)<a href="https://www.gettoby.com/p/76vggkacyvnl" target="_blank"></a></iframe>

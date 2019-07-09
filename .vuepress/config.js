@@ -22,7 +22,7 @@ module.exports = {
         author: 'Changero',
         huawei: false,
         nav: [
-            { text: '首页', link: '/', icon: 'reco-home' },
+            { text: '首页', link: '/aboutme/', icon: 'reco-home' },
             { text: '分享', link: '/share/', icon: 'reco-up' },
             { text: '读书', link: '/read/', icon: 'reco-search' },
             {
@@ -39,7 +39,7 @@ module.exports = {
             },
             {
                 text: 'TimeLine',
-                link: '/daily/',
+                link: '/timeline/',
                 icon: 'reco-date'
             },
             {

@@ -30,6 +30,7 @@ title: 前端常用资源及文档、网站收藏
 
 - [前端网](https://www.qdfuns.com/portal.php)
 - [掘金](https://juejin.im/)
+- [掘金翻译计划](https://juejin.im/tag/%E6%8E%98%E9%87%91%E7%BF%BB%E8%AF%91%E8%AE%A1%E5%88%92)
 - [jstips](http://www.jstips.co/)
 - [leetcode](https://leetcode.com/)、[leetcode中文](https://leetcode-cn.com/)
 

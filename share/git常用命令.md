@@ -17,6 +17,8 @@ ssh-keygen -t rsa -C 'email'
     git config --global --unset user.name
     git config --global --unset user.email
 ```
+<!-- more -->
+
 config文件
 ```bash
 Host github.com     # 这里是服务器名称，任意

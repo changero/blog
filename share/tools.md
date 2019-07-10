@@ -1,13 +1,22 @@
 ---
 title: 工具分享
+date: 2019-05-19
 sidebarDepth: 2
+categories:
+  - 工具
 ---
 
+
+
 ## chrome扩展
+
+- [chrome多平台各版本下载](https://www.chromedownloads.net/chrome64win/)
 
 这里记录一下常用的chrome扩展，免得经常性的到处找。以下链接都是google商店地址，如果没有梯子，也可以到[crx4chrome](https://www.crx4chrome.com/)、[cnplugins](http://www.cnplugins.com/)、[chromecj](http://chromecj.com/)、[chrome666](https://www.chrome666.com/)、[extfans](https://extfans.com/)等商店上去寻找
 
 - [toby](https://chrome.google.com/webstore/detail/toby-for-chrome/hddnkoipeenegfoeaoibdmnaalmgkpip?utm_source=chrome-ntp-icon)类似书签管理
+
+<!-- more -->
 
 - [SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-ntp-icon)好用的代理工具。[github wiki](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
 
@@ -74,17 +83,9 @@ sidebarDepth: 2
 
 - **WizTree**,Windows 磁盘分析工具，他可以用来查找占用大量分区的无用文件和文件夹，可以直接进行删除等操作。安装命令：`choco install wiztree`
 
-~~- **spotify**,音乐播放软件,安装命令：`choco install spotify`。**速度慢**~~
-
 - **steam**,不解释了,安装命令：`choco install steam`
 
-~~- **rambox**,第三方聊天聚合起，内置了90多个聊天软件，包括了微信、叮叮。安装命令：`choco install rambox`,无法安装~~
-
-~~- **Franz**，同上。安装命令：`choco install Franz`。[官网](https://meetfranz.com/),不好用~~
-
 - **rainmeter**，Rainmeter可在桌面上显示可自定义的皮肤，如内存和电池电量，RSS源和天气预报。安装命令：`choco install rainmeter`。
-
-~~- **start10**，修改开始菜单样式。安装命令：`choco install start10`。收费~~
 
 - **listary**, 同everything。`choco install listary`。
 
@@ -127,6 +128,32 @@ sidebarDepth: 2
 - **freedownloadmanager**, 下载工具。[地址](https://www.freedownloadmanager.org/zh/)
 
 - **quicker**, 多功能组合程序,[地址](https://getquicker.net/)
+
+## 命令行上传工具
+
+> [网址](https://bashupload.com),上传的时候需要用到curl工具，下载的时候用到wget工具。当然也可以直接在网站上去操作。最多保存7天，其间不限次数下载
+
+> windows上可以通过[choco](https://chocolatey.org)安装`curl`和`wget`
+
+1、 上传
+
+```bash
+> curl https://bashupload.com/[filename] --data-binary @text.txt
+
+Uploaded 1 file, 3 bytes
+
+wget https://bashupload.com/aDH9y/myfile.txt
+```
+
+上传之后会返回相关的下载链接
+
+2、 下载
+
+> 直接用上面的链接就可以下载
+```bash
+wget https://bashupload.com/aDH9y/myfile.txt
+```
+
 
 ## 网站分享
 

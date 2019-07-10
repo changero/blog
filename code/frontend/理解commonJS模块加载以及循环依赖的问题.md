@@ -27,6 +27,8 @@ commonjs中，一个脚本文件就是一个模块，通过`exports`、或者`mo
 
 `id`就是模块名，`exports`就是导出的数据对象，`loaded`表示当前模块是否加载完成
 
+<!-- more -->
+
 举个🌰：
 
 ```js

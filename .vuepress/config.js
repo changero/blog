@@ -70,8 +70,9 @@ module.exports = {
                         'git常用命令.md',
                         'git撤销操作.md',
                         'gant-design小结.md',
-                        '记又一次重装系统的历程.md'
-
+                        '记又一次重装系统的历程.md',
+                        "百度云共享账号.md",
+                        "网络畅游.md"
                     ]
                 }
 
@@ -82,7 +83,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/read/',
-                        '学习的方法.md'
+                        '学习的方法.md',
+                        "记录想说的话.md"
                     ]
                 }
             ],
@@ -123,7 +125,8 @@ module.exports = {
                         "babel7入门级指南",
                         "两种函数组合方式.md",
                         "理解commonJS模块加载以及循环依赖的问题.md",
-                        "IFC.md"
+                        "IFC.md",
+                        "Date对象时区转化.md"
                     ]
                 }
             ],

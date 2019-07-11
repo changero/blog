@@ -73,11 +73,15 @@ categories:
 
 - **ccleaner**，轻量级系统管理软件，包含垃圾清理，软件卸载等常用功能，占用内存小。支持中文，安装命令`choco install ccleaner`
 
-> 下面的软件还没有进行过实测
-
 - **potplayer**, 可播放4K视频，她的优点是启动速度快，内存占用小，无广告，功能强大。安装命令：`choco install potplayer`
 
 - **Bandizip**, Bandzizip是一款压缩工具，他轻巧，快捷、免费、无任何广告。它支持WinZip、7-Zip、WinRAR以及其他格式。安装命令：`choco install bandizip`
+
+- **listary**, 跟`wox`+`everything`一样的功能，听过跟`totalcommander`搭配更佳。`choco install listary`。
+
+- **quicklook**, 快速查看工具，比较轻量，按空格就能查看文件，图片，压缩文件等。`choco install quicklook`
+
+> 下面的软件还没有进行过实测
 
 - **Fastston capture**,一个Windows上滚动截图的神器，可以录像，以及截任何你想截的图。支持 BMP、JPG、JPEG、GIF、PNG、TIFF、WMF、ICO 和 TGA 在内的主流图片格式，提供缩放、旋转、剪切、颜色调整功能。安装命令：`choco install fscapture`
 
@@ -87,21 +91,16 @@ categories:
 
 - **rainmeter**，Rainmeter可在桌面上显示可自定义的皮肤，如内存和电池电量，RSS源和天气预报。安装命令：`choco install rainmeter`。
 
-- **listary**, 同everything。`choco install listary`。
 
 - **rocketdock**, 任务栏美化，类似MAC的dock。`choco install rocketdock`。
 
 - **aria2**, 多线程下载工具，应该可以配合百度云使用。`choco install aria2`。
-
-- **quicklook**, 快速查看工具。`choco install quicklook`
 
 - **ditto**, 功能强大的剪切板，支持局域网内剪切板同步。`choco install ditto`。
 
 - **typora**, markdown编辑器。`choco install typora`。
 
 - **sharex**, 可以用它截图、录屏、拾取颜色、合并图像、生成视频缩略图、检查哈希值、生成二维码、捕捉网页和滚动窗口、对图片进行 OCR 文字识别，甚至还可以当做 FTP 客户端使用。`choco install sharex`。
-
-- **qdir**, 能够在同一界面同时打开多个窗口。。`choco install qdir`。
 
 - **eagleget**, 下载工具，配合tampermonkey下来百度云。`choco install eagleget`。
 

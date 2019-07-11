@@ -135,7 +135,8 @@ module.exports = {
                     title: 'typescript',
                     collapsable: false,
                     children: [
-                        "收集的部分问题及解决方法.md"
+                        "收集的部分问题及解决方法.md",
+                        "生成d.ts.md"
                     ]
                 }
             ]

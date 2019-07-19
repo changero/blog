@@ -35,6 +35,7 @@ module.exports = {
                     { text: 'vue', link: '/code/vue/' },
                     { text: 'tools', link: '/code/tools/' },
                     { text: 'rxjs', link: '/code/rxjs/' },
+                    { text: 'git', link: '/code/git/' },
                 ]
             },
             {
@@ -67,8 +68,6 @@ module.exports = {
                         'how-to-create-github-pages.md',
                         'node-commander.md',
                         'partClub总结.md',
-                        'git常用命令.md',
-                        'git撤销操作.md',
                         'gant-design小结.md',
                         '记又一次重装系统的历程.md',
                         "百度云共享账号.md",
@@ -95,7 +94,8 @@ module.exports = {
                     children: [
                         "/code/react/",
                         "hooks.md",
-                        "stateless组件如何通过静态方法更新.md"
+                        "stateless组件如何通过静态方法更新.md",
+                        "useCallBack和useMemo.md"
                     ]
                 }
             ],
@@ -126,7 +126,10 @@ module.exports = {
                         "两种函数组合方式.md",
                         "理解commonJS模块加载以及循环依赖的问题.md",
                         "IFC.md",
-                        "Date对象时区转化.md"
+                        "Date对象时区转化.md",
+                        "自定义标签.md",
+                        "确定页面rem大小的两种思路.md",
+                        "gulp-less处理antd中的less引用.md"
                     ]
                 }
             ],
@@ -137,6 +140,16 @@ module.exports = {
                     children: [
                         "收集的部分问题及解决方法.md",
                         "生成d.ts.md"
+                    ]
+                }
+            ],
+            "/code/git/": [
+                {
+                    title: "git经验分享",
+                    collapsable: false,
+                    children: [
+                        'git常用命令.md',
+                        'git撤销操作.md',
                     ]
                 }
             ]

@@ -117,9 +117,3 @@ git checkout commitid -- a.txt
 git reset commit a.txt
 git checkout -- a.txt
 ```
-
-
-
-
-
-

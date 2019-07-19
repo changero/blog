@@ -21,6 +21,8 @@ tsc -d --emitDeclarationOnly --allowJs false --declarationDir ./lib/@types
 
 > 注意：一定要设置`--allowJs false`
 
+<!-- more -->
+
 ### gulp-typescript
 
 ```js

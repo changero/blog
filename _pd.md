@@ -75,6 +75,8 @@ keys:
 |[好知](http://www.howzhi.com/channel/IT-internet)|changero@126.com|-2-
 |有道| changero@126.com| -1-|
 |B站|changero@126.com|-2-
+|amazon|changerocc@outlook.com|-2-|
+|smdl|ab5232918smdl|-2-|
 
 
 
@@ -86,7 +88,7 @@ keys:
 |~~qlearly~~|bianqu@www.bccto.me|-3-
 |loom|bianqu@www.bccto.me|-3-
 |mega|bianqu@www.bccto.me|-3-|恢复密钥:yOTtekAjs0Hvk-bwQU0wSQ
-|1password|changero@126.com|cylCHEN9422|[密钥](A3-GG6ZL9-NKTEQC-9BJ9K-9REPR-XR595-2L745)
+|1password|changero@126.com|-2-|[密钥](A3-GG6ZL9-NKTEQC-9BJ9K-9REPR-XR595-2L745)
 
 ## vsCode插件
 

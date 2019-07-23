@@ -7,7 +7,10 @@ module.exports = {
     base: '', // base路径，用于将网站部署到非根目录下，在vue文件和md文件中通过$withBase函数访问
     chainWebpack: (config) => {
         config.plugin('copy').use(Copyplugin, [
-            [{ from: './.vuepress/static', to: './static' }] // from 是命令的执行路径，to是生成的文件夹路径
+            [
+                { from: './.vuepress/static', to: './static' },
+                { from: './.vuepress/public', to: '.' },
+            ] // from 是命令的执行路径，to是生成的文件夹路径
         ])
     },
     evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill

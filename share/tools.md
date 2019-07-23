@@ -153,6 +153,13 @@ wget https://bashupload.com/aDH9y/myfile.txt
 wget https://bashupload.com/aDH9y/myfile.txt
 ```
 
+## 命令行生成二维码
+
+```bash
+curl -L qrgo.elsesiy.com/test
+curl -L qrgo.elsesiy.com/http://cblog.changero.win
+```
+
 
 ## 网站分享
 
@@ -309,6 +316,26 @@ wget https://bashupload.com/aDH9y/myfile.txt
 - [*搜盘吧](http://www.sopanba.com)
 
 - [*搜盘侠](http://www.sopanxia.com)
+
+## 磁盘刻录工具
+
+### iso文件
+
+- [unetbootin](https://unetbootin.github.io/)
+
+- [balena](https://www.balena.io/)
+
+- [软碟通](https://cn.ultraiso.net/xiazai.html) - windows
+
+- [rufus](https://rufus.ie/)
+
+- [win32diskimager](https://sourceforge.net/projects/win32diskimager/)- windows
+
+### img文件
+
+- <a href="/static/physdiskwrite.exe" download='physdiskWriter.exe' >physdiskWriter</a>  - windows
+
+- <a href="/static/img2kvm" download='img2kvm' >physdiskWriter</a>  - linux
 
 <iframe src="https://www.gettoby.com/e/99d3rnacsjj8" width="690" height="350" frameBorder="0">Collection: VPS (62 tabs)<a href="https://www.gettoby.com/p/99d3rnacsjj8" target="_blank"></a></iframe>
 

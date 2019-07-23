@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git常用命令 | Changero</title>
+    <meta name="description" content="技术只是工具，不是目的">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.fe5aacdd.css" as="style"><link rel="preload" href="/assets/js/app.3771b3c4.js" as="script"><link rel="preload" href="/assets/js/5.aeb3d5b3.js" as="script"><link rel="preload" href="/assets/js/1.8be823b2.js" as="script"><link rel="preload" href="/assets/js/28.d3915013.js" as="script"><link rel="prefetch" href="/assets/js/10.bcf31d95.js"><link rel="prefetch" href="/assets/js/11.41c37008.js"><link rel="prefetch" href="/assets/js/12.159d39b7.js"><link rel="prefetch" href="/assets/js/13.51bb3dec.js"><link rel="prefetch" href="/assets/js/14.c6f2d39f.js"><link rel="prefetch" href="/assets/js/15.8eae04d9.js"><link rel="prefetch" href="/assets/js/16.e6fd340f.js"><link rel="prefetch" href="/assets/js/17.d69121ff.js"><link rel="prefetch" href="/assets/js/18.f16407c4.js"><link rel="prefetch" href="/assets/js/19.5c6a6db0.js"><link rel="prefetch" href="/assets/js/20.f82c9423.js"><link rel="prefetch" href="/assets/js/21.37668836.js"><link rel="prefetch" href="/assets/js/22.e935434b.js"><link rel="prefetch" href="/assets/js/23.7b06393c.js"><link rel="prefetch" href="/assets/js/24.366d2145.js"><link rel="prefetch" href="/assets/js/25.31a1adbc.js"><link rel="prefetch" href="/assets/js/26.830f3aa2.js"><link rel="prefetch" href="/assets/js/27.9cb2ac86.js"><link rel="prefetch" href="/assets/js/29.154f7316.js"><link rel="prefetch" href="/assets/js/3.a791917c.js"><link rel="prefetch" href="/assets/js/30.4f260c11.js"><link rel="prefetch" href="/assets/js/31.91ad6c4c.js"><link rel="prefetch" href="/assets/js/32.bdbc4dbc.js"><link rel="prefetch" href="/assets/js/33.501af1d4.js"><link rel="prefetch" href="/assets/js/34.ce4f84f3.js"><link rel="prefetch" href="/assets/js/35.6927d9be.js"><link rel="prefetch" href="/assets/js/36.0a732e3f.js"><link rel="prefetch" href="/assets/js/37.69540c1d.js"><link rel="prefetch" href="/assets/js/38.dd88023b.js"><link rel="prefetch" href="/assets/js/39.27d975d6.js"><link rel="prefetch" href="/assets/js/4.2558858c.js"><link rel="prefetch" href="/assets/js/40.fc59f1f4.js"><link rel="prefetch" href="/assets/js/41.329633fc.js"><link rel="prefetch" href="/assets/js/42.ff7186e5.js"><link rel="prefetch" href="/assets/js/43.11f997be.js"><link rel="prefetch" href="/assets/js/44.7dab79cc.js"><link rel="prefetch" href="/assets/js/45.14db7584.js"><link rel="prefetch" href="/assets/js/46.d03f5e69.js"><link rel="prefetch" href="/assets/js/47.bfdfd2bd.js"><link rel="prefetch" href="/assets/js/48.146ed0e3.js"><link rel="prefetch" href="/assets/js/49.f8b845a8.js"><link rel="prefetch" href="/assets/js/50.16f3b2c6.js"><link rel="prefetch" href="/assets/js/51.d9e503ee.js"><link rel="prefetch" href="/assets/js/52.82780a85.js"><link rel="prefetch" href="/assets/js/53.79b2351f.js"><link rel="prefetch" href="/assets/js/54.dea25b54.js"><link rel="prefetch" href="/assets/js/55.093801f1.js"><link rel="prefetch" href="/assets/js/56.8199cc59.js"><link rel="prefetch" href="/assets/js/57.5d1bf8f2.js"><link rel="prefetch" href="/assets/js/6.5c4f1a6a.js"><link rel="prefetch" href="/assets/js/7.3ecfae8c.js"><link rel="prefetch" href="/assets/js/8.dfe08c7c.js"><link rel="prefetch" href="/assets/js/9.e4c92739.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fe5aacdd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Changero</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/前端.html" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/category/编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/category/心得.html" class="nav-link"><i class="iconfont undefined"></i>
+  心得
+</a></li><li class="dropdown-item"><!----> <a href="/category/趣味.html" class="nav-link"><i class="iconfont undefined"></i>
+  趣味
+</a></li><li class="dropdown-item"><!----> <a href="/category/计算机.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机
+</a></li><li class="dropdown-item"><!----> <a href="/category/工具.html" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/share/" class="nav-link"><i class="iconfont reco-up"></i>
+  分享
+</a></div><div class="nav-item"><a href="/read/" class="nav-link"><i class="iconfont reco-search"></i>
+  读书
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-menu"></i>
+      编程
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/code/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/code/react/" class="nav-link"><i class="iconfont undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code/tools/" class="nav-link"><i class="iconfont undefined"></i>
+  tools
+</a></li><li class="dropdown-item"><!----> <a href="/code/rxjs/" class="nav-link"><i class="iconfont undefined"></i>
+  rxjs
+</a></li><li class="dropdown-item"><!----> <a href="/code/git/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="http://quan.changero.win" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  好有券
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="mailto://changero@126.com" class="nav-link external"><i class="iconfont reco-message"></i>
+  联系我
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/前端.html" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/category/编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/category/心得.html" class="nav-link"><i class="iconfont undefined"></i>
+  心得
+</a></li><li class="dropdown-item"><!----> <a href="/category/趣味.html" class="nav-link"><i class="iconfont undefined"></i>
+  趣味
+</a></li><li class="dropdown-item"><!----> <a href="/category/计算机.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机
+</a></li><li class="dropdown-item"><!----> <a href="/category/工具.html" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/share/" class="nav-link"><i class="iconfont reco-up"></i>
+  分享
+</a></div><div class="nav-item"><a href="/read/" class="nav-link"><i class="iconfont reco-search"></i>
+  读书
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-menu"></i>
+      编程
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/code/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/code/react/" class="nav-link"><i class="iconfont undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code/tools/" class="nav-link"><i class="iconfont undefined"></i>
+  tools
+</a></li><li class="dropdown-item"><!----> <a href="/code/rxjs/" class="nav-link"><i class="iconfont undefined"></i>
+  rxjs
+</a></li><li class="dropdown-item"><!----> <a href="/code/git/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="http://quan.changero.win" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  好有券
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="mailto://changero@126.com" class="nav-link external"><i class="iconfont reco-message"></i>
+  联系我
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>git经验分享</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/code/git/git常用命令.html" class="active sidebar-link">git常用命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/code/git/git常用命令.html#配置" class="sidebar-link">配置</a></li></ul></li><li><a href="/code/git/git撤销操作.html" class="sidebar-link">git撤销操作</a></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>git常用命令</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Changero</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2019-7-9</span></i> <!----> <i class="iconfont reco-tag tags" data-v-0b496ca7><span class="tag-item" data-v-0b496ca7>
+      git
+    </span></i></div></div> <div class="content default"><h2 id="配置"><a href="#配置" aria-hidden="true" class="header-anchor">#</a> 配置</h2> <h3 id="生成公钥"><a href="#生成公钥" aria-hidden="true" class="header-anchor">#</a> 生成公钥</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>ssh-keygen -t rsa -C <span class="token string">'email'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果要生成多个ssh密钥文件，可以输入不同的文件路径，默认在.ssh文件夹下，将对应的公钥添加到相应的git远程仓库网站,同时配置config文件，以便在使用不同网站的时候能使用正确的私钥</p> <p>取消全局配置</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>    <span class="token function">git</span> config --global --unset user.name
+    <span class="token function">git</span> config --global --unset user.email
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div> <p>config文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Host github.com     <span class="token comment"># 这里是服务器名称，任意</span>
+HostName github.com <span class="token comment"># 这里是服务器真实地址</span>
+User <span class="token function">git</span> 
+IdentifyFile ~/.ssh/id_rsa.pub <span class="token comment"># 对应网站的公钥</span>
+
+Host gitlab.com     <span class="token comment"># 这里是服务器名称，任意</span>
+HostName gitlab.com <span class="token comment"># 这里是服务器真实地址</span>
+User <span class="token function">git</span> 
+IdentifyFile ~/.ssh/id_rsa_lab.pub <span class="token comment"># 对应网站的公钥</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="命令"><a href="#命令" aria-hidden="true" class="header-anchor">#</a> 命令</h3> <h5 id="添加远程仓库地址"><a href="#添加远程仓库地址" aria-hidden="true" class="header-anchor">#</a> 添加远程仓库地址</h5> <blockquote><p>git remote add origin address</p></blockquote> <p>origin ： 自定义远程仓库名称
+address:  远程仓库地址</p> <h5 id="查看远程仓库地址"><a href="#查看远程仓库地址" aria-hidden="true" class="header-anchor">#</a> 查看远程仓库地址</h5> <blockquote><p>git remote -v</p></blockquote> <h5 id="删除远程仓库"><a href="#删除远程仓库" aria-hidden="true" class="header-anchor">#</a> 删除远程仓库</h5> <blockquote><p>git remote rm origin</p></blockquote> <h5 id="提交工作区修改到暂存区"><a href="#提交工作区修改到暂存区" aria-hidden="true" class="header-anchor">#</a> 提交工作区修改到暂存区</h5> <blockquote><p>git add</p></blockquote> <h5 id="提交暂存区所有信息到仓库，形成一个commitid"><a href="#提交暂存区所有信息到仓库，形成一个commitid" aria-hidden="true" class="header-anchor">#</a> 提交暂存区所有信息到仓库，形成一个commitId</h5> <blockquote><p>git commit -m 'message'</p></blockquote> <blockquote><p>git commit -am 'message'</p></blockquote> <h5 id="提交本地修改到远程仓库"><a href="#提交本地修改到远程仓库" aria-hidden="true" class="header-anchor">#</a> 提交本地修改到远程仓库</h5> <blockquote><p>git push</p></blockquote> <h5 id="删除文件"><a href="#删除文件" aria-hidden="true" class="header-anchor">#</a> 删除文件</h5> <blockquote><p>git rm file</p></blockquote> <h5 id="移动、改名"><a href="#移动、改名" aria-hidden="true" class="header-anchor">#</a> 移动、改名</h5> <blockquote><p>git mv file newFile</p></blockquote> <h5 id="查看分支信息"><a href="#查看分支信息" aria-hidden="true" class="header-anchor">#</a> 查看分支信息</h5> <blockquote><p>git branch<br>
+添加a参数可以查看远程仓库的分支</p></blockquote> <p>回退本次merge</p> <blockquote><p>git merge --abort</p></blockquote> <h5 id="创建分支"><a href="#创建分支" aria-hidden="true" class="header-anchor">#</a> 创建分支</h5> <blockquote><p>git checkout -b branch</p></blockquote> <h5 id="创建分支并关联远程分支"><a href="#创建分支并关联远程分支" aria-hidden="true" class="header-anchor">#</a> 创建分支并关联远程分支</h5> <blockquote><p>git checkout -b branch origin/branch</p></blockquote> <h5 id="切换分支"><a href="#切换分支" aria-hidden="true" class="header-anchor">#</a> 切换分支</h5> <blockquote><p>git checkout branch</p></blockquote> <h5 id="从目标分支拉取部分文件"><a href="#从目标分支拉取部分文件" aria-hidden="true" class="header-anchor">#</a> 从目标分支拉取部分文件</h5> <blockquote><p>git checkout branch [files]</p></blockquote> <h5 id="关联分支"><a href="#关联分支" aria-hidden="true" class="header-anchor">#</a> 关联分支</h5> <blockquote><p>git branch --set-upstream-to=origin/branch branch</p></blockquote> <h5 id="提交的时候关联分支"><a href="#提交的时候关联分支" aria-hidden="true" class="header-anchor">#</a> 提交的时候关联分支</h5> <blockquote><p>git push origin 远程分支:本地分支</p></blockquote> <blockquote><p>git push -u origin 远程分支</p></blockquote> <p><code>如果本地分支名和远程分支名相同，默认情况下可以直接推送，如果不同，需要设置push.default为upstream</code></p> <blockquote><p>git config --local push.default upstream</p></blockquote> <h5 id="拉取远程数据"><a href="#拉取远程数据" aria-hidden="true" class="header-anchor">#</a> 拉取远程数据</h5> <blockquote><p>git fetch</p></blockquote> <h5 id="合并到当前分支"><a href="#合并到当前分支" aria-hidden="true" class="header-anchor">#</a> 合并到当前分支</h5> <blockquote><p>git merge</p></blockquote> <h3 id="回退版本的操作"><a href="#回退版本的操作" aria-hidden="true" class="header-anchor">#</a> 回退版本的操作</h3> <p>1、 如果还没有通过add提交到暂存区</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> checkout -- filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>git checkout</code>还可以用于撤销修改到某一个特定版本或者分支的文件状态</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> checkout origin/master -- filname
+<span class="token function">git</span> checkout commitid -- filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>2、 如果提交到暂存区了</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 丢弃暂存区内的所有修改</span>
+<span class="token function">git</span> reset <span class="token keyword">.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>接着，可以通过<code>checkout</code>命令来撤销工作区的修改</p> <p>3、 回退文件到特定版本</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 回退版本并且删除所有暂存区、工作区修改</span>
+<span class="token function">git</span> reset --hard commitId/branch/originbranch 
+<span class="token comment"># 将所有改动合并到暂存区，工作区不变</span>
+<span class="token function">git</span> reset --soft commitId/branch/originbranch 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新于: </span> <span class="time">7/19/2019, 9:50:41 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/code/git/git撤销操作.html">
+          git撤销操作
+        </a>
+        →
+      </span></p></div> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3771b3c4.js" defer></script><script src="/assets/js/5.aeb3d5b3.js" defer></script><script src="/assets/js/1.8be823b2.js" defer></script><script src="/assets/js/28.d3915013.js" defer></script>
+  </body>
+</html>

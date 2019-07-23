@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>node命令行工具 | Changero</title>
+    <meta name="description" content="技术只是工具，不是目的">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.fe5aacdd.css" as="style"><link rel="preload" href="/assets/js/app.3771b3c4.js" as="script"><link rel="preload" href="/assets/js/5.aeb3d5b3.js" as="script"><link rel="preload" href="/assets/js/1.8be823b2.js" as="script"><link rel="preload" href="/assets/js/50.16f3b2c6.js" as="script"><link rel="prefetch" href="/assets/js/10.bcf31d95.js"><link rel="prefetch" href="/assets/js/11.41c37008.js"><link rel="prefetch" href="/assets/js/12.159d39b7.js"><link rel="prefetch" href="/assets/js/13.51bb3dec.js"><link rel="prefetch" href="/assets/js/14.c6f2d39f.js"><link rel="prefetch" href="/assets/js/15.8eae04d9.js"><link rel="prefetch" href="/assets/js/16.e6fd340f.js"><link rel="prefetch" href="/assets/js/17.d69121ff.js"><link rel="prefetch" href="/assets/js/18.f16407c4.js"><link rel="prefetch" href="/assets/js/19.5c6a6db0.js"><link rel="prefetch" href="/assets/js/20.f82c9423.js"><link rel="prefetch" href="/assets/js/21.37668836.js"><link rel="prefetch" href="/assets/js/22.e935434b.js"><link rel="prefetch" href="/assets/js/23.7b06393c.js"><link rel="prefetch" href="/assets/js/24.366d2145.js"><link rel="prefetch" href="/assets/js/25.31a1adbc.js"><link rel="prefetch" href="/assets/js/26.830f3aa2.js"><link rel="prefetch" href="/assets/js/27.9cb2ac86.js"><link rel="prefetch" href="/assets/js/28.d3915013.js"><link rel="prefetch" href="/assets/js/29.154f7316.js"><link rel="prefetch" href="/assets/js/3.a791917c.js"><link rel="prefetch" href="/assets/js/30.4f260c11.js"><link rel="prefetch" href="/assets/js/31.91ad6c4c.js"><link rel="prefetch" href="/assets/js/32.bdbc4dbc.js"><link rel="prefetch" href="/assets/js/33.501af1d4.js"><link rel="prefetch" href="/assets/js/34.ce4f84f3.js"><link rel="prefetch" href="/assets/js/35.6927d9be.js"><link rel="prefetch" href="/assets/js/36.0a732e3f.js"><link rel="prefetch" href="/assets/js/37.69540c1d.js"><link rel="prefetch" href="/assets/js/38.dd88023b.js"><link rel="prefetch" href="/assets/js/39.27d975d6.js"><link rel="prefetch" href="/assets/js/4.2558858c.js"><link rel="prefetch" href="/assets/js/40.fc59f1f4.js"><link rel="prefetch" href="/assets/js/41.329633fc.js"><link rel="prefetch" href="/assets/js/42.ff7186e5.js"><link rel="prefetch" href="/assets/js/43.11f997be.js"><link rel="prefetch" href="/assets/js/44.7dab79cc.js"><link rel="prefetch" href="/assets/js/45.14db7584.js"><link rel="prefetch" href="/assets/js/46.d03f5e69.js"><link rel="prefetch" href="/assets/js/47.bfdfd2bd.js"><link rel="prefetch" href="/assets/js/48.146ed0e3.js"><link rel="prefetch" href="/assets/js/49.f8b845a8.js"><link rel="prefetch" href="/assets/js/51.d9e503ee.js"><link rel="prefetch" href="/assets/js/52.82780a85.js"><link rel="prefetch" href="/assets/js/53.79b2351f.js"><link rel="prefetch" href="/assets/js/54.dea25b54.js"><link rel="prefetch" href="/assets/js/55.093801f1.js"><link rel="prefetch" href="/assets/js/56.8199cc59.js"><link rel="prefetch" href="/assets/js/57.5d1bf8f2.js"><link rel="prefetch" href="/assets/js/6.5c4f1a6a.js"><link rel="prefetch" href="/assets/js/7.3ecfae8c.js"><link rel="prefetch" href="/assets/js/8.dfe08c7c.js"><link rel="prefetch" href="/assets/js/9.e4c92739.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fe5aacdd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Changero</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/前端.html" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/category/编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/category/心得.html" class="nav-link"><i class="iconfont undefined"></i>
+  心得
+</a></li><li class="dropdown-item"><!----> <a href="/category/趣味.html" class="nav-link"><i class="iconfont undefined"></i>
+  趣味
+</a></li><li class="dropdown-item"><!----> <a href="/category/计算机.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机
+</a></li><li class="dropdown-item"><!----> <a href="/category/工具.html" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/share/" class="nav-link router-link-active"><i class="iconfont reco-up"></i>
+  分享
+</a></div><div class="nav-item"><a href="/read/" class="nav-link"><i class="iconfont reco-search"></i>
+  读书
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-menu"></i>
+      编程
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/code/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/code/react/" class="nav-link"><i class="iconfont undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code/tools/" class="nav-link"><i class="iconfont undefined"></i>
+  tools
+</a></li><li class="dropdown-item"><!----> <a href="/code/rxjs/" class="nav-link"><i class="iconfont undefined"></i>
+  rxjs
+</a></li><li class="dropdown-item"><!----> <a href="/code/git/" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="http://quan.changero.win" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  好有券
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="mailto://changero@126.com" class="nav-link external"><i class="iconfont reco-message"></i>
+  联系我
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/前端.html" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/category/编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/category/心得.html" class="nav-link"><i class="iconfont undefined"></i>
+  心得
+</a></li><li class="dropdown-item"><!----> <a href="/category/趣味.html" class="nav-link"><i class="iconfont undefined"></i>
+  趣味
+</a></li><li class="dropdown-item"><!----> <a href="/category/计算机.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机
+</a></li><li class="dropdown-item"><!----> <a href="/category/工具.html" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/share/" class="nav-link router-link-active"><i class="iconfont reco-up"></i>
+  分享
+</a></div><div class="nav-item"><a href="/read/" class="nav-link"><i class="iconfont reco-search"></i>
+  读书
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-menu"></i>
+      编程
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/code/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/code/react/" class="nav-link"><i class="iconfont undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code/tools/" class="nav-link"><i class="iconfont undefined"></i>
+  tools
+</a></li><li class="dropdown-item"><!----> <a href="/code/rxjs/" class="nav-link"><i class="iconfont undefined"></i>
+  rxjs
+</a></li><li class="dropdown-item"><!----> <a href="/code/git/" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="http://quan.changero.win" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  好有券
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="mailto://changero@126.com" class="nav-link external"><i class="iconfont reco-message"></i>
+  联系我
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>分享</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/share/" class="sidebar-link">介绍</a></li><li><a href="/share/cookie、session和token.html" class="sidebar-link">cookie、session、token</a></li><li><a href="/share/tools.html" class="sidebar-link">工具分享</a></li><li><a href="/share/aboutearth.html" class="sidebar-link">你相信地球只有人类文明吗</a></li><li><a href="/share/how-to-create-github-pages.html" class="sidebar-link">如何创建一个github pages仓库</a></li><li><a href="/share/node-commander.html" class="active sidebar-link">node命令行工具</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/share/node-commander.html#开始" class="sidebar-link">开始</a></li><li class="sidebar-sub-header"><a href="/share/node-commander.html#npm-link" class="sidebar-link">npm link</a></li><li class="sidebar-sub-header"><a href="/share/node-commander.html#commander" class="sidebar-link">commander</a></li><li class="sidebar-sub-header"><a href="/share/node-commander.html#inquirer" class="sidebar-link">inquirer</a></li><li class="sidebar-sub-header"><a href="/share/node-commander.html#chalk" class="sidebar-link">chalk</a></li></ul></li><li><a href="/share/partClub总结.html" class="sidebar-link">零件俱乐部总结</a></li><li><a href="/share/gant-design小结.html" class="sidebar-link">gant-design小结</a></li><li><a href="/share/记又一次重装系统的历程.html" class="sidebar-link">记又一次重装系统的历程</a></li><li><a href="/share/百度云共享账号.html" class="sidebar-link">百度云共享账号</a></li><li><a href="/share/网络畅游.html" class="sidebar-link">网络畅游</a></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>node命令行工具</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Changero</span></i> <!----> <!----> <!----></div></div> <div class="content default"><p>本篇博客主要介绍了如何使用commander, inquirer以及chalk从零开始，创建属于自己的命令行工具。<a href="https://zhuanlan.zhihu.com/p/66130343" target="_blank" rel="noopener noreferrer">原文链接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="开始"><a href="#开始" aria-hidden="true" class="header-anchor">#</a> 开始</h2> <p>首先我们先花一分钟的时间，体验一下创建自己的命令行cli工具是什么感觉。</p> <h3 id="新建项目目录"><a href="#新建项目目录" aria-hidden="true" class="header-anchor">#</a> 新建项目目录</h3> <p>假如我们的项目名称叫hello-cli，使用如下命令新建项目目录。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> hello-cli <span class="token operator">&amp;&amp;</span> <span class="token function">cd</span> hello-cli
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="初始化项目"><a href="#初始化项目" aria-hidden="true" class="header-anchor">#</a> 初始化项目</h3> <p>接下里使用npm-init命令来初始化一个简单的package.json文件。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> init -y
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p><code>-y</code>参数表示接受npm的一切默认参数设置。</p></blockquote> <p>接着安装依赖</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> chalk commander inquirer shelljs -S
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="新建入口文件"><a href="#新建入口文件" aria-hidden="true" class="header-anchor">#</a> 新建入口文件</h3> <p>在项目根目录下新建名为hello的文件，不需要任何后缀，值得注意的是此时的文件名就是你的cli工具第一个键入的命令，例如npm install，那么hello就等价于npm。并将代码替换如下。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>#<span class="token operator">!</span> <span class="token operator">/</span>usr<span class="token operator">/</span>bin<span class="token operator">/</span>env node
+
+<span class="token keyword">const</span> program <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'commander'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> inquirer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'inquirer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> chalk <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'chalk'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+program
+  <span class="token punctuation">.</span><span class="token function">command</span><span class="token punctuation">(</span><span class="token string">'init'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">alias</span><span class="token punctuation">(</span><span class="token string">'i'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token string">'初始化项目'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token parameter">option</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 该对象用于存储所有与用户交互的数据</span>
+    <span class="token keyword">let</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 假设我们需要用户自定义项目名称</span>
+      projectName<span class="token punctuation">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">// 使用chalk打印美化的版本信息</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span>default<span class="token punctuation">.</span><span class="token function">bold</span><span class="token punctuation">(</span><span class="token string">'hello v1.0.0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 用于存储所有的交互步骤，例如让用户输入项目名称就是其中一个步骤</span>
+    <span class="token keyword">let</span> promps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>config<span class="token punctuation">.</span>projectName <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      promps<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'input'</span><span class="token punctuation">,</span>
+        name<span class="token punctuation">:</span> <span class="token string">'projectName'</span><span class="token punctuation">,</span>
+        message<span class="token punctuation">:</span> <span class="token string">'请输入项目名称'</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">validate</span><span class="token punctuation">:</span> <span class="token parameter">input</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">'项目名称不能为空'</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token comment">// 更新对象中属性的数据</span>
+          config<span class="token punctuation">.</span>projectName <span class="token operator">=</span> input<span class="token punctuation">;</span>
+          <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 至此，与用户的所有交互均已完成，answers是收集到的用户所填的所有数据</span>
+    <span class="token comment">// 同时，这也是你开始操作的地方，这个cli工具的核心代码应该从这个地方开始</span>
+    inquirer<span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span>promps<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">answers</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// do something here</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>answers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+program<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>argv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><p>对比原文链接，此外还需要多2个步骤：</p> <p>1、 增加当前脚本可执行权限</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code> <span class="token function">chmod</span> +x hello
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2、 修改package.json，增加bin字段</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token comment">// ... </span>
+    <span class="token property">&quot;bin&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token property">&quot;hello&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;hello&quot;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// ... </span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><p>注意，在<code>bin</code>中的key值将作为链接后的文件名，value指代对应执行命令的实际文件</p></blockquote> <p>链接后的文件名表示的是通过<code>npm link</code>命令链接，以及通过<code>npm install</code>安装之后在bin目录下的文件名</p> <h2 id="npm-link"><a href="#npm-link" aria-hidden="true" class="header-anchor">#</a> npm link</h2> <p>那么问题来了， 在你的项目根目录下使用npm link，然后在你本地上就相当于安装了名为hello-cli这样的一个全局npm包了。其原理是将你本地的项目在全局的node_modules中做了一个软链接，拿此项目举例，全局的hello命令已经指向了你的本地目录。如果你想取消测试项目在全局中的映射，同样的进入项根目录，输入命令npm unlink即可。</p> <p>然后搭配以下命令食用你的第一个cli工具吧。如果报错提示没有权限，在命令前加上sudo即可。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>hello init
+<span class="token comment"># 或者 hello i</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>关于<code>npm link</code>,<a href="https://github.com/atian25/blog/issues/17" target="_blank" rel="noopener noreferrer">参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="commander"><a href="#commander" aria-hidden="true" class="header-anchor">#</a> commander</h2> <p><a href="https://github.com/tj/commander.js" target="_blank" rel="noopener noreferrer"><em>commander</em><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>是一个Node.js环境下的命令行接口解决方案。在上面的一分钟体验例子中，我们用到了<code>command</code>，<code>alias</code>，<code>description</code>，<code>action</code>这四个API。</p> <ul><li><strong>command</strong> command代表了这个cli工具向用户暴露的命令行指令。我们还是拿npm install来举例子，command('init')声明了一个叫init的命令，在此处，init等价于install</li> <li><strong>alias</strong> alias是对于当前命令行指令的更短的指令。例如大家都知道，npm install可以简写为npm i。i就是定义的alias</li> <li><strong>description</strong> description是对当前命令行指令的描述，commander会自动的生成当前cli工具的帮助文档，而该描述就会在hello -h中展示，如果你的一分钟体验项目还在的话，在命令行中输入hello -h就可以看到自动生成的帮助文档了</li> <li><strong>action</strong> action是我们注册我们自己回调函数的地方</li> <li><strong>parse</strong> parse命令则是解析命令行</li></ul> <p>下面是一分钟体验项目中没有使用的命令，option。还是举一个例子。如果有用过hexo的应该熟悉这个命令。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>hexo new post <span class="token variable">$YOUR_POST_NAME</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>没用过也没关系，这个命令是用于创建一个可以自定义名字的Markdown的文档的。大家可能会发现，上面的命令包含了4个单词，而我们的例子中只有两个。那是因为一分钟项目中没有使用commander的optionAPI。</p> <p>如果你想在hello项目中实现一样的命令，那么只需要在program中调用该API即可。<code>.option('-p, --post', 'add post')</code>，然后就可以通过option参数获取到-p后面，用户输入的参数的值。</p> <h2 id="inquirer"><a href="#inquirer" aria-hidden="true" class="header-anchor">#</a> inquirer</h2> <p>大家也发现了，在命令行输入init命令后，我们需要不停地与命令行进行交互拿到数据，但是在代码里并没有怎么体现，这是因为我们用了inquirer来帮我们做这些事情。</p> <p>通过inquirer，我们可以实现输入框，获取用户的输入数据，还可以实现选择框。举个例子，用过antd-design-pro应该熟悉创建项目的流程。在命令行中输入命令<code>yarn create umi</code>，在之后的流程中就会出现一个可选择的list。只需要将步骤中的代码替换成如下即可。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>promps<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'list'</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">'projectName'</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">'请输入项目名称'</span><span class="token punctuation">,</span>
+    choices<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'ant-design-pro'</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">'ant-design-pro'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'dva'</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">'dva'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>在项目中，还使用了<code>validate</code>来对用户的输入数据进行验证，如果不需要验证的话，直接把validate整个代码删除掉就好。</p> <h2 id="chalk"><a href="#chalk" aria-hidden="true" class="header-anchor">#</a> chalk</h2> <p><a href="https://github.com/chalk/chalk" target="_blank" rel="noopener noreferrer">chalk<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>没有什么好介绍的，官网上的文档已经写的很详细了。给大家列一下项目中使用的例子就好。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 使用默认的字体颜色，加粗字体</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span>default<span class="token punctuation">.</span><span class="token function">bold</span><span class="token punctuation">(</span><span class="token string">'hello v1.0.0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 打印蓝色的提示信息</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">blue</span><span class="token punctuation">(</span><span class="token string">'hello v1.0.0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 字符串模板用法，在同一行中打印不同样式的信息</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token template-string"><span class="token string">`{white.bold [1/3]} 🔍`</span></span> <span class="token operator">+</span> chalk<span class="token template-string"><span class="token string">`{default.bold Clone project into local path...}`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新于: </span> <span class="time">5/19/2019, 4:48:08 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/share/how-to-create-github-pages.html" class="prev">
+          如何创建一个github pages仓库
+        </a></span> <span class="next"><a href="/share/partClub总结.html">
+          零件俱乐部总结
+        </a>
+        →
+      </span></p></div> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3771b3c4.js" defer></script><script src="/assets/js/5.aeb3d5b3.js" defer></script><script src="/assets/js/1.8be823b2.js" defer></script><script src="/assets/js/50.16f3b2c6.js" defer></script>
+  </body>
+</html>

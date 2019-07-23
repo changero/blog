@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>stateless组件如何通过静态方法更新 | Changero</title>
+    <meta name="description" content="技术只是工具，不是目的">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.fe5aacdd.css" as="style"><link rel="preload" href="/assets/js/app.3771b3c4.js" as="script"><link rel="preload" href="/assets/js/5.aeb3d5b3.js" as="script"><link rel="preload" href="/assets/js/1.8be823b2.js" as="script"><link rel="preload" href="/assets/js/31.91ad6c4c.js" as="script"><link rel="prefetch" href="/assets/js/10.bcf31d95.js"><link rel="prefetch" href="/assets/js/11.41c37008.js"><link rel="prefetch" href="/assets/js/12.159d39b7.js"><link rel="prefetch" href="/assets/js/13.51bb3dec.js"><link rel="prefetch" href="/assets/js/14.c6f2d39f.js"><link rel="prefetch" href="/assets/js/15.8eae04d9.js"><link rel="prefetch" href="/assets/js/16.e6fd340f.js"><link rel="prefetch" href="/assets/js/17.d69121ff.js"><link rel="prefetch" href="/assets/js/18.f16407c4.js"><link rel="prefetch" href="/assets/js/19.5c6a6db0.js"><link rel="prefetch" href="/assets/js/20.f82c9423.js"><link rel="prefetch" href="/assets/js/21.37668836.js"><link rel="prefetch" href="/assets/js/22.e935434b.js"><link rel="prefetch" href="/assets/js/23.7b06393c.js"><link rel="prefetch" href="/assets/js/24.366d2145.js"><link rel="prefetch" href="/assets/js/25.31a1adbc.js"><link rel="prefetch" href="/assets/js/26.830f3aa2.js"><link rel="prefetch" href="/assets/js/27.9cb2ac86.js"><link rel="prefetch" href="/assets/js/28.d3915013.js"><link rel="prefetch" href="/assets/js/29.154f7316.js"><link rel="prefetch" href="/assets/js/3.a791917c.js"><link rel="prefetch" href="/assets/js/30.4f260c11.js"><link rel="prefetch" href="/assets/js/32.bdbc4dbc.js"><link rel="prefetch" href="/assets/js/33.501af1d4.js"><link rel="prefetch" href="/assets/js/34.ce4f84f3.js"><link rel="prefetch" href="/assets/js/35.6927d9be.js"><link rel="prefetch" href="/assets/js/36.0a732e3f.js"><link rel="prefetch" href="/assets/js/37.69540c1d.js"><link rel="prefetch" href="/assets/js/38.dd88023b.js"><link rel="prefetch" href="/assets/js/39.27d975d6.js"><link rel="prefetch" href="/assets/js/4.2558858c.js"><link rel="prefetch" href="/assets/js/40.fc59f1f4.js"><link rel="prefetch" href="/assets/js/41.329633fc.js"><link rel="prefetch" href="/assets/js/42.ff7186e5.js"><link rel="prefetch" href="/assets/js/43.11f997be.js"><link rel="prefetch" href="/assets/js/44.7dab79cc.js"><link rel="prefetch" href="/assets/js/45.14db7584.js"><link rel="prefetch" href="/assets/js/46.d03f5e69.js"><link rel="prefetch" href="/assets/js/47.bfdfd2bd.js"><link rel="prefetch" href="/assets/js/48.146ed0e3.js"><link rel="prefetch" href="/assets/js/49.f8b845a8.js"><link rel="prefetch" href="/assets/js/50.16f3b2c6.js"><link rel="prefetch" href="/assets/js/51.d9e503ee.js"><link rel="prefetch" href="/assets/js/52.82780a85.js"><link rel="prefetch" href="/assets/js/53.79b2351f.js"><link rel="prefetch" href="/assets/js/54.dea25b54.js"><link rel="prefetch" href="/assets/js/55.093801f1.js"><link rel="prefetch" href="/assets/js/56.8199cc59.js"><link rel="prefetch" href="/assets/js/57.5d1bf8f2.js"><link rel="prefetch" href="/assets/js/6.5c4f1a6a.js"><link rel="prefetch" href="/assets/js/7.3ecfae8c.js"><link rel="prefetch" href="/assets/js/8.dfe08c7c.js"><link rel="prefetch" href="/assets/js/9.e4c92739.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fe5aacdd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Changero</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/前端.html" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/category/编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/category/心得.html" class="nav-link"><i class="iconfont undefined"></i>
+  心得
+</a></li><li class="dropdown-item"><!----> <a href="/category/趣味.html" class="nav-link"><i class="iconfont undefined"></i>
+  趣味
+</a></li><li class="dropdown-item"><!----> <a href="/category/计算机.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机
+</a></li><li class="dropdown-item"><!----> <a href="/category/工具.html" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/share/" class="nav-link"><i class="iconfont reco-up"></i>
+  分享
+</a></div><div class="nav-item"><a href="/read/" class="nav-link"><i class="iconfont reco-search"></i>
+  读书
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-menu"></i>
+      编程
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/code/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/code/react/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code/tools/" class="nav-link"><i class="iconfont undefined"></i>
+  tools
+</a></li><li class="dropdown-item"><!----> <a href="/code/rxjs/" class="nav-link"><i class="iconfont undefined"></i>
+  rxjs
+</a></li><li class="dropdown-item"><!----> <a href="/code/git/" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="http://quan.changero.win" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  好有券
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="mailto://changero@126.com" class="nav-link external"><i class="iconfont reco-message"></i>
+  联系我
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/前端.html" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/category/编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/category/心得.html" class="nav-link"><i class="iconfont undefined"></i>
+  心得
+</a></li><li class="dropdown-item"><!----> <a href="/category/趣味.html" class="nav-link"><i class="iconfont undefined"></i>
+  趣味
+</a></li><li class="dropdown-item"><!----> <a href="/category/计算机.html" class="nav-link"><i class="iconfont undefined"></i>
+  计算机
+</a></li><li class="dropdown-item"><!----> <a href="/category/工具.html" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/share/" class="nav-link"><i class="iconfont reco-up"></i>
+  分享
+</a></div><div class="nav-item"><a href="/read/" class="nav-link"><i class="iconfont reco-search"></i>
+  读书
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-menu"></i>
+      编程
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/code/typescript/" class="nav-link"><i class="iconfont undefined"></i>
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/code/react/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/code/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/code/tools/" class="nav-link"><i class="iconfont undefined"></i>
+  tools
+</a></li><li class="dropdown-item"><!----> <a href="/code/rxjs/" class="nav-link"><i class="iconfont undefined"></i>
+  rxjs
+</a></li><li class="dropdown-item"><!----> <a href="/code/git/" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="http://quan.changero.win" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  好有券
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="mailto://changero@126.com" class="nav-link external"><i class="iconfont reco-message"></i>
+  联系我
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>React学习之路</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/code/react/" class="sidebar-link">正在开发</a></li><li><a href="/code/react/hooks.html" class="sidebar-link">React Hooks</a></li><li><a href="/code/react/stateless组件如何通过静态方法更新.html" class="active sidebar-link">stateless组件如何通过静态方法更新</a></li><li><a href="/code/react/useCallBack和useMemo.html" class="sidebar-link">(译)useCallBack和useMemo</a></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>stateless组件如何通过静态方法更新</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>Changero</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2019-6-21</span></i> <!----> <i class="iconfont reco-tag tags" data-v-0b496ca7><span class="tag-item" data-v-0b496ca7>
+      react
+    </span><span class="tag-item" data-v-0b496ca7>
+      hooks
+    </span></i></div></div> <div class="content default"><p>一般在中后台系统中，都会维护自己的图标库，我们公司通过<a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer">iconfont.cn<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>对图标进行管理，并使用<code>ant-design</code>作为前端UI框架。但是在最近的一个项目中，有一个需求需要对Icon组件作出对iconfontUrl作出响应动作，通过一个静态方法的调用，达到更新组件图标的效果</p> <p>在Icon组件上有一个静态方法<code>createFromIconfontCN</code>，通过他可以得到一个新的IconFont组件，这个组件中就包含了参数中指代的图标库信息</p> <p>我们可以这样来定义我们的组件</p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code><span class="token comment">// DynamicAntIcon.js</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Icon <span class="token keyword">as</span> AntIcon <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'antd'</span>
+<span class="token keyword">const</span> <span class="token function-variable function">DynamicAntIcon</span> <span class="token operator">=</span> <span class="token parameter">props</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">AntIcon</span></span> <span class="token spread"><span class="token punctuation">{</span><span class="token punctuation">...</span><span class="token attr-value">props</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> DynamicAntIcon
+
+<span class="token comment">// App.js</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> DynamicIcon <span class="token keyword">from</span> <span class="token string">'./DynamicAntIcon.js'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">DynamicIcon</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>read<span class="token punctuation">'</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>通过<code>AntIcon.createFromIconfontCN</code>方法，可以得到一个新的Icon，用于更新返回的<code>Icon</code>组件，所以我们需要将最终返回的组件做到State中</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// DynamicAntIcon.js</span>
+<span class="token keyword">const</span> <span class="token function-variable function">DynamicAntIcon</span> <span class="token operator">=</span> <span class="token parameter">props</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> Icon<span class="token punctuation">,</span> setIcon <span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>AntIcon<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>Icon <span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>注意useState接受的参数不是组件本身，而是一个方法，因为组件本身就是一个方法，所以，如果直接传递到useState里面的话会被调用，这样得到的Icon就不是AntIcon，因此要用一个方法包装一下</p> <p>现在来定义更新操作，通过useEffect钩子函数,去响应外部传入的iconfontUrl，那么就先要定义一个方法接收url参数的静态方法，并且，每当静态方法调用的时候能通知组件更新，代码如下：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// DynamicAntIcon.js</span>
+<span class="token comment">// 记录当前使用的是那个组件</span>
+<span class="token keyword">let</span> dynamicicon <span class="token operator">=</span> AntIcon
+<span class="token comment">// icon的更新历史</span>
+<span class="token keyword">const</span> iconHistory <span class="token operator">=</span> <span class="token punctuation">[</span>dynamicicon<span class="token punctuation">]</span>
+<span class="token keyword">const</span> chain <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> <span class="token function-variable function">DynamicAntIcon</span> <span class="token operator">=</span> <span class="token parameter">props</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> chainId<span class="token punctuation">,</span> setCahinId <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> url<span class="token punctuation">,</span> setUrl <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>Icon<span class="token punctuation">,</span> setIcon<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> dynamicicon<span class="token punctuation">)</span>
+    React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 每当初始化一个组件的时候将更新url方法push到数组</span>
+        <span class="token keyword">const</span> id <span class="token operator">=</span> chain<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>setIcon<span class="token punctuation">)</span>
+        <span class="token function">setCahinId</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 卸载的时候删除数组中的项</span>
+            chain<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>chainId<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>Icon <span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 更新所有使用该组件的图标</span>
+DynamicAntIcon<span class="token punctuation">.</span>current <span class="token operator">=</span> <span class="token number">0</span>
+DynamicAntIcon<span class="token punctuation">.</span><span class="token function-variable function">update</span> <span class="token operator">=</span> <span class="token parameter">url</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获得新Icon</span>
+    <span class="token keyword">const</span> IconFont <span class="token operator">=</span> AntIcon<span class="token punctuation">.</span><span class="token function">createFromIconfontCN</span><span class="token punctuation">(</span><span class="token punctuation">{</span> scriptUrl<span class="token punctuation">:</span> url <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// 更新当前Icon</span>
+    dynamicicon <span class="token operator">=</span> IconFont
+    <span class="token comment">// 添加到历史记录</span>
+    iconHistory<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>IconFont<span class="token punctuation">)</span>
+    <span class="token comment">// 更新current辅助属性</span>
+    DynamicAntIcon<span class="token punctuation">.</span>current <span class="token operator">=</span> iconHistory<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span>
+    <span class="token comment">// 通知所有icon更新</span>
+    chain<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">setIcon</span> <span class="token operator">=&gt;</span> <span class="token function">setIcon</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> IconFont<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 回退到之前的某个图标库</span>
+DynamicAntIcon<span class="token punctuation">.</span><span class="token function-variable function">reset</span> <span class="token operator">=</span> <span class="token parameter">index</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>index<span class="token operator">&lt;</span> history<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    dynamicicon <span class="token operator">=</span> history<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+    chain<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">setIcon</span> <span class="token operator">=&gt;</span> <span class="token function">setIcon</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> history<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    DynamicAntIcon<span class="token punctuation">.</span>current <span class="token operator">=</span> index
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> history <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'history'</span><span class="token punctuation">)</span>
+DynamicAntIcon<span class="token punctuation">.</span>history <span class="token operator">=</span> iconHistory
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><p>实现的主要原理是通过维护一个内部数组来管理所有setIcon方法，当update调用的时候所有setIcon都被加载，达到更新的目的。</p> <p>同时需要保存上每次调用更新之后得到的那个图标组件，保证下一次初始化图标的时候能够正确的加载图标库</p> <p>但是这样还是无法达到一个项目中维护多个图标库的目的，我们需要保存每次更新url方法得到的那个图标组件</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> iconmap <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;default&quot;</span><span class="token punctuation">:</span> AntIcon
+<span class="token punctuation">}</span>
+DynamicAntIcon<span class="token punctuation">.</span><span class="token function-variable function">get</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> url</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  <span class="token keyword">let</span> computedKey <span class="token operator">=</span> key<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>key<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>iconmap<span class="token punctuation">[</span>computedKey<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> iconmap<span class="token punctuation">[</span>computedKey<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    iconmap<span class="token punctuation">[</span>computedKey<span class="token punctuation">]</span> <span class="token operator">=</span> AntIcon<span class="token punctuation">.</span><span class="token function">createFromIconfontCN</span><span class="token punctuation">(</span><span class="token punctuation">{</span> scriptUrl<span class="token punctuation">:</span> url <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    DynamicAntIcon<span class="token punctuation">[</span>computedKey<span class="token punctuation">]</span> <span class="token operator">=</span> iconmap<span class="token punctuation">[</span>computedKey<span class="token punctuation">]</span>
+    <span class="token keyword">return</span> iconmap<span class="token punctuation">[</span>computedKey<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> dynamicicon
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 追加history属性</span>
+<span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'iconmap'</span><span class="token punctuation">)</span>
+
+DynamicAntIcon<span class="token punctuation">[</span>map<span class="token punctuation">]</span> <span class="token operator">=</span> iconmap
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>这样就可以实现在项目中管理多套图标组件的功能</p></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新于: </span> <span class="time">6/30/2019, 11:08:47 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/code/react/hooks.html" class="prev">
+          React Hooks
+        </a></span> <span class="next"><a href="/code/react/useCallBack和useMemo.html">
+          (译)useCallBack和useMemo
+        </a>
+        →
+      </span></p></div> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3771b3c4.js" defer></script><script src="/assets/js/5.aeb3d5b3.js" defer></script><script src="/assets/js/1.8be823b2.js" defer></script><script src="/assets/js/31.91ad6c4c.js" defer></script>
+  </body>
+</html>

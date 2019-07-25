@@ -32,6 +32,8 @@ keys:
 |[google](https://mail.google.com/mail)|changerocc@gmail.com|-g-|[谷歌账号被禁用](https://accounts.google.com/signin/recovery)
 |[微软邮箱]()|changerocc@outlook.com|-2-
 |139|15108447254@139.com|-2-
+|sina|lowkey_wizard@sina.com|-2-|只能新浪邮箱登录
+
 
 
 ## git remote
@@ -77,6 +79,8 @@ keys:
 |B站|changero@126.com|-2-
 |amazon|changerocc@outlook.com|-2-|
 |smdl|ab5232918smdl|-2-|
+|12306|151|-2-|
+|[1password](http://my.1password.com)|changero@126.com|cylCHEN9422|[秘钥](A3-GG6ZL9-NKTEQC-9BJ9K-9REPR-XR595-2L745)
 
 
 
@@ -92,7 +96,8 @@ keys:
 
 ## vsCode插件
 
-[settings sync token](fba9f970a18e741e9c3839b48e72d573637c733f)、[gistID](http://e03a9053f64c7bea7b520b11f5b408a1/)
+[settings sync token](e89defa5b3384329eae0bb6183fb255aa308cad9)、[gistid](e03a9053f64c7bea7b520b11f5b408a1)
+
 
 
 

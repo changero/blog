@@ -91,6 +91,17 @@ categories:
 
 - **rainmeter**，Rainmeter可在桌面上显示可自定义的皮肤，如内存和电池电量，RSS源和天气预报。安装命令：`choco install rainmeter`。
 
+- **vnc-viewer**，`choco install vnc-viewer`
+
+- **msys2**, `choco install msys2`
+
+- **beyondcompare**, `choco install beyondcompare`
+
+- **zoom**, `choco install zoom`
+
+- **kodi**, `choco install kodi`
+
+- **angryip**, `choco install angryip`
 
 - **rocketdock**, 任务栏美化，类似MAC的dock。`choco install rocketdock`。
 
@@ -217,29 +228,18 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 
 - [胖次](https://www.panc.cc/)
 
-- [西林街搜索](http://www.xilinjie.com/)
-
-- [资源猫](https://www.ziyuanmao.com)
-
-- [磁力云](http://www.clyun.cc)
-
-- [鸵鸟搜索](http://www.tuoniao.me/)
-
 - [特百度](http://www.tebaidu.com/)
-
-- [爱挖盘](http://www.iwapan.com/)
-
-- [BT奥修磁力](http://www.oshoh.com)
 
 - [呆木瓜](http://www.daimugua.com)
 
-- [麦库搜索](http://www.huisou.me/)
-
-[一行代码](https://www.alinecode.com/)
+- [一行代码](https://www.alinecode.com/)
 
 ### 网盘搜索汇总
 
 #### ★★★★★
+
+- [鸠摩搜书](https://www.jiumodiary.com/)
+
 - [*盘多多](http://www.panduoduo.net/)
 
 - [*去转盘](http://www.quzhuanpan.com/)
@@ -309,11 +309,7 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 
 - [*我搜云](http://www.wosouyun.com)
 
-- [*91百度盘](http://www.91baidupan.com)
-
 - [*坑搜](http://www.kengso.com)
-
-- [*搜盘吧](http://www.sopanba.com)
 
 - [*搜盘侠](http://www.sopanxia.com)
 
@@ -321,15 +317,18 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 
 ### iso文件
 
-- [unetbootin](https://unetbootin.github.io/)
+|软件|跨平台|github|官网|choco|支持img
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|etcher|是|[github](https://github.com/balena-io/etcher/releases)|[官网](https://www.balena.io/etcher/)|是|是
+|rufus|windows|[github](https://github.com/pbatard/rufus)|[官网](https://rufus.ie/)|是|是
+|unetbootin|是|[github](https://github.com/unetbootin/unetbootin/releases)|[官网](https://unetbootin.github.io/)|是|是
+|软碟通|windows|-|[官网](https://cn.ultraiso.net/xiazai.html)|-|-
+|win32diskimager|windows|-|[官网](https://sourceforge.net/projects/win32diskimager/)|是|-|
+|tuxboot|ubuntu|-|[官网](https://tuxboot.org/download/)|是|-|
+|poweriso|是|[github](https://github.com/thioshp/poweriso)|[官网](https://www.poweriso.com/download.php)|是|-|
+|autobootdisk|linux|[github](https://github.com/EvilSourcerer/AutoBootDisk)|[官网](https://www.simpodex.com/)|是|-|
+|isorecorder|windows|-|[官网](http://isorecorder.alexfeinman.com/#/)|是|-|
 
-- [balena](https://www.balena.io/)
-
-- [软碟通](https://cn.ultraiso.net/xiazai.html) - windows
-
-- [rufus](https://rufus.ie/)
-
-- [win32diskimager](https://sourceforge.net/projects/win32diskimager/)- windows
 
 ### img文件
 

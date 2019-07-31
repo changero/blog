@@ -20,7 +20,6 @@ title: 前端常用资源及文档、网站收藏
 - [foru17](https://github.com/foru17/front-end-collect)
 - [前端九部](https://frontend9.com)
 - [goshakkk](https://goshakkk.name/)国外的一个博主
-- [林鑫](http://blog.gdfengshuo.com/)
 - [html5rocks](https://www.html5rocks.com/zh/tutorials/)
 - [berwin](https://github.com/berwin/Blog)
 - [love2](https://love2.io/)

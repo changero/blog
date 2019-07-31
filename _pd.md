@@ -64,7 +64,7 @@ keys:
 |facebook| changerocc@outlook.com |-2-
 |facebook|bianqu@www.bccto.me |-3-
 |stakcoverflow|changerocc@outlook.com| -2-
-|百度云盘bduss|snajhvjr750338|ql39wjy|[bduss](BQWjNwVjFjandtYmdoSExQbn44N0NYaHZ1SkVPaDNKdzBJaFM0aWVMYmRHWFpjQVFBQUFBJCQAAAAAAAAAAAEAAACAg5pic25hamh2anI3NTAzMzgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN2MTlzdjE5caD)
+|百度云盘bduss|snajhvjr750338|ql39wjy|[bduss](BQWjNwVjFjandtYmdoSExQbn44N0NYaHZ1SkVPaDNKdzBJaFM0aWVMYmRHWFpjQVFBQUFBJCQAAAAAAAAAAAEAAACAg5pic25hamh2anI3NTAzMzgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN2MTlzdjE5caD)、[bduss](hxeDdaeFQwQlRidERGVzgxM29udkpwSmJOTGdHV1NwY0hzVkZzMktSWmFjQk5kSVFBQUFBJCQAAAAAAAAAAAEAAACAg5pic25hamh2anI3NTAzMzgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFrj61xa4-tcdT)
 |steam| bianqu999| kissKISS77520 |changerocc@outlook.com
 |Gameloft|c459705849@qq.com(s7899870)| 123456788
 |优酷|Changerocc(862170589@qq.com)|-2-
@@ -96,7 +96,7 @@ keys:
 
 ## vsCode插件
 
-[settings sync token](e89defa5b3384329eae0bb6183fb255aa308cad9)、[gistid](e03a9053f64c7bea7b520b11f5b408a1)
+[settings sync token](730d5829cd3d7dadbaf-53bd1883f2bf414852eb1)、[gistid](e03a9053f64c7bea7b520b11f5b408a1)
 
 
 

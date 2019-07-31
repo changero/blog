@@ -2,7 +2,7 @@
 title: node命令行工具
 ---
 
-本篇博客主要介绍了如何使用commander, inquirer以及chalk从零开始，创建属于自己的命令行工具。[原文链接](https://zhuanlan.zhihu.com/p/66130343)
+本篇博客主要介绍了如何使用commander, inquirer以及chalk从零开始，创建属于自己的命令行工具。[原文链接](https://zhuanlan.zhihu.com/p/66130343)、[参考1](http://blog.gdfengshuo.com/article/27/)
 
 ## 开始
 
@@ -181,5 +181,4 @@ console.log(chalk.blue('hello v1.0.0'));
 // 字符串模板用法，在同一行中打印不同样式的信息
 console.log(chalk`{white.bold [1/3]} 🔍` + chalk`{default.bold Clone project into local path...}`);
 ```
-
 

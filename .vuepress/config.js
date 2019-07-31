@@ -137,7 +137,8 @@ module.exports = {
                         "Date对象时区转化.md",
                         "自定义标签.md",
                         "确定页面rem大小的两种思路.md",
-                        "gulp-less处理antd中的less引用.md"
+                        "gulp-less处理antd中的less引用.md",
+                        "浏览器table布局策略.md"
                     ]
                 }
             ],

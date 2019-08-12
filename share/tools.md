@@ -336,6 +336,26 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 
 - <a href="https://coding.net/api/project/3188554/files/5626569/download" download='img2kvm' >img2kvm</a>  - linux
 
+## 软路由
+
+### 国内无法上网
+
+在`网络 > 防火墙 > 自定义规则`下添加`iptables -t nat -I POSTROUTING -j MASQUERADE`
+
+### nanopi R1编译
+
+[参考](https://blog.csdn.net/wb4916/article/details/78227022)
+
+重要说明:
+
+- Target System选择Allwinner A1x/A20/A3x
+
+- Subtarget选择Allwinner A20/A3x
+
+- Target Profile选择FriendlyARM NanoPi NEO
+
+
+
 <iframe src="https://www.gettoby.com/e/99d3rnacsjj8" width="690" height="350" frameBorder="0">Collection: VPS (62 tabs)<a href="https://www.gettoby.com/p/99d3rnacsjj8" target="_blank"></a></iframe>
 
 <iframe src="https://www.gettoby.com/e/76vggkacyvnl" width="690" height="350" frameBorder="0">Collection: 工具 (88 tabs)<a href="https://www.gettoby.com/p/76vggkacyvnl" target="_blank"></a></iframe>

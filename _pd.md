@@ -10,6 +10,7 @@ keys:
 -2-: cylCHEN9422
 -3-: 77582580
 -4-: -7758258-
+-4-: -qq00TC93-
 -g-: changero199402021194. 
 -w-: 57155a92
 -->
@@ -30,9 +31,16 @@ keys:
 |:-:|:-:|:-:|:-:
 |[网易](http://mail.126.com/)|changero@126.com(15108447254)|-1-
 |[google](https://mail.google.com/mail)|changerocc@gmail.com|-g-|[谷歌账号被禁用](https://accounts.google.com/signin/recovery)
+|[google](https://mail.google.com/mail)|ochivec@gmail.com|-2-|
 |[微软邮箱]()|changerocc@outlook.com|-2-
-|139|15108447254@139.com|-2-
+|[onedrive5T]()|bianqu@t.odmail.cn|-4-
+|[139](193.com)|15108447254@139.com|-2-
+|[189](189.cn)|15108447254@139.com|-2-
 |sina|lowkey_wizard@sina.com|-2-|只能新浪邮箱登录
+|smc|venne_ann@student.smc.edu|-4-|google登陆
+|ccc|gminor2@student.ccc.edu|-4-|outlook登陆
+
+
 
 
 

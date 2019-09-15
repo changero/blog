@@ -79,7 +79,9 @@ module.exports = {
                         'gant-design小结.md',
                         '记又一次重装系统的历程.md',
                         "百度云共享账号.md",
-                        "网络畅游.md"
+                        "网络畅游.md",
+                        "出国留学姿势.md",
+                        "openwrt调教历程.md",
                     ]
                 }
 

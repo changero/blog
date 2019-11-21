@@ -81,6 +81,10 @@ categories:
 
 - **quicklook**, 快速查看工具，比较轻量，按空格就能查看文件，图片，压缩文件等。`choco install quicklook`
 
+- **googlechrome**, 谷歌浏览器,`choco install googlechrome`
+
+- **firefox**, 火狐浏览器,`choco install firefox`
+
 > 下面的软件还没有进行过实测
 
 - **Fastston capture**,一个Windows上滚动截图的神器，可以录像，以及截任何你想截的图。支持 BMP、JPG、JPEG、GIF、PNG、TIFF、WMF、ICO 和 TGA 在内的主流图片格式，提供缩放、旋转、剪切、颜色调整功能。安装命令：`choco install fscapture`

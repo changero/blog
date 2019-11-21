@@ -44,6 +44,7 @@ module.exports = {
                     { text: 'tools', link: '/code/tools/' },
                     { text: 'rxjs', link: '/code/rxjs/' },
                     { text: 'git', link: '/code/git/' },
+                    { text: 'linux相关教程和笔记', link: '/code/linux/史上最牛的Linux视频教程' },
                 ]
             },
             {
@@ -93,7 +94,8 @@ module.exports = {
                     children: [
                         '/read/',
                         '学习的方法.md',
-                        "记录想说的话.md"
+                        "记录想说的话.md",
+                        "富爸爸穷爸爸.md"
                     ]
                 }
             ],
@@ -161,6 +163,15 @@ module.exports = {
                     children: [
                         'git常用命令.md',
                         'git撤销操作.md',
+                    ]
+                }
+            ],
+            "/code/linux/": [
+                {
+                    title: 'linux相关教程',
+                    collapsable: false,
+                    children: [
+                        "史上最牛的Linux视频教程.md"
                     ]
                 }
             ]

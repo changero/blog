@@ -73,15 +73,11 @@ module.exports = {
                         '/share/',
                         'cookie、session和token.md',
                         'tools.md',
-                        'aboutearth.md',
                         'how-to-create-github-pages.md',
                         'node-commander.md',
                         'partClub总结.md',
                         'gant-design小结.md',
                         '记又一次重装系统的历程.md',
-                        "百度云共享账号.md",
-                        "网络畅游.md",
-                        "出国留学姿势.md",
                         "openwrt调教历程.md",
                     ]
                 }

@@ -79,7 +79,8 @@ module.exports = {
                         'gant-design小结.md',
                         '记又一次重装系统的历程.md',
                         "openwrt调教历程.md",
-                        "破解wetool历程.md"
+                        "破解wetool历程.md",
+                        "https证书.md"
                     ]
                 }
 

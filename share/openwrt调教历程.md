@@ -2,7 +2,7 @@
 title: openwrt调教历程
 date: 2019-09-15
 categories:
-  - cate
+  - openwrt
 tags:
   - tag
 ---
@@ -75,6 +75,19 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 
 ## 配置
 
+### 镜像源
+
+```
+# 中科大
+https://openwrt.proxy.ustclug.org/
+# 韩国
+https://mirror.0x.sg/openwrt/
+清华大学的LEDE镜像站
+https://mirrors.cnnic.cn/lede/releases/
+浙江大学 | OPENWRT | 开源镜像站地址
+http://mirrors.zju.edu.cn/openwrt/
+```
+
 ### 挂载硬盘
 
 参考这一篇[文章](https://blog.csdn.net/xiexievv/article/details/50525783)，将多添加的磁盘挂载到虚拟机
@@ -84,6 +97,16 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 在`网络 > 接口`下选择wan口，进行拨号上网，lan口不需要太多的设置
 
 如果不能上网，在`网络 > 防火墙 > 自定义规则`下添加`iptables -t nat -I POSTROUTING -j MASQUERADE`
+
+#### 单臂主路由
+
+- 接线方法：没有交换机的情况下，可以利用多网口路由器代替。
+
+`光猫`和软路由都连接`路由器lan口`或者`交换机`
+
+- 软路由设置
+
+进入到网络-接口，设置LAN口，去掉桥接，物理设置中选择eth0。设置WAN口，选择刚才LAN口的接口
 
 ### aliddns
 
@@ -132,5 +155,177 @@ bt配置，[tracker list](https://newtrackon.com/list)，[trackerslist](https://
 
 更多[参考](https://www.mivm.cn/?s=openwrt)
 
+## 安装npm
 
+1、 从[淘宝镜像](https://npm.taobao.org/mirrors/npm/)上下载包
+
+```bash
+wget https://npm.taobao.org/mirrors/npm/v6.9.2.tar.gz
+```
+
+2、解压后，修改包中`bin/npm`文件，
+
+```bash
+#!/bin/sh
+(set -o igncr) 2>/dev/null && set -o igncr; # cygwin encoding fix
+
+basedir=`dirname "$0"`
+
+case `uname` in
+    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
+esac
+
+NODE_EXE="$basedir/node.exe"
+if ! [ -x "$NODE_EXE" ]; then
+  NODE_EXE=node
+fi
+
+# 修改成绝对路径
+NPM_CLI_JS="/download/npm/bin/npm-cli.js"
+
+case `uname` in
+  *MINGW*)
+    NPM_PREFIX=`"$NODE_EXE" "$NPM_CLI_JS" prefix -g`
+    NPM_PREFIX_NPM_CLI_JS="$NPM_PREFIX/node_modules/npm/bin/npm-cli.js"
+    if [ -f "$NPM_PREFIX_NPM_CLI_JS" ]; then
+      NPM_CLI_JS="$NPM_PREFIX_NPM_CLI_JS"
+    fi
+    ;;
+  *CYGWIN*)
+    NPM_PREFIX=`"$NODE_EXE" "$NPM_CLI_JS" prefix -g`
+    NPM_PREFIX_NPM_CLI_JS="$NPM_PREFIX/node_modules/npm/bin/npm-cli.js"
+    if [ -f "$NPM_PREFIX_NPM_CLI_JS" ]; then
+      NPM_CLI_JS="$NPM_PREFIX_NPM_CLI_JS"
+    fi
+    ;;
+esac
+
+"$NODE_EXE" "$NPM_CLI_JS" "$@"
+~                               
+```
+
+> 如果出现无法保存的问题，可能是因为磁盘空间不够，将包拷贝到一个剩余空间足够的分区下编辑
+
+3、创建软连接
+
+```bash
+ln -s /npm/bin/npm /usr/bin
+```
+
+4、修改npm全局安装模式的路径
+
+```bash
+npm config set prefix "D:\Software\nodejs\node_global"
+npm config set cache "D:\Software\nodejs\node_cache"
+```
+
+## nanopi-wrt
+
+### 设置静态地址
+
+#### 方法1：不使用NetworkManager管理，手动设置
+
+以下文字介绍不使用 NetworkManager 来管理网络，改为手动设置，设置静态IP更灵活：
+编辑 NetworkManger.conf，将ifupdown中的managed设置为false，如下所示：
+
+```bash
+sudo vi /etc/NetworkManager/NetworkManager.conf
+
+[ifupdown]
+managed=false
+```
+
+再将网络设置加入 /etc/network/interfaces 即可：
+
+```bash
+vi /etc/network/interfaces
+```
+
+/etc/network/interfaces文件内容如下：
+
+```bash
+# The loopback network interface
+auto lo
+iface lo inet loopback
+ 
+# network interface not managed by Network Manager
+allow-hotplug eth0
+iface eth0 inet static
+address 192.168.2.199
+netmask 255.255.255.0
+gateway 192.168.2.1
+dns-nameservers 192.168.2.1
+```
+
+
+## docker记录
+
+> 单独使用一个硬盘挂在到/opt/docker记录
+
+> docker ps -a # 查看正在运行的镜像
+
+> docker exec -it containerID /bin/bash   进入容器交互  containerID:镜像ID
+
+### 加速站点
+
+https://registry.docker-cn.com
+
+http://hub-mirror.c.163.com
+
+https://3laho3y3.mirror.aliyuncs.com
+
+http://f1361db2.m.daocloud.io
+
+https://mirror.ccs.tencentyun.com
+
+```bash
+vi /etc/docker/daemon.json
+{
+  "registry-mirrors": ["https://registry.docker-cn.com"]
+}
+```
+
+
+- 安装kodexplorer
+
+> docker run --restart=always -d -p 8081:80 --name kodexplorer -v /download/kod:/code baiyuetribe/kodexplorer:latest
+
+- jellyfin
+
+因为之前已经安装过kodexplorer，所以直接哪kod里面的路径做一个软连接到/download/jellyfin/video
+
+> docker run --restart=always -d -p 8096:8096 -v /download/jellyfin/config:/config -v /download/jellyfin/videos:/videos jellyfin/jellyfin:latest -name jellyfin 
+
+- dos游戏
+
+> docker run -d --name dosgame -p 262:262 oldiy/dosgame-web-docker:latest
+
+- 临时邮箱
+
+> docker run --name forsaken-mail -itd -p 25:25 -p 3000:3000 rockmaity/forsaken-mail
+
+- docker-pan
+    
+> docker run --name=pan -v /opt/data:/var/www/html/system/data/default_home_folder  -dti -p 8082:80 -p 6800:6800 jaegerdocker/pan
+
+- 人人影视
+
+> docker run -d --name rrshare -p 3001:3001 -v /videos:/opt/work/store oldiy/rrshare64:latest
+
+- syncthing
+
+> docker run -it  -p 8384:8384 -p 22000:22000 -v /opt/data/syncthing/config:/var/syncthing/config -v /opt/data/syncthing:/var/syncthing syncthing/syncthing:latest
+
+> aria2
+- docker run -d --name aria2 -p 5003:80 -v /opt/data/aria2:/data -v /opt/data/aria2:/conf -e PUID=1000 -e PGID=1000 -e EXTERNAL_PORT=5003 -e USER_NAME=bianqu -e PASSWORD=123123 sanjusss/aria2-ariang-docker
+    
+- docker run -d --name aria2 -p 5003:80 -v /opt/data/aria2:/data sanjusss/aria2-ariang-docker 用户名、密码默认admin
+
+### 解除容器网络占用
+
+> docker network disconnect --force bridge [name]
+
+查看网络占用
+
+> docker network inspect bridge
 

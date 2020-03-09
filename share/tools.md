@@ -41,6 +41,8 @@ categories:
 
 - [npmhub](https://chrome.google.com/webstore/detail/npmhub/kbbbjimdjbjclaebffknlabpogocablj/related)扫描出`package.json`文件中的依赖，显示在`README`下面
 
+- [sourcegraph](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack?utm_source=chrome-ntp-icon)打开一个github项目会出现一个图标，点击图标就可以已编辑器的形式打开整个项目
+
 ## windows下软件
 
 大部分软件都是通过[chocolatey](http://chocolatey.org)来安装。首先要安装chocolatey，管理员身份打开CDM

@@ -44,6 +44,7 @@ module.exports = {
                     { text: 'tools', link: '/code/tools/' },
                     { text: 'rxjs', link: '/code/rxjs/' },
                     { text: 'git', link: '/code/git/' },
+                    { text: 'docker', link: '/code/docker/' },
                     { text: 'linux相关教程和笔记', link: '/code/linux/史上最牛的Linux视频教程' },
                 ]
             },
@@ -167,7 +168,17 @@ module.exports = {
                     children: [
                         'git常用命令.md',
                         'git撤销操作.md',
-                        "git子模块.md"
+                        "git子模块.md",
+                        "git代理设置.md"
+                    ]
+                }
+            ],
+            "/code/docker/": [
+                {
+                    title: "遇到过的问题",
+                    collapsable: false,
+                    children: [
+                        "ubuntu容器设置启动脚本.md"
                     ]
                 }
             ],

@@ -43,6 +43,8 @@ categories:
 
 - [sourcegraph](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack?utm_source=chrome-ntp-icon)打开一个github项目会出现一个图标，点击图标就可以已编辑器的形式打开整个项目
 
+- [SimpleExtManager](https://chrome.google.com/webstore/detail/simpleextmanager/kniehgiejgnnpgojkdhhjbgbllnfkfdk?utm_source=chrome-ntp-icon)，便捷的管理已有的扩展
+
 ## windows下软件
 
 大部分软件都是通过[chocolatey](http://chocolatey.org)来安装。首先要安装chocolatey，管理员身份打开CDM

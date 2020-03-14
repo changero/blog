@@ -268,6 +268,12 @@ dns-nameservers 192.168.2.1
 
 ### 加速站点
 
+"https://n2goo078.mirror.aliyuncs.com",
+
+"https://1nj0zren.mirror.aliyuncs.com",
+
+"https://docker.mirrors.ustc.edu.cn",
+
 https://registry.docker-cn.com
 
 http://hub-mirror.c.163.com

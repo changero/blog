@@ -45,6 +45,7 @@ module.exports = {
                     { text: 'rxjs', link: '/code/rxjs/' },
                     { text: 'git', link: '/code/git/' },
                     { text: 'docker', link: '/code/docker/' },
+                    { text: 'electron', link: '/code/electron/' },
                     { text: 'linux相关教程和笔记', link: '/code/linux/史上最牛的Linux视频教程' },
                 ]
             },
@@ -179,6 +180,15 @@ module.exports = {
                     collapsable: false,
                     children: [
                         "ubuntu容器设置启动脚本.md"
+                    ]
+                }
+            ],
+            "/code/electron/": [
+                {
+                    title: "electron",
+                    collapsable: false,
+                    children: [
+                        "解决electron下载问题.md"
                     ]
                 }
             ],

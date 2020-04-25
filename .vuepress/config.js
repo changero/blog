@@ -152,7 +152,6 @@ module.exports = {
                         "css/gulp-less处理antd中的less引用.md",
                         "浏览器table布局策略.md",
                         "Object禁止对象扩展的方法比较.md",
-                        // "剪切板粘贴显示图片.md",
                         "promise and generator.md",
                         "创建scope包.md"
                     ]

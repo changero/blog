@@ -46,6 +46,8 @@ module.exports = {
                     { text: 'git', link: '/code/git/' },
                     { text: 'docker', link: '/code/docker/' },
                     { text: 'electron', link: '/code/electron/' },
+                    { text: 'mongodb', link: '/code/mongodb/' },
+                    { text: '加解密', link: '/code/encryption/' },
                     { text: 'linux相关教程和笔记', link: '/code/linux/史上最牛的Linux视频教程' },
                 ]
             },
@@ -147,8 +149,12 @@ module.exports = {
                         "Date对象时区转化.md",
                         "自定义标签.md",
                         "确定页面rem大小的两种思路.md",
-                        "gulp-less处理antd中的less引用.md",
-                        "浏览器table布局策略.md"
+                        "css/gulp-less处理antd中的less引用.md",
+                        "浏览器table布局策略.md",
+                        "Object禁止对象扩展的方法比较.md",
+                        // "剪切板粘贴显示图片.md",
+                        "promise and generator.md",
+                        "创建scope包.md"
                     ]
                 }
             ],
@@ -198,6 +204,24 @@ module.exports = {
                     collapsable: false,
                     children: [
                         "史上最牛的Linux视频教程.md"
+                    ]
+                }
+            ],
+            "/code/mongodb/": [
+                {
+                    title: 'mongodb',
+                    collapsable: false,
+                    children: [
+                        "基础命令.md"
+                    ]
+                }
+            ],
+            "/code/encryption/": [
+                {
+                    title: '加解密',
+                    collapsable: false,
+                    children: [
+                        "basic_encryption.md"
                     ]
                 }
             ]

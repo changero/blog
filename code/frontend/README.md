@@ -24,6 +24,7 @@ title: 前端常用资源及文档、网站收藏
 - [berwin](https://github.com/berwin/Blog)
 - [love2](https://love2.io/)
 - [loveky](https://loveky.github.io/)
+- [jack](https://jakearchibald.com/) 谷歌浏览器开发者
 
 ## 社区
 
@@ -47,6 +48,7 @@ title: 前端常用资源及文档、网站收藏
 - [javascript数据结构与算法](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
 - [NWjs](https://nwjs.io/)js开发桌面端应用
 - [gulp](https://gulpjs.com/)
+- [whatwg](https://spec.whatwg.org/) whatwg标准文档
 
 ## 前端组织
 

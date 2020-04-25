@@ -22,15 +22,19 @@ meta:
 
 1. 新建一个仓库，命名随意
 2. 在setting中找到github pages。点击choose themes按钮，选择一款主题
-3. 提交之后便可以通过[username].github.io/[reponame]， 访问
+3. 提交之后便可以通过[username].github.io/[reponame]访问
 
 ### 3.自定义页面
 
 1. 新建一个仓库，命名随意
 2. 在setting中找到github pages。在source选择需要展示的分支，然后点击save
-3. 保存成功以后通过[username].github.io/[reponame]
+3. 保存成功以后通过[username].github.io/[reponame]访问
 
-如果还没有创建[username].github.io，那么可以通过custom domain的方式访问，具体就是需要有自己的域名，接着添加CNAME解析到[username].github.io。这样通过自己的域名就可以访问当前仓库了
+默认行为下，[username].github.io是直接访问[username].github.io仓库的，其他的仓库在配置了`github pages`服务之后需要指定对应的仓库名才能访问
+
+### CNAME访问
+
+在仓库里面创建一个CNAME文件，写入域名解析中的CNAME记录。CNAME记录需要解析到[username].github.io，比如说对于[username].github.io/[reponame]，就创建一个CNAME记录为[reponame].domain.com。这样访问[reponame].domain.com就可以直接访问[reponame]仓库部署的pages服务
 
 
 ## 配合[vuepress](https://vuepress.vuejs.org/zh/guide/deploy.html#github-pages)部署

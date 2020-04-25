@@ -187,3 +187,29 @@ openssl pkcs12 -export -in client-cert.pem -inkey client-key.pem -certfile ca-ce
 3、[sslforfree.com](https://www.sslforfree.com/)
 
 4、[CSR在线制作](https://www.chinassl.net/ssltools/generator-csr.html)与[申请](https://www.chinassl.net/ssltools/free-ssl.html)
+
+### HTTPS请求流程
+
+参考自[Sunny Classroom](https://www.youtube.com/watch?v=33VYnE7Bzpk)
+
+1、验证过程
+
+- 浏览器发起请求
+
+- web server 提供 server public key和数字证书`digital certificate`
+
+- 浏览器根据CA公匙验证数字证书，验证通过就会显示🔒的图标
+
+- 使用服务器的共匙加密本地一个对称密钥发送到服务器端
+
+- 服务器使用私钥解密经过共匙加密过的数据，得到客户端密钥
+
+2、请求过程
+
+- 客户端用服务器共匙加密数据并发送
+
+- 服务器用私钥解密得到请求数据
+
+- 服务器用客户端密钥加密返回的数据
+
+- 客户端解密得到相应数据

@@ -1,17 +1,21 @@
 const Copyplugin = require('copy-webpack-plugin')
-
-
 module.exports = {
     title: 'Changero',
     description: "技术只是工具，不是目的",
     base: '', // base路径，用于将网站部署到非根目录下，在vue文件和md文件中通过$withBase函数访问
-    chainWebpack: (config) => {
+    chainWebpack: (config, isServer) => {
+        const isProduction = process.env.NODE_ENV === "production"
+
+        if (isProduction) {
+            config.output.publicPath("https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/")
+        }
         config.plugin('copy').use(Copyplugin, [
             [
                 { from: './.vuepress/static', to: './static' },
                 { from: './.vuepress/public', to: '.' },
             ] // from 是命令的执行路径，to是生成的文件夹路径
         ])
+        console.log(isProduction, process.env.NODE_ENV, config.output.get("publicPath"))
     },
     evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill
     markdown: {

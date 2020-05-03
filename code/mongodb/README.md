@@ -1,0 +1,1 @@
+mongo "mongodb+srv://cluster0-gyism.gcp.mongodb.net/test"  --username bianqu

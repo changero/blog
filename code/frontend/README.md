@@ -13,16 +13,15 @@ title: 前端常用资源及文档、网站收藏
 - [天🐷阁](https://github.com/atian25/blog)
 - [sorrycc平时关注的前端库](https://github.com/sorrycc/awesome-f2e-libs)
 - [陈三](https://blog.zfanw.com/)
-- [D2日报](https://daily.fairyever.com/)
+- ~~[D2日报](https://daily.fairyever.com/)~~
 - [别人的收藏夹](https://panjiachen.github.io/awesome-bookmarks/)
 - [浪里行舟](https://github.com/ljianshu/Blog)
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub/blob/master/README.md)
 - [foru17](https://github.com/foru17/front-end-collect)
-- [前端九部](https://frontend9.com)
+- ~~[前端九部](https://frontend9.com)~~
 - [goshakkk](https://goshakkk.name/)国外的一个博主
 - [html5rocks](https://www.html5rocks.com/zh/tutorials/)
 - [berwin](https://github.com/berwin/Blog)
-- [love2](https://love2.io/)
 - [loveky](https://loveky.github.io/)
 - [jack](https://jakearchibald.com/) 谷歌浏览器开发者
 

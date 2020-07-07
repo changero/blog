@@ -44,6 +44,7 @@ module.exports = {
                     { text: 'frontend', link: '/code/frontend/' },
                     { text: 'typescript', link: '/code/typescript/' },
                     { text: 'react', link: '/code/react/' },
+                    { text: 'react-native', link: '/code/react-native/' },
                     { text: 'vue', link: '/code/vue/' },
                     { text: 'tools', link: '/code/tools/' },
                     { text: 'rxjs', link: '/code/rxjs/' },
@@ -122,6 +123,10 @@ module.exports = {
                         "useCallBack和useMemo.md"
                     ]
                 }
+            ],
+            "/code/react-native/": [
+                "/code/react-native/",
+                "mac搭建react-native开发环境.md"
             ],
             "/code/rxjs/": [
                 "/code/rxjs/",

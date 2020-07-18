@@ -32,6 +32,7 @@ title: 前端常用资源及文档、网站收藏
 - [掘金翻译计划](https://juejin.im/tag/%E6%8E%98%E9%87%91%E7%BF%BB%E8%AF%91%E8%AE%A1%E5%88%92)
 - [jstips](http://www.jstips.co/)
 - [leetcode](https://leetcode.com/)、[leetcode中文](https://leetcode-cn.com/)
+- [web.dev](https://web.dev/)
 
 ## 文档
 
@@ -48,6 +49,11 @@ title: 前端常用资源及文档、网站收藏
 - [NWjs](https://nwjs.io/)js开发桌面端应用
 - [gulp](https://gulpjs.com/)
 - [whatwg](https://spec.whatwg.org/) whatwg标准文档
+
+## 环境搭建
+
+- [puppeteer](https://juejin.im/post/5b99c9ece51d450e51625630)
+- [react-native](/code/react-native/mac搭建react-native开发环境)
 
 ## 前端组织
 

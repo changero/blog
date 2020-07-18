@@ -1,21 +1,21 @@
-const Copyplugin = require('copy-webpack-plugin')
+const Copyplugin = require('copy-webpack-plugin');
 module.exports = {
     title: 'Changero',
     description: "技术只是工具，不是目的",
     base: '', // base路径，用于将网站部署到非根目录下，在vue文件和md文件中通过$withBase函数访问
     chainWebpack: (config, isServer) => {
-        const isProduction = process.env.NODE_ENV === "production"
+        const isProduction = process.env.NODE_ENV === "production";
 
         if (isProduction) {
-            config.output.publicPath("https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/")
+            config.output.publicPath("https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/");
         }
         config.plugin('copy').use(Copyplugin, [
             [
                 { from: './.vuepress/static', to: './static' },
                 { from: './.vuepress/public', to: '.' },
             ] // from 是命令的执行路径，to是生成的文件夹路径
-        ])
-        console.log(isProduction, process.env.NODE_ENV, config.output.get("publicPath"))
+        ]);
+        console.log(isProduction, process.env.NODE_ENV, config.output.get("publicPath"));
     },
     evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill
     markdown: {
@@ -89,6 +89,7 @@ module.exports = {
                         '记又一次重装系统的历程.md',
                         "破解wetool历程.md",
                         "https证书.md",
+                        "VSCode插件自备.md",
                     ]
                 },
                 {
@@ -162,7 +163,8 @@ module.exports = {
                         "浏览器table布局策略.md",
                         "Object禁止对象扩展的方法比较.md",
                         "promise and generator.md",
-                        "创建scope包.md"
+                        "创建scope包.md",
+                        "使用JS访问摄像头.md",
                     ]
                 }
             ],
@@ -244,4 +246,4 @@ module.exports = {
             }
         },
     }
-}
+};

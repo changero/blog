@@ -42,6 +42,7 @@ module.exports = {
                 icon: 'reco-menu',
                 items: [
                     { text: 'frontend', link: '/code/frontend/' },
+                    { text: 'node', link: '/code/node/' },
                     { text: 'typescript', link: '/code/typescript/' },
                     { text: 'react', link: '/code/react/' },
                     { text: 'react-native', link: '/code/react-native/' },
@@ -90,6 +91,7 @@ module.exports = {
                         "破解wetool历程.md",
                         "https证书.md",
                         "VSCode插件自备.md",
+                        "部署Heroku.md"
                     ]
                 },
                 {
@@ -109,7 +111,8 @@ module.exports = {
                         '/read/',
                         '学习的方法.md',
                         "记录想说的话.md",
-                        "富爸爸穷爸爸.md"
+                        "富爸爸穷爸爸.md",
+                        "《走吧，张小研》读后感.md",
                     ]
                 }
             ],
@@ -165,6 +168,16 @@ module.exports = {
                         "promise and generator.md",
                         "创建scope包.md",
                         "使用JS访问摄像头.md",
+                    ]
+                }
+            ],
+            "/code/node/": [
+                {
+                    title: "工具",
+                    collapsable: false,
+                    children: [
+                        "lerna.md",
+                        "yargs.md",
                     ]
                 }
             ],

@@ -91,6 +91,14 @@ export http_proxy="socks5://127.0.0.1:1080"
 export https_proxy="socks5://127.0.0.1:1080"
 ```
 
+无法使用代理，可以添加镜像。在package.json的build中添加electron的镜像
+
+```json
+"electronDownload": {
+    "mirror": "https://npm.taobao.org/mirrors/electron/"
+  },
+```
+
 ## Tips
 
 rebuild 如果很慢，可能是要翻墙，可尝试 cnpmjs.org 提供的镜像，`electron-rebuild -d=https://gh-contractor-zcbenz.cnpmjs.org/atom-shell/dist/`

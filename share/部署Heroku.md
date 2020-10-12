@@ -40,7 +40,12 @@ addEventListener('fetch', event => {
 })
 ```
 
-然后修改address为worker的地址
+### 配置
+
+直接修改address为worker的地址
+
+或者address填`cloudflare.com`、下面的hosts和tls servername都填worker的地址，然后删掉path
+
 
   
 

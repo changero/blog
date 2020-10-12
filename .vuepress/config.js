@@ -15,7 +15,6 @@ module.exports = {
                 { from: './.vuepress/public', to: '.' },
             ] // from 是命令的执行路径，to是生成的文件夹路径
         ]);
-        console.log(isProduction, process.env.NODE_ENV, config.output.get("publicPath"));
     },
     evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill
     markdown: {
@@ -91,7 +90,9 @@ module.exports = {
                         "破解wetool历程.md",
                         "https证书.md",
                         "VSCode插件自备.md",
-                        "部署Heroku.md"
+                        "部署Heroku.md",
+                        "croc.md",
+                        "chrome插件.md",
                     ]
                 },
                 {

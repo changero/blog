@@ -6,45 +6,6 @@ categories:
   - 工具
 ---
 
-
-
-## chrome扩展
-
-- [chrome多平台各版本下载](https://www.chromedownloads.net/chrome64win/)
-
-这里记录一下常用的chrome扩展，免得经常性的到处找。以下链接都是google商店地址，如果没有梯子，也可以到[crx4chrome](https://www.crx4chrome.com/)、[cnplugins](http://www.cnplugins.com/)、[chromecj](http://chromecj.com/)、[chrome666](https://www.chrome666.com/)、[extfans](https://extfans.com/)等商店上去寻找
-
-- [toby](https://chrome.google.com/webstore/detail/toby-for-chrome/hddnkoipeenegfoeaoibdmnaalmgkpip?utm_source=chrome-ntp-icon)类似书签管理
-
-<!-- more -->
-
-- [SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-ntp-icon)好用的代理工具。[github wiki](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
-
-分享一个几乎永久使用的节点: `https://www.copyplay.net:443`
-
-规则列表：`https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt`
-
-
-- [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=chrome-ntp-icon)谁用谁知道的插件，通过脚本扩展目标网站的功能。脚本的下载网址：[greasyfork](https://greasyfork.org/zh-CN/scripts)、[国外](http://userscripts-mirror.org/)。推荐[脚本](https://greasyfork.org/zh-CN/scripts/370811-2019%E5%B9%B44%E6%9C%8815%E6%97%A5%E6%9B%B4%E6%96%B0-%E7%BD%91%E7%9B%98%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99-%E8%87%AA%E5%8A%A8%E6%9F%A5%E8%AF%A2%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E7%9A%84%E6%8F%90%E5%8F%96%E7%A0%81-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E6%92%AD%E6%94%BE-%E5%85%A8%E7%BD%91%E4%BB%98%E8%B4%B9%E9%9F%B3%E4%B9%90%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD-%E6%B7%98%E5%AE%9D-%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%A4%A7%E9%A2%9D%E8%B4%AD%E7%89%A9%E4%BC%98%E6%83%A0%E5%88%B8%E9%A2%86%E5%8F%96-%E6%94%AF%E6%8C%81%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC%E6%9F%A5%E8%AF%A2),可以破解百度网盘的分享
-
-- [octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?utm_source=chrome-ntp-icon)浏览github仓库的时候再也不用一层一层的去找文件了
-
-- [广告终结者](https://chrome.google.com/webstore/detail/%E5%B9%BF%E5%91%8A%E7%BB%88%E7%BB%93%E8%80%85/fpdnjdlbdmifoocedhkighhlbchbiikl?utm_source=chrome-ntp-icon)亲测拦截优酷广告有效
-
-- [loom](https://chrome.google.com/webstore/detail/loom-video-recorder-scree/liecbddmkiiihnedobmlmillhodjkdmb?utm_source=chrome-ntp-icon)浏览器录屏扩展
-
-- [youtube广告拦截](https://chrome.google.com/webstore/detail/video-adblocker-for-youtu/hflefjhkfeiaignkclmphmokmmbhbhik)见明知意
-
-- [mega](https://chrome.google.com/webstore/detail/mega/bigefpfhnfcobdlfbedofhhaibnlghod/related)免费的50G云盘
-
-- [octolinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp/related)查看github仓库代码的时候可以很方便的跳转到其依赖的库
-
-- [npmhub](https://chrome.google.com/webstore/detail/npmhub/kbbbjimdjbjclaebffknlabpogocablj/related)扫描出`package.json`文件中的依赖，显示在`README`下面
-
-- [sourcegraph](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack?utm_source=chrome-ntp-icon)打开一个github项目会出现一个图标，点击图标就可以已编辑器的形式打开整个项目
-
-- [SimpleExtManager](https://chrome.google.com/webstore/detail/simpleextmanager/kniehgiejgnnpgojkdhhjbgbllnfkfdk?utm_source=chrome-ntp-icon)，便捷的管理已有的扩展
-
 ## windows下软件
 
 大部分软件都是通过[chocolatey](http://chocolatey.org)来安装。首先要安装chocolatey，管理员身份打开CDM
@@ -60,6 +21,9 @@ categories:
 2、 `ChocolateyToolsLocation`配置通过choco安装的软件的安装路径。不同的软件有软件自身的路径，所以这个路径不一定生效
 
 [chocolatey安装参考](https://www.jianshu.com/p/f5f4efd04cab)
+
+
+<!-- more -->
 
 ### 推荐软件
 
@@ -337,6 +301,159 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 |autobootdisk|linux|[github](https://github.com/EvilSourcerer/AutoBootDisk)|[官网](https://www.simpodex.com/)|是|-|
 |isorecorder|windows|-|[官网](http://isorecorder.alexfeinman.com/#/)|是|-|
 
-<iframe src="https://www.gettoby.com/e/99d3rnacsjj8" width="690" height="350" frameBorder="0">Collection: VPS (62 tabs)<a href="https://www.gettoby.com/p/99d3rnacsjj8" target="_blank"></a></iframe>
+<!-- <iframe src="https://www.gettoby.com/e/99d3rnacsjj8" width="690" height="350" frameBorder="0">Collection: VPS (62 tabs)<a href="https://www.gettoby.com/p/99d3rnacsjj8" target="_blank"></a></iframe>
 
-<iframe src="https://www.gettoby.com/e/76vggkacyvnl" width="690" height="350" frameBorder="0">Collection: 工具 (88 tabs)<a href="https://www.gettoby.com/p/76vggkacyvnl" target="_blank"></a></iframe>
+<iframe src="https://www.gettoby.com/e/76vggkacyvnl" width="690" height="350" frameBorder="0">Collection: 工具 (88 tabs)<a href="https://www.gettoby.com/p/76vggkacyvnl" target="_blank"></a></iframe> -->
+
+## 在线视频
+
+1.[片库](https://www.pianku.tv/)
+
+2.[五号站](http://www.wuhaozhan.net)
+
+3.[海免影院](http://www.haitudy.com)
+
+4.[dilidili](https://www.dililitv.com/)
+
+5.[在线之家](https://www.zxzjs.com)
+
+6.[两个BT](http://www.bttwo.com)
+
+7.[电影蜜蜂](https://www.dybee.tv)
+
+8.新版6v影院：https://www.66s.cc       
+9.全视频TV：http://www.qsptv.com  
+10.独播库：https://www.duboku.net
+11.哗嘀影视：https://www.bde4.com                                               
+12.星辰影院：http://www.vodxc.tv
+13.豌豆影视：https://www.wandouys.com                                   
+14.酸枣电影网（66影视）：https://www.suanzao.tv
+15.4K屋：http://www.kkkkmao.com
+16.看看屋：https://www.kankanwu.com
+17.蛋蛋赞影院：https://www.dandanzan.com
+18.迅播影院：http://www.22tu.cc
+19.酷绘视频：http://www.kuhuiv.com
+20.我的电影网：http://www.wodedy.net
+21.琪琪影院：https://www.77evd.cc/
+22.七七看片：https://www.77kpp.com/
+23.草民电影：https://www.cmdy5.com/
+24.私人官网：http://www.aishang118.cn/
+25.电影盒子：http://www.tv5box.com/
+26.全能影视：http://www.qnvod.net/
+27.影视分享：https://www.ysshare.com/
+28.94神马电影网：http://www.9rmb.com/
+29.好恐怖：http://www.hkb123.com/
+30.慢头影视：http://www.paojiaoys.com/
+31.影猫：http://www.mvcat.com/
+32.BT猫：https://www.btmao.cc/
+33.神马电影网：https://www.jlszyy.cc/
+34.达达兔电影院：https://www.dadatutu.com/
+35.西瓜影院：https://www.xigua2222.com/
+36.片吧：http://www.pianba.tv/
+37.片库网：https://www.pianku.tv/
+38.无双影视：https://53ys.cc/
+39.80s手机电影网：http://www.8080s.net/
+40.西瓜电影：https://www.xigua110.com/
+41.人人影视：http://www.yyetss.com/
+42.高清资源网：http://www.gaoqingzy.com/
+43.OK电影网：http://www.kk2w.cc/
+44.豆瓣电影资源采集网：http://www.douban666.com/
+45.87影院：https://www.87kk.tv/
+46.放映影院：https://www.t90dyy.tv/
+47.速影TV：https://suyingtv.com/
+48.嘀哆咪影视：https://www.haiduomi.cc/
+49.优片网：http://www.iupian.com/
+50.黑米影院：https://www.tv432.com/
+51.且听风吟：http://www.qtfy7.com/
+52.88影视网：https://www.88ys.com/
+53.嘀哩哩：http://www.dililitv.com/
+54.云播TV：https://www.yunbtv.com/
+55.田鸡影院：http://www.tianjiyy123.com/
+56.奈非影视：https://www.nfmovies.com/
+57.全集网：https://www.quanji789.com/
+58.全集网：http://quanji456.com/
+59.狗带TV：http://www.goudaitv1.com/
+60.五杀电影院：https://www.lol5s.com/
+61.蓝马影视：https://www.lanmays.com/
+62.奇葩影视：https://www.qpvod.com/
+63.迅雷哥：https://www.4142.cc/
+64.影视分享：https://www.ysshare.com/
+65.新视觉影院：http://www.yy6080.cn/
+66.v部落：http://www.vbuluo99.com/
+67.神驴影院：http://www.shenlvyy.com/
+68.美鱼剧场：http://www.hailiys.com/
+69.吼吼：http://hoho.tv/
+70.酷云影视：https://kuyun.tv/
+71.想看剧：https://www.xiangkanju.cc/
+72.去看TV：http://www.qukantv.net/
+73.胖子视频：http://www.pangzi.ca/
+74.海外影院：https://www.haiwaiyy.com/
+75.好吧：http://hao8tv.com/
+76.日本影视：http://www.jp2468.com/
+77.TNT影视：http://www.tntdy2.vip/
+78.优乐电影网：http://www.youlebe.com/
+79.面包网：https://www.mianbao99.com/
+80.猫哈哈：http://www.maohaha.com/
+81.七七电视：https://www.77ds.vip/
+82.我乐电影：http://www.56dy.com/
+83.钉子电影：http://www.dingziyc.com/
+84.蓝鲸电影：https://www.ljmovie.com/
+85.葡萄影视：https://www.putaoys.com/
+86.太初电影：https://www.tcmove.com/
+87.完美看看：https://www.wanmeikk.me/
+88.吾爱看影视：http://www.5aikp.com/
+89播王：https://bowan.su/
+90.Gimy TV剧迷：https://gimy.tv/
+91.NO视频：http://www.novipnoad.com/
+92.枫林网：http://8maple.ru/
+93.91美剧：https://91mjw.com/
+94.美剧鸟：http://www.meijuniao.com/
+95.爱美剧：https://www.meiju.net/
+96.天天看美剧：http://www.ttkmj.tv/
+97.日剧TV：https://www.rijutv.com/
+98.韩剧集网：https://www.juji.tv/
+99.韩剧网：http://www.hanju.cc/
+100.韩剧TV：https://www.hanjutv.com/
+101.Zzzfun：http://www.zzzfun.com/
+102.妮可动漫：http://www.nicotv.me/
+103.吐槽弹幕网：http://www.tucao.one/
+104.动漫岛：http://www.dmd8.com/
+105.碟影视界：http://www.952780.com/
+106.皮皮影视网：https://www.taiks.com/
+107.ADC电影网：https://www.adcmove.com/
+108.欧西电影：https://www.ouxi.me/
+109.青鸟影视：https://www.qingniao.me/
+110.盐酥鸡：https://www.ysuzy.com/
+
+## 在线音乐
+
+1、「用得最多」墨灵音乐：官网 https://yinyue.qugeek.com/
+特点：①海量音乐搜索，试听，下载 ②无广告，无需注册登陆，完全免费
+③在线白噪音，转码，编辑 MP3 标签，FM ④支持部分音乐无损下载
+2、「可播放 vip、下架歌曲」网易云音乐、QQ 音乐、咪咕音乐http://tool.liumingye.cn/music/
+http://47.112.23.238/
+http://music.jsososo.com/
+3、「基于麦聪音乐搜索器搭建的网站」一般使用酷狗、酷我。
+http://www.xieqian.vip/music
+http://tool.wotula.com/t/web/music-master/
+http://www.lxh5068.com/music
+4、「基于 mkonlineplayer 搭建的在线音乐播放器」支持主流音乐平台搜索试听下载。
+http://music.itmxue.cn
+http://guozhivip.com/yinyue/
+https://music.postgraduate.top
+http://tool.wotula.com/t/web/mkplayer/
+https://www.mosq.cn/yy/music/
+http://vip.xcsee.cn/music
+http://ayy.ayxhk.com
+http://tool.yiixue.com/Tools/mk_music
+5、「不错的音乐在线试听网站」将 QQ 音乐、网易云音乐和虾米音乐上的歌添加到一个列表来播放
+http://tongzhong.xyz
+http://mini.tongzhong.xyz
+6、「免费音乐搜索大全」
+mmplayer 在线音乐播放器：ui 美观，支持网易音乐
+https://www.postgraduate.top/app.php/music
+http://music.mtnhao.com/
+7、摩声音乐搜索：搜索歌曲速度很快，支持网易云、QQ、虾米、酷狗、百度免费搜索试听下载。
+http://moresound.tk/music/
+8、解锁网易云音乐灰色链接
+https://github.com/nondanee/UnblockNeteaseMusic

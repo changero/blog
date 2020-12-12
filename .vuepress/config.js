@@ -48,6 +48,7 @@ module.exports = {
         text: "编程",
         icon: "reco-menu",
         items: [
+          { text: "基础", link: "/code/basic/" },
           { text: "frontend", link: "/code/frontend/" },
           { text: "node", link: "/code/node/" },
           { text: "typescript", link: "/code/typescript/" },
@@ -61,6 +62,8 @@ module.exports = {
           { text: "electron", link: "/code/electron/" },
           { text: "mongodb", link: "/code/mongodb/" },
           { text: "加解密", link: "/code/encryption/" },
+          { text: "python", link: "/code/python/" },
+          { text: "flutter", link: "/code/flutter/" },
           {
             text: "linux相关教程和笔记",
             link: "/code/linux/史上最牛的Linux视频教程",
@@ -103,6 +106,7 @@ module.exports = {
             "VSCode插件自备.md",
             "部署Heroku.md",
             "chrome插件.md",
+            "iterm2git别名.md",
           ],
         },
         {
@@ -129,6 +133,14 @@ module.exports = {
           ],
         },
       ],
+
+      "/code/basic/": [
+        {
+          title: "基础",
+          collapsable: false,
+          children: ["理解Unicode与UTF-8.md", "线性表.md", "全排列算法.md"],
+        },
+      ],
       "/code/react/": [
         {
           title: "React学习之路",
@@ -144,6 +156,8 @@ module.exports = {
       "/code/react-native/": [
         "/code/react-native/",
         "mac搭建react-native开发环境.md",
+        "mac下安卓开发环境搭建.md",
+        "安卓调试.md",
       ],
       "/code/rxjs/": [
         "/code/rxjs/",
@@ -164,7 +178,7 @@ module.exports = {
           collapsable: false,
           children: [
             "/code/frontend/",
-            "理解Unicode与UTF-8.md",
+            "简单实现一个函数柯里化.md",
             "babel7入门级指南",
             "两种函数组合方式.md",
             "理解commonJS模块加载以及循环依赖的问题.md",
@@ -240,6 +254,20 @@ module.exports = {
           title: "加解密",
           collapsable: false,
           children: ["basic_encryption.md"],
+        },
+      ],
+      "/code/python/": [
+        {
+          title: "python",
+          collapsable: false,
+          children: ["python如何安装第三方库.md"],
+        },
+      ],
+      "/code/flutter/": [
+        {
+          title: "flutter",
+          collapsable: false,
+          children: ["mac下Flutter开发环境搭建.md"],
         },
       ],
     },

@@ -7,17 +7,21 @@ categories:
 
 ## 安装
 
-youtube-dl 的运行依赖 python
+youtube-dl 的运行依赖 python3
 
 - UNIX 系统
 
-> sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-> sudo chmod a+rx /usr/local/bin/youtube-dl
+```bash
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+```
 
 或者
 
-> sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
-> sudo chmod a+rx /usr/local/bin/youtube-dl
+```bash
+sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+```
 
 - windows
 
@@ -86,3 +90,25 @@ youtube-dl 的运行依赖 python
 --proxy 127.0.0.1:1080
 
 -o ~/download
+
+## you-get
+
+you-get 可以用来下来 B 站的视频，youtube-dl 也可以，但问题在于无法下来视频列表
+
+### 安装
+
+> brew install you-get # macOS
+
+> pip3 install you-get # ubuntu
+
+### 下载
+
+-l, --list 用来下载列表
+
+-o 指定下载目录，跟 youtube-dl 一样
+
+-h 查看帮助命令
+
+```bash
+you-get -l -o ~/Downloads/xx https://www.bilibili.com/avXXXXXXX
+```

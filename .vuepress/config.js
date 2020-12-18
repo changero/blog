@@ -64,6 +64,8 @@ module.exports = {
           { text: "加解密", link: "/code/encryption/" },
           { text: "python", link: "/code/python/" },
           { text: "flutter", link: "/code/flutter/" },
+          { text: "计算机网络", link: "/code/network/" },
+          { text: "graphql", link: "/code/graphql/" },
           {
             text: "linux相关教程和笔记",
             link: "/code/linux/史上最牛的Linux视频教程",
@@ -268,6 +270,20 @@ module.exports = {
           title: "flutter",
           collapsable: false,
           children: ["mac下Flutter开发环境搭建.md"],
+        },
+      ],
+      "/code/network/": [
+        {
+          title: "计算机网络",
+          collapsable: false,
+          children: ["图解计算机网络.md"],
+        },
+      ],
+      "/code/graphql/": [
+        {
+          title: "graphql",
+          collapsable: false,
+          children: ["认识graphql.md"],
         },
       ],
     },

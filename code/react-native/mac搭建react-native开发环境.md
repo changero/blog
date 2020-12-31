@@ -7,19 +7,19 @@ tags:
   - 配置
 ---
 
-## ios端
+## ios 端
 
-#### 安装homebrew
+#### 安装 homebrew
 
 搜索按照官方命令直接安装
 
-#### 安装nvm
+#### 安装 nvm
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-可以将以上github地址替换为`jsdelivr`CDN
+可以将以上 github 地址替换为`jsdelivr`CDN
 
 ```bash
 curl -o- https://cdn.jsdelivr.net/gh/nvm-sh/nvm@v0.35.3/install.sh | bash
@@ -32,9 +32,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
-
-
-##### 使用nvm安装node
+##### 使用 nvm 安装 node
 
 1、配置镜像
 
@@ -54,22 +52,22 @@ nvm ls-remote --lts
 nvm install xx.xx.xx
 ```
 
-4、安装镜像管理包nrm
+4、安装镜像管理包 nrm
 
 ```bash
 npm install nrm -g
 nrm use taobao
 ```
 
-到这里就可以通过npm来安装`react-native-cli`工具了
+到这里就可以通过 npm 来安装`react-native-cli`工具了
 
 ```bash
 npm install react-native-cli
 ```
 
-*可选yarn替代npm*
+_可选 yarn 替代 npm_
 
-#### 安装watchman
+#### 安装 watchman
 
 ```bash
 brew install watchman
@@ -77,19 +75,19 @@ brew install watchman
 all_proxy=socks5://127.0.0.1:1080 brew install watchman
 ```
 
-#### 安装xocde并配置common Line tools
+#### 安装 xocde 并配置 common Line tools
 
 启动 Xcode，并在`Xcode | Preferences | Locations`菜单中检查一下是否装有某个版本的`Command Line Tools`
 
-#### 安装cocoapods
+#### 安装 cocoapods
 
-[CocoaPods](https://cocoapods.org/)是用 Ruby 编写的包管理器。从 0.60 版本开始 react native 的 iOS 版本需要使用 CocoaPods 来管理依赖，可以使用brew安装，也可以使用ruby的包管理工具安装
+[CocoaPods](https://cocoapods.org/)是用 Ruby 编写的包管理器。从 0.60 版本开始 react native 的 iOS 版本需要使用 CocoaPods 来管理依赖，可以使用 brew 安装，也可以使用 ruby 的包管理工具安装
 
 ```bash
 sudo gem install cocoapods
 ```
 
-*可选配置cocoapods的中科大源*，[参考](https://mirrors.tuna.tsinghua.edu.cn/help/CocoaPods/)
+_可选配置 cocoapods 的中科大源_，[参考](https://mirrors.tuna.tsinghua.edu.cn/help/CocoaPods/)
 
 ### 初始化项目
 
@@ -99,10 +97,10 @@ react-native init myrn
 
 ### 启动
 
-建议在ios目录下通过pod先安装依赖
+建议在 ios 目录下通过 pod 先安装依赖
 
 ```bash
-cd myrn && pod install 
+cd myrn && pod install
 ```
 
 安装报错，可以[参考](https://www.jianshu.com/p/7b21254cbd77)
@@ -113,33 +111,33 @@ cd myrn && pod install
 export all_proxy=socks5://127.0.0.1:1080
 ```
 
-最后可以通过打开ios目录下的`.xcworkspace`文件直接导入到XCODE中运行，也可以执行：
+最后可以通过打开 ios 目录下的`.xcworkspace`文件直接导入到 XCODE 中运行，也可以执行：
 
 ```bash
 react-native run-ios
 ```
 
-来启动项目。此时会打开ios模拟器和一个终端
+来启动项目。此时会打开 ios 模拟器和一个终端
 
 ### 可能出现的问题
 
-在启动终端打开模拟器的时候，出现找不到node执行文件的情况。
+在启动终端打开模拟器的时候，出现找不到 node 执行文件的情况。
 
-原因是启动的终端的环境变量中并没有node，主要跟终端的配置有关。通过nvm安装node，以软连接的形式将node链接到全局环境下
+原因是启动的终端的环境变量中并没有 node，主要跟终端的配置有关。通过 nvm 安装 node，以软连接的形式将 node 链接到全局环境下
 
 ```bash
 ln -s $(which node) /usr/local/bin/node
 ```
 
-或者在xcode中配置，[参考](https://www.jianshu.com/p/4501ed597aba)
+或者在 xcode 中配置，[参考](https://www.jianshu.com/p/4501ed597aba)
 
-## Android端配置
+## Android 端配置
 
 `brew`、`node`、`watchman`等安装配置参考上面。一定要备好梯子
 
-### 安装JDK
+### 安装 JDK
 
-mac一般自带jdk，也可以手动安装，[下载地址](https://www.kagura.me/dev/20200424112618.html)
+mac 一般自带 jdk，也可以手动安装，[下载地址](https://www.kagura.me/dev/20200424112618.html)
 
 然后配置环境变量
 
@@ -152,17 +150,17 @@ export PATH
 export CLASSPATH
 ```
 
-试试运行javac
+试试运行 javac
 
-### 安装Android Studio
+### 安装 Android Studio
 
 可以在这个[网站](https://www.androiddevtools.cn/#)上下载，也可以去官网，备好梯子。
 
-#### SDK的安装
+#### SDK 的安装
 
-如果下载到没有SDK的版本，需要单独下载SDK，[参考](https://testerhome.com/topics/19377)
+如果下载到没有 SDK 的版本，需要单独下载 SDK，[参考](https://testerhome.com/topics/19377)
 
-然后需要配置sdk环境变量
+然后需要配置 sdk 环境变量
 
 ```bash
 export ANDROID_HOME=$HOME/XXX
@@ -172,17 +170,34 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 ```
 
-
-
 ### 启动项目
 
-先执行`npm run android`构建Android项目，并启动一个Server。
+先执行`npm run android`构建 Android 项目，并启动一个 Server。
 
-将android项目导入到android studio，点击模拟器启动，第一次需要创建一个模拟器。按步骤执行安装模拟器虚拟设备就可以了
+将 android 项目导入到 android studio，点击模拟器启动，第一次需要创建一个模拟器。按步骤执行安装模拟器虚拟设备就可以了
 
 最后启动成功
 
-#### 关于maven镜像的问题
+#### 关于 maven 镜像的问题
 
 可以尝试阿里云提供的[maven 镜像](https://help.aliyun.com/document_detail/102512.html?spm=a2c40.aliyun_maven_repo.0.0.361865e90r2x4b)，将`android/build.gradle`中的`jcenter()`和`google()`分别替换为`maven { url 'https://maven.aliyun.com/repository/jcenter' }`和`maven { url 'https://maven.aliyun.com/repository/google' }`（注意有多处需要替换
 
+## QA
+
+1. 启动之后显示`no bundle url present`
+
+a. 在 package.json 中添加一条，然后执行`npm run build:ios`
+
+    ```json
+      {
+        "scripts":{
+          "build:ios": "react-native --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"
+        }
+      }
+    ```
+
+b. 打开 xcode，选择`Select -> Target → Build Phases`,在`Copy Bundle Resources`下添加好刚才构建出来的 main.jsbundle
+
+c. 重新启动
+
+[参考连接](https://onexlab-io.medium.com/no-bundle-url-present-fixed-ca2688a80f66)

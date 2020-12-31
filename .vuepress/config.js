@@ -1,7 +1,7 @@
 const Copyplugin = require("copy-webpack-plugin");
 module.exports = {
-  title: "Changero",
-  description: "技术只是工具，不是目的",
+  title: "编程小兵",
+  description: "路漫漫其修远兮，吾将上下而求索",
   base: "", // base路径，用于将网站部署到非根目录下，在vue文件和md文件中通过$withBase函数访问
   chainWebpack: (config, isServer) => {
     const isProduction = process.env.NODE_ENV === "production";
@@ -18,15 +18,6 @@ module.exports = {
       ], // from 是命令的执行路径，to是生成的文件夹路径
     ]);
   },
-  evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill
-  markdown: {
-    lineNumbers: true,
-  },
-  plugins: [
-    // "@vuepress/back-to-top", // reco中内置了
-    "@vuepress/medium-zoom", // A JavaScript library for zooming images like Medium
-  ],
-  theme: "reco",
   head: [
     [
       "meta",
@@ -36,10 +27,36 @@ module.exports = {
       },
     ],
   ],
+  // evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill
+  markdown: {
+    lineNumbers: true,
+  },
+  theme: "reco",
   themeConfig: {
+    type: "blog",
+    logo: "/hero.png",
+    search: true,
+    searchMaxSuggestions: 10,
+    lastUpdated: "最后更新于",
+    // 博客头像
+    authorAvatar: "/hero.png",
+    record: "xxxx",
     startYear: "2019",
     author: "Changero",
     huawei: false,
+    socialLinks: [
+      // 信息栏展示社交信息
+      { icon: "reco-github", link: "https://github.com/changero" },
+      { icon: "reco-npm", link: "https://www.npmjs.com/~reco_luan" },
+    ],
+    friendLink: [
+      // {
+      //   title: "午后南杂",
+      //   desc: "Enjoy when you can, and endure when you must.",
+      //   email: "1156743527@qq.com",
+      //   link: "https://www.recoluan.com",
+      // },
+    ],
     nav: [
       { text: "首页", link: "/", icon: "reco-home" },
       { text: "分享", link: "/share/", icon: "reco-up" },
@@ -89,6 +106,7 @@ module.exports = {
         icon: "reco-message",
       },
     ],
+
     sidebar: {
       "/share/": [
         {
@@ -140,7 +158,12 @@ module.exports = {
         {
           title: "基础",
           collapsable: false,
-          children: ["理解Unicode与UTF-8.md", "线性表.md", "全排列算法.md"],
+          children: ["理解Unicode与UTF-8.md"],
+        },
+        {
+          title: "算法",
+          collapsable: false,
+          children: ["线性表.md", "全排列算法.md", "二叉堆", "js实现一个栈"],
         },
       ],
       "/code/react/": [
@@ -199,6 +222,11 @@ module.exports = {
       ],
       "/code/node/": [
         {
+          title: "配置",
+          collapsable: false,
+          children: ["nvm.md"],
+        },
+        {
           title: "工具",
           collapsable: false,
           children: ["lerna.md", "yargs.md"],
@@ -220,6 +248,7 @@ module.exports = {
             "git撤销操作.md",
             "git子模块.md",
             "git代理设置.md",
+            "指定跟踪分支",
           ],
         },
       ],

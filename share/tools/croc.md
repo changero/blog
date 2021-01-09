@@ -7,13 +7,15 @@ categories:
 
 ## 前言
 
-在此之前，与服务器完成文件传输的主要工具是`ssh`、`FTP`等手段。后来了解到[`bashupload`](https://bashupload.com/)，上传文件后可以得到7天的免费存储时间。不过文件总归是存在在别人的服务器上。后来终于等来了croc
+在此之前，与服务器完成文件传输的主要工具是`ssh`、`FTP`等手段。后来了解到[`bashupload`](https://bashupload.com/)，上传文件后可以得到 7 天的免费存储时间。不过文件总归是存在在别人的服务器上。后来终于等来了 croc
 
 ## bashupload
 
 ```bash
 curl https://bashupload.com/name.txt --data-binary @file.txt
 ```
+
+<!-- more -->
 
 ## Croc
 
@@ -26,17 +28,14 @@ curl https://bashupload.com/name.txt --data-binary @file.txt
 > curl https://getcroc.schollz.com | bash
 
 - MacOS
-	
+
   > brew install croc
-  
-- windows
-	> scoop install croc
+
+- windows > scoop install croc
+
   > choco install croc
 
-- ubuntu
-	> snap install croc
-
-<!-- more -->
+- ubuntu > snap install croc
 
 ### 使用
 
@@ -54,7 +53,7 @@ Code is: code-phrase
 croc code-phrase
 ```
 
-- 自定义code
+- 自定义 code
 
 ```bash
 croc send --code myfile [file(s)-or-folder]
@@ -76,14 +75,15 @@ croc send --text 'hello'
 
 - 自主中继
 
-我觉得是最主要的功能，默认情况下，croc使用公共中继，也可以开启自己的中继
+我觉得是最主要的功能，默认情况下，croc 使用公共中继，也可以开启自己的中继
 
 ```bash
 croc relay
 ```
 
 会占用`9009-9013`端口
->您可以自定义端口（例如croc relay --ports 1111,1112），但是中继必须至少有2个端口。第一个端口用于通信，随后的端口用于多路复用数据传输
+
+> 您可以自定义端口（例如 croc relay --ports 1111,1112），但是中继必须至少有 2 个端口。第一个端口用于通信，随后的端口用于多路复用数据传输
 
 使用中继发送文件
 
@@ -91,7 +91,7 @@ croc relay
 croc --relay 'youhost.com:9009' send [filename]
 ```
 
-使用docker
+使用 docker
 
 ```
 docker run -d -p 9009-9013:9009-9013 -e CROC_PASS='YOURPASSWORD' schollz/croc
@@ -103,7 +103,7 @@ docker run -d -p 9009-9013:9009-9013 -e CROC_PASS='YOURPASSWORD' schollz/croc
 croc --pass YOURPASSWORD --relay 'youhost.com:9009' [code]
 ```
 
-注意 如果需要在docker的宿主机上发送文件，需要修改docker容器占用的端口，否则在宿主机上发送文件的时候会提示端口被占用，例如：
+注意 如果需要在 docker 的宿主机上发送文件，需要修改 docker 容器占用的端口，否则在宿主机上发送文件的时候会提示端口被占用，例如：
 
 ```
 docker run -d -p 9109-9113:9009-9013 -e CROC_PASS='YOURPASSWORD' schollz/croc

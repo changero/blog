@@ -7,9 +7,9 @@ module.exports = {
     const isProduction = process.env.NODE_ENV === "production";
 
     if (isProduction) {
-      config.output.publicPath(
-        "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/"
-      );
+      // config.output.publicPath(
+      //   "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/"
+      // );
     }
     config.plugin("copy").use(Copyplugin, [
       [
@@ -41,6 +41,11 @@ module.exports = {
     // 博客头像
     authorAvatar: "/hero.png",
     record: "xxxx",
+    // 备案
+    // record: 'ICP 备案文案',
+    // recordLink: 'ICP 备案指向链接',
+    // cyberSecurityRecord: '公安部备案文案',
+    // cyberSecurityLink: '公安部备案指向链接',
     startYear: "2019",
     author: "Changero",
     huawei: false,
@@ -106,6 +111,7 @@ module.exports = {
         icon: "reco-message",
       },
     ],
+    subSidebar: "auto",
 
     sidebar: {
       "/share/": [
@@ -123,16 +129,19 @@ module.exports = {
             "记又一次重装系统的历程.md",
             "破解wetool历程.md",
             "https证书.md",
-            "VSCode插件自备.md",
             "部署Heroku.md",
-            "chrome插件.md",
             "iterm2git别名.md",
           ],
         },
         {
           title: "工具",
           collapsable: false,
-          children: ["tools/youtube-dl.md", "tools/croc"],
+          children: [
+            "tools/youtube-dl.md",
+            "tools/croc",
+            "tools/VSCode插件自备",
+            "tools/chrome插件",
+          ],
         },
         {
           title: "openwrt",
@@ -217,6 +226,7 @@ module.exports = {
             "promise and generator.md",
             "创建scope包.md",
             "使用JS访问摄像头.md",
+            "认识webworker和websocket",
           ],
         },
       ],

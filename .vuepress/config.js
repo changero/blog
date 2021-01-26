@@ -7,9 +7,9 @@ module.exports = {
     const isProduction = process.env.NODE_ENV === "production";
 
     if (isProduction) {
-      // config.output.publicPath(
-      //   "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/"
-      // );
+      config.output.publicPath(
+        "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/"
+      );
     }
     config.plugin("copy").use(Copyplugin, [
       [
@@ -73,21 +73,16 @@ module.exports = {
           { text: "基础", link: "/code/basic/" },
           { text: "frontend", link: "/code/frontend/" },
           { text: "node", link: "/code/node/" },
-          { text: "typescript", link: "/code/typescript/" },
-          { text: "react", link: "/code/react/" },
-          { text: "react-native", link: "/code/react-native/" },
-          { text: "vue", link: "/code/vue/" },
           { text: "tools", link: "/code/tools/" },
           { text: "rxjs", link: "/code/rxjs/" },
           { text: "git", link: "/code/git/" },
           { text: "docker", link: "/code/docker/" },
           { text: "electron", link: "/code/electron/" },
-          { text: "mongodb", link: "/code/mongodb/" },
-          { text: "加解密", link: "/code/encryption/" },
           { text: "python", link: "/code/python/" },
+          { text: "android", link: "/code/android/" },
           { text: "flutter", link: "/code/flutter/" },
+          { text: "数据库", link: "/code/db/" },
           { text: "计算机网络", link: "/code/network/" },
-          { text: "graphql", link: "/code/graphql/" },
           {
             text: "linux相关教程和笔记",
             link: "/code/linux/史上最牛的Linux视频教程",
@@ -131,6 +126,7 @@ module.exports = {
             "https证书.md",
             "部署Heroku.md",
             "iterm2git别名.md",
+            "一句话技巧",
           ],
         },
         {
@@ -163,6 +159,7 @@ module.exports = {
         },
       ],
 
+      "/code/android/": ["/code/android/", "问题集合"],
       "/code/basic/": [
         {
           title: "基础",
@@ -174,24 +171,23 @@ module.exports = {
           collapsable: false,
           children: ["线性表.md", "全排列算法.md", "二叉堆", "js实现一个栈"],
         },
-      ],
-      "/code/react/": [
         {
-          title: "React学习之路",
+          title: "加解密",
           collapsable: false,
-          children: [
-            "/code/react/",
-            "hooks.md",
-            "stateless组件如何通过静态方法更新.md",
-            "useCallBack和useMemo.md",
-          ],
+          children: ["basic_encryption"],
         },
       ],
-      "/code/react-native/": [
-        "/code/react-native/",
-        "mac搭建react-native开发环境.md",
-        "mac下安卓开发环境搭建.md",
-        "安卓调试.md",
+      "/code/db/": [
+        {
+          title: "mongodb",
+          collapsable: false,
+          children: ["mongodb/基础命令.md"],
+        },
+        {
+          title: "graphql",
+          collapsable: false,
+          children: ["graphql/认识graphql.md"],
+        },
       ],
       "/code/rxjs/": [
         "/code/rxjs/",
@@ -209,7 +205,7 @@ module.exports = {
       "/code/frontend/": [
         {
           title: "前端",
-          collapsable: false,
+          collapsable: true,
           children: [
             "/code/frontend/",
             "简单实现一个函数柯里化.md",
@@ -227,6 +223,33 @@ module.exports = {
             "创建scope包.md",
             "使用JS访问摄像头.md",
             "认识webworker和websocket",
+            "webpack的publicPath",
+          ],
+        },
+        {
+          title: "typescript",
+          collapsable: true,
+          children: [
+            "typescript/收集的部分问题及解决方法.md",
+            "typescript/生成d.ts.md",
+          ],
+        },
+        {
+          title: "react",
+          collapsable: true,
+          children: [
+            "react/hooks.md",
+            "react/stateless组件如何通过静态方法更新.md",
+            "react/useCallBack和useMemo.md",
+          ],
+        },
+        {
+          title: "react-native",
+          collapsable: true,
+          children: [
+            "react-native/mac搭建react-native开发环境.md",
+            "react-native/mac下安卓开发环境搭建.md",
+            "react-native/安卓调试.md",
           ],
         },
       ],
@@ -240,13 +263,6 @@ module.exports = {
           title: "工具",
           collapsable: false,
           children: ["lerna.md", "yargs.md"],
-        },
-      ],
-      "/code/typescript/": [
-        {
-          title: "typescript",
-          collapsable: false,
-          children: ["收集的部分问题及解决方法.md", "生成d.ts.md"],
         },
       ],
       "/code/git/": [
@@ -283,20 +299,6 @@ module.exports = {
           children: ["史上最牛的Linux视频教程.md"],
         },
       ],
-      "/code/mongodb/": [
-        {
-          title: "mongodb",
-          collapsable: false,
-          children: ["基础命令.md"],
-        },
-      ],
-      "/code/encryption/": [
-        {
-          title: "加解密",
-          collapsable: false,
-          children: ["basic_encryption.md"],
-        },
-      ],
       "/code/python/": [
         {
           title: "python",
@@ -316,13 +318,6 @@ module.exports = {
           title: "计算机网络",
           collapsable: false,
           children: ["图解计算机网络.md"],
-        },
-      ],
-      "/code/graphql/": [
-        {
-          title: "graphql",
-          collapsable: false,
-          children: ["认识graphql.md"],
         },
       ],
     },

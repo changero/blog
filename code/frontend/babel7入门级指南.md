@@ -6,11 +6,11 @@ categories:
   - 前端
 tags:
   - js
-  - babel 
+  - babel
 sidebarDepth: 2
 ---
 
-babel中文[文档](https://www.babeljs.cn/)，[官网](https://babeljs.io/)
+babel 中文[文档](https://www.babeljs.cn/)，[官网](https://babeljs.io/)
 
 ## 介绍
 
@@ -50,7 +50,7 @@ babel 本身不具有任何转化功能，它把转化的功能都分解到一�
 
 ## @babel/core
 
-`@babel/core`处于babel生命周期的解析阶段，babel的其他工具，包括结合第三方构建器都是调用这个包来进行代码解析的。它允许使用编程的方式来对一段代码进行编译生成ast。
+`@babel/core`处于 babel 生命周期的解析阶段，babel 的其他工具，包括结合第三方构建器都是调用这个包来进行代码解析的。它允许使用编程的方式来对一段代码进行编译生成 ast。
 
 安装：
 
@@ -61,9 +61,9 @@ npm install @babel/core -S
 我们可以直接使用`babel.transform`来编译
 
 ```js
-const babel = require('@babel/core')
+const babel = require("@babel/core");
 
-babel.transform('const obj = {};const copyObj = {...obj}', options)
+babel.transform("const obj = {};const copyObj = {...obj}", options);
 ```
 
 > 输出包含有`{code, ast, mode}`的对象
@@ -89,7 +89,7 @@ babel.transformFromAst(ast, code, options);
 
 ## @babel/cli
 
-babel的cli工具，允许我们通过命令行编译文件。必须同时安装`@babel/core`
+babel 的 cli 工具，允许我们通过命令行编译文件。必须同时安装`@babel/core`
 
 安装：
 
@@ -134,19 +134,19 @@ npx babel src --out-dir lib --ignore "src/**/*.spec.js","src/**/*.test.js"
 
 ## @babel/register
 
-引入`@babel/register`以后，会重写require函数，所以在此之后require调用的包，都会经过babel编译，但不包括当前文件
+引入`@babel/register`以后，会重写 require 函数，所以在此之后 require 调用的包，都会经过 babel 编译，但不包括当前文件
 
 ## 开始操作
 
-上面，再了解了使用babel的几种方式以后，我们使用`@babel/cli`工具来了解babel的转换结果
+上面，再了解了使用 babel 的几种方式以后，我们使用`@babel/cli`工具来了解 babel 的转换结果
 
 首先在`src/index.js`中写下如下语句
 
 ```js
-const func = (num) => console.log(num)
+const func = (num) => console.log(num);
 ```
 
-添加script命令到`package.json`
+添加 script 命令到`package.json`
 
 ```json
   "scripts":{
@@ -157,16 +157,16 @@ const func = (num) => console.log(num)
 然后执行命令`npm run compile`，结果输出：
 
 ```js
-const func = num => console.log(num);
+const func = (num) => console.log(num);
 ```
 
-跟源文件没有任何区别，是不是babel执行失败的。其实不是的，因为babel的转换过程依赖plugin执行，如果没有plugin，就会原样输出。所以如果我们要想编译arrow function，需要添加相应的plugin-`@babel/plugin-transform-arrow-functions`
+跟源文件没有任何区别，是不是 babel 执行失败的。其实不是的，因为 babel 的转换过程依赖 plugin 执行，如果没有 plugin，就会原样输出。所以如果我们要想编译 arrow function，需要添加相应的 plugin-`@babel/plugin-transform-arrow-functions`
 
 ```bash
 npm install @babel/plugin-transform-arrow-functions -D
 ```
 
-修改script
+修改 script
 
 ```json
 "scripts":{
@@ -177,18 +177,18 @@ npm install @babel/plugin-transform-arrow-functions -D
 执行命令以后，结果如下：
 
 ```js
-const func = function (num) {
+const func = function(num) {
   return console.log(num);
 };
 ```
 
 arrow-function 正确的编译成了普通函数
 
-除了支持在命令行中添加插件以外，babel还支持配置文件
+除了支持在命令行中添加插件以外，babel 还支持配置文件
 
-1、 在`package.json`中添加babel字段
+1、 在`package.json`中添加 babel 字段
 
-2、 新增`.babel.rc`文件
+2、 新增`.babelrc`文件
 
 3、 新增`babel.config.js`文件
 
@@ -196,9 +196,7 @@ arrow-function 正确的编译成了普通函数
 
 ```json
 {
-  "plugins":[
-     "@babel/plugin-transform-arrow-functions"
-  ]
+  "plugins": ["@babel/plugin-transform-arrow-functions"]
 }
 ```
 
@@ -206,20 +204,20 @@ arrow-function 正确的编译成了普通函数
 
 ```json
 {
-  "plugins":[
-     [
-       "@babel/plugin-transform-arrow-functions",
-       {
-          spec: true
-        }
-      ]
+  "plugins": [
+    [
+      "@babel/plugin-transform-arrow-functions",
+      {
+        "spec": true
+      }
+    ]
   ]
 }
 ```
 
 现在我们已经能够编译`arrow function`新语法了，如果还需要支持其他特性，就必须添加其他相应的插件。但是，在我们的项目中，往往有许许多多的特性需要转化，那么光是维护插件集就是一项费事的工作了。所以就不得不提到预设(presets)了。
 
-babel的转换工作都是通过添加插件来进行，而presets就是一个插件的集合，这样我们只需要添加一个preset就可以包含很多个插件的功能了。现在，我们只需要关注一个`@babel/preset-env`的包就可以了，至于其他的`preset-es201x`或者`preset-stage-x`可以不用关注了，因为它们在`babel7`中已经被移除[](https://babeljs.io/blog/2018/07/27/removing-babels-stage-presets)
+babel 的转换工作都是通过添加插件来进行，而 presets 就是一个插件的集合，这样我们只需要添加一个 preset 就可以包含很多个插件的功能了。现在，我们只需要关注一个`@babel/preset-env`的包就可以了，至于其他的`preset-es201x`或者`preset-stage-x`可以不用关注了，因为它们在`babel7`中已经被移除[](https://babeljs.io/blog/2018/07/27/removing-babels-stage-presets)
 
 ## @babel/preset-env
 
@@ -233,9 +231,7 @@ npm install @babel/preset-env -S
 
 ```json
 {
-  "presets":[
-    "@babel/preset-env"
-  ]
+  "presets": ["@babel/preset-env"]
 }
 ```
 
@@ -243,33 +239,33 @@ npm install @babel/preset-env -S
 
 ### polyfill
 
-在继续理解之前先来说一下什么是ployfill。
+在继续理解之前先来说一下什么是 ployfill。
 
-polyfill的意思是垫片，它的作用是使我们的代码在各种版本的浏览器中都能使用到相同的API。
+polyfill 的意思是垫片，它的作用是使我们的代码在各种版本的浏览器中都能使用到相同的 API。
 
-试想一个这样的场景，当你编译好一个文件，然后拿到chrome、firefox等现代浏览器里面去运行，发现效果不错。然后高高兴兴的就把代码提交到了版本库。过了一会就有人来找你了，说你刚才提交的代码在它的浏览器中无法运行。你接受了他的bug邀请，赶赴战场并熟练的按下`F12`，发现一个绚丽的场景。其中又一个error引起了你的注意:`... is not a function`。你想起了这是你调用的一个新方法，恰好这个新方法在这个浏览器里面还不支持。
+试想一个这样的场景，当你编译好一个文件，然后拿到 chrome、firefox 等现代浏览器里面去运行，发现效果不错。然后高高兴兴的就把代码提交到了版本库。过了一会就有人来找你了，说你刚才提交的代码在它的浏览器中无法运行。你接受了他的 bug 邀请，赶赴战场并熟练的按下`F12`，发现一个绚丽的场景。其中又一个 error 引起了你的注意:`... is not a function`。你想起了这是你调用的一个新方法，恰好这个新方法在这个浏览器里面还不支持。
 
-怎么办？升级浏览器？不现实。我们无法判断用户运行代码的环境，所以只能从代码层面入手。这个时候就是polyfill大显身手的时候了，它通过在项目中引入别人写好的方法，让你写的新方法能够在低版本浏览器中也能够运行起来。
+怎么办？升级浏览器？不现实。我们无法判断用户运行代码的环境，所以只能从代码层面入手。这个时候就是 polyfill 大显身手的时候了，它通过在项目中引入别人写好的方法，让你写的新方法能够在低版本浏览器中也能够运行起来。
 
-不过要注意的是，polyfill包含的内容非常多，不是里面所有的方法我们都有用到，但是也会被一起打包进项目代码，导致产物体积过大。
+不过要注意的是，polyfill 包含的内容非常多，不是里面所有的方法我们都有用到，但是也会被一起打包进项目代码，导致产物体积过大。
 
 ### useBuiltIns
 
-useBuiltIns选项有3个可选值:`entry`、`usage`、`false`，主要用于处理代码中`import '@babel/polyfill'`或者`require('@babel/polyfill')`的地方
+useBuiltIns 选项有 3 个可选值:`entry`、`usage`、`false`，主要用于处理代码中`import '@babel/polyfill'`或者`require('@babel/polyfill')`的地方
 
-- entry: 全局值引入一次ployfill，编译的结果中用`core-js`相应包替换。如果引入多次将可能导致冲突
+- entry: 全局值引入一次 ployfill，编译的结果中用`core-js`相应包替换。如果引入多次将可能导致冲突
 
-- usage: 在使用到特定API的文件中引入`core-js`的相应包
+- usage: 在使用到特定 API 的文件中引入`core-js`的相应包
 
 - false: 不替换
 
 #### **entry**
 
-在entry模式下，要求在代码中只写入一次polyfill，一般写在项目的入口文件
+在 entry 模式下，要求在代码中只写入一次 polyfill，一般写在项目的入口文件
 
 ```js
 // index.js
-import '@babel/ployfill'
+import "@babel/ployfill";
 ```
 
 编译结果如下
@@ -296,7 +292,7 @@ require("regenerator-runtime/runtime");
 
 #### **usage**
 
-在usage模式下，不需要显示的去引入`@babel/polyfill`。而是当发现文件中使用到新API的时候，会自动在文件头部引入对应的包
+在 usage 模式下，不需要显示的去引入`@babel/polyfill`。而是当发现文件中使用到新 API 的时候，会自动在文件头部引入对应的包
 
 ```js
 var p = new Promise();
@@ -309,10 +305,10 @@ require("core-js/modules/es6.promise");
 
 require("core-js/modules/es6.object.to-string");
 
-var p = new Promise(); 
+var p = new Promise();
 ```
 
-## runtime与transform-runtime
+## runtime 与 transform-runtime
 
 `@babel/runtime`与`@babel/plugin-transform-runtime`两个包是最容易让人混淆的，根据名字也只能猜出后一个是插件，至于区别更是不知道是什么
 
@@ -320,7 +316,7 @@ var p = new Promise();
 
 ```js
 class Foo {
-    method() { }
+  method() {}
 }
 ```
 
@@ -329,38 +325,60 @@ class Foo {
 ```js
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
 
 var Foo =
-/*#__PURE__*/
-function () {
-  function Foo() {
-    _classCallCheck(this, Foo);
-  }
+  /*#__PURE__*/
+  (function() {
+    function Foo() {
+      _classCallCheck(this, Foo);
+    }
 
-  _createClass(Foo, [{
-    key: "method",
-    value: function method() {}
-  }]);
+    _createClass(Foo, [
+      {
+        key: "method",
+        value: function method() {},
+      },
+    ]);
 
-  return Foo;
-}();
+    return Foo;
+  })();
 ```
 
-发现编译之后，文件中会多出几个方法来，很显然，这些方法都是用于辅助那个class的方法。目前来看，这样的编译结果没有任何问题，可一旦文件多了起来就会发现，在每一个使用到class的文件，头部都会多几个这样的方法，而且一摸一样。这样也会导致在最后的产物中有重复的东西。
+发现编译之后，文件中会多出几个方法来，很显然，这些方法都是用于辅助那个 class 的方法。目前来看，这样的编译结果没有任何问题，可一旦文件多了起来就会发现，在每一个使用到 class 的文件，头部都会多几个这样的方法，而且一摸一样。这样也会导致在最后的产物中有重复的东西。
 
 解决这个问题的方法就是引入`@babel/plugin-transform-runtime`插件，安装、修改配置、走起
 
 ```js
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+var _classCallCheck2 = _interopRequireDefault(
+  require("@babel/runtime/helpers/classCallCheck")
+);
 
-var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+var _createClass2 = _interopRequireDefault(
+  require("@babel/runtime/helpers/createClass")
+);
 ```
 
 现在头部的几个方法都变成了对`@babel/runtime`包的引入，而不是直接定义一个方法，那么所有的文件也都同样的引入包，不在去定义方法的话，产物自然就变小了
@@ -369,12 +387,9 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 ## 与第三方工具结合
 
-常用的第三方构建工具例如`webpack`、`gulp`等都有相应的介入babel的包，webpack中对应的是`babel-loader`，gulp中对应的是`gulp-babel`
-通过这些包我们就可以直接最构建器中启动babel编译文件，而不需要手动调用cli工具
-
+常用的第三方构建工具例如`webpack`、`gulp`等都有相应的介入 babel 的包，webpack 中对应的是`babel-loader`，gulp 中对应的是`gulp-babel`
+通过这些包我们就可以直接最构建器中启动 babel 编译文件，而不需要手动调用 cli 工具
 
 ## 总结
 
-简单讲述了一下关于bebel的使用方法、以及配置。而babel还有更多其他配置和选项需要去学习，现在只是有了一个大概的印象，至于更高阶的babel原理留待以后探索
-
-
+简单讲述了一下关于 bebel 的使用方法、以及配置。而 babel 还有更多其他配置和选项需要去学习，现在只是有了一个大概的印象，至于更高阶的 babel 原理留待以后探索

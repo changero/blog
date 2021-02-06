@@ -1,4 +1,6 @@
+const path = require("path");
 const Copyplugin = require("copy-webpack-plugin");
+
 module.exports = {
   title: "编程小兵",
   description: "路漫漫其修远兮，吾将上下而求索",
@@ -7,9 +9,9 @@ module.exports = {
     const isProduction = process.env.NODE_ENV === "production";
 
     if (isProduction) {
-      config.output.publicPath(
-        "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/"
-      );
+      let publicPath = "/blog/";
+      publicPath = "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/";
+      config.output.publicPath(publicPath);
     }
     config.plugin("copy").use(Copyplugin, [
       [
@@ -275,6 +277,8 @@ module.exports = {
             "git子模块.md",
             "git代理设置.md",
             "指定跟踪分支",
+            "自己搭建git服务器",
+            "git服务器接受到更新",
           ],
         },
       ],

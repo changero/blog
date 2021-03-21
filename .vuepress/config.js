@@ -67,7 +67,7 @@ module.exports = {
     nav: [
       { text: "首页", link: "/", icon: "reco-home" },
       { text: "分享", link: "/share/", icon: "reco-up" },
-      { text: "读书", link: "/read/", icon: "reco-search" },
+      { text: "记录", link: "/read/", icon: "reco-search" },
       {
         text: "编程",
         icon: "reco-menu",
@@ -149,7 +149,7 @@ module.exports = {
       ],
       "/read/": [
         {
-          title: "读书",
+          title: "记录",
           collapsable: false,
           children: [
             "/read/",
@@ -157,6 +157,8 @@ module.exports = {
             "记录想说的话.md",
             "富爸爸穷爸爸.md",
             "《走吧，张小研》读后感.md",
+            "note.md",
+            "2021离职感想",
           ],
         },
       ],
@@ -252,6 +254,14 @@ module.exports = {
             "react-native/mac搭建react-native开发环境.md",
             "react-native/mac下安卓开发环境搭建.md",
             "react-native/安卓调试.md",
+          ],
+        },
+        {
+          title: "2分钱学前端图形学",
+          collapsable: true,
+          children: [
+            "graph/前端必懂的数学知识和Canvas",
+            "graph/H5游戏开发入门",
           ],
         },
       ],

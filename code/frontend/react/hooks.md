@@ -10,21 +10,23 @@ tags:
   - hooks
 ---
 
-> *Hook 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。*
+> _Hook 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。_
 
-使用Hooks一定要记住一下几点：
+使用 Hooks 一定要记住一下几点：
 
 1、 **完全可选的**。你无需重写任何已有代码就可以在一些组件中尝试 Hook。但是如果你不想，你不必现在就去学习或使用 Hook。
 
 2、 **100% 向后兼容的**。 Hook 不包含任何破坏性改动。
 
-3、**Hooks发布于`React>=16.8.0`**
-
-Hooks将使构建一个组件变得更加简单，无需再把逻辑写到`ComponentDidMount`、`ComponentDidUpdate`使逻辑变得难以理解。也不需要再在组件中大量的使用setState函数。我不喜欢setState的原因是，无法从概念上分离不同的变量，所有的变量都通过一个函数去更新UI。
+3、**Hooks 发布于`React>=16.8.0`**
 
 <!-- more -->
 
-而Hooks正是解决这些问题的，每一个变量都有自己的专属更新函数，使开发人员及维护人员使用的时候更加清楚的知道当前做的是什么操作。在Hooks以前，我会使用`recompose`库提供的`withState`方法，与`useState`相比，简直有异曲同工之妙
+Hooks 将使构建一个组件变得更加简单，无需再把逻辑写到`ComponentDidMount`、`ComponentDidUpdate`使逻辑变得难以理解。也不需要再在组件中大量的使用 setState 函数。我不喜欢 setState 的原因是，无法从概念上分离不同的变量，所有的变量都通过一个函数去更新 UI。
+
+<!-- more -->
+
+而 Hooks 正是解决这些问题的，每一个变量都有自己的专属更新函数，使开发人员及维护人员使用的时候更加清楚的知道当前做的是什么操作。在 Hooks 以前，我会使用`recompose`库提供的`withState`方法，与`useState`相比，简直有异曲同工之妙
 
 在以前，组件间复用逻辑，往往采用`HOC`、或者`props render`的方法，现在多了一个`Hooks`的选择
 
@@ -38,55 +40,53 @@ Hook 就是 JavaScript 函数，但是使用它们会有两个额外的规则：
 
 ## useState
 
-Hooks使用起来非常简单
+Hooks 使用起来非常简单
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Example() {
-    // 声明一个叫 "count" 的 state 变量
-    const [count, setCount] = useState(0);
-    return (
-        <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-                Click me
-      </button>
-        </div>
-    );
+  // 声明一个叫 "count" 的 state 变量
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
 }
 
-export default Example
+export default Example;
 ```
 
-在这里，使用了useState函数，它接收一个值作为参数，这个参数表示返回的state的初始值。在返回值中，通过解构就可以得到一个count变量，以及修改count的方法，在jsx中，就可以像使用任何变量一样使用count。
+在这里，使用了 useState 函数，它接收一个值作为参数，这个参数表示返回的 state 的初始值。在返回值中，通过解构就可以得到一个 count 变量，以及修改 count 的方法，在 jsx 中，就可以像使用任何变量一样使用 count。
 
-setState还可以接受一个方法作为参数，组件第一次加载的时候会调用，相当于组件生命周期中的`componentDidMount`,返回值作为State的数据返回
+setState 还可以接受一个方法作为参数，组件第一次加载的时候会调用，相当于组件生命周期中的`componentDidMount`,返回值作为 State 的数据返回
 
 ```js
-useState(()=>{
+useState(() => {
   // some code
-  return 'initial data'
-})
+  return "initial data";
+});
 ```
 
-setCount有2种调用方式，一种是直接传入要更新的值，另一种是传入一个update函数，函数将接收count当前值作为参数，并返回新的值
+setCount 有 2 种调用方式，一种是直接传入要更新的值，另一种是传入一个 update 函数，函数将接收 count 当前值作为参数，并返回新的值
 
 ```js
-setCount(2)
-setCount(count => count+1)
+setCount(2);
+setCount((count) => count + 1);
 ```
 
-当调用setCount之后，将自动更新count到视图。与setState一样，会合并多次调用，并返回最后一次调用的结果。
+当调用 setCount 之后，将自动更新 count 到视图。与 setState 一样，会合并多次调用，并返回最后一次调用的结果。
 
-当视图更新的时候，useState会自动判断是否是第一次调用，如果是第一次调用，就会返回初始值，如果不是就返回当前值。如果初始值是一个变量，useState并不会根据更新后的值重新计算，这个时候可能需要用到自定义Hooks
+当视图更新的时候，useState 会自动判断是否是第一次调用，如果是第一次调用，就会返回初始值，如果不是就返回当前值。如果初始值是一个变量，useState 并不会根据更新后的值重新计算，这个时候可能需要用到自定义 Hooks
 
 ## useEffect
 
-useState是用于维护state变量的，那么useEffect就是维护mount与update阶段的钩子函数。看看它是如何使用的
+useState 是用于维护 state 变量的，那么 useEffect 就是维护 mount 与 update 阶段的钩子函数。看看它是如何使用的
 
 ```js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Example() {
   const [count, setCount] = useState(0);
@@ -98,32 +98,27 @@ function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
 ```
 
-useEffect接收一个回调函数作为参数，将在每一次`render`之后适当的时候调用。在这一阶段不能取用其他Hooks，否则将引起死循环，但是可以去执行访问Dom，调用异步接口等等操作，所以才被称为副作用
+useEffect 接收一个回调函数作为参数，将在每一次`render`之后适当的时候调用。在这一阶段不能取用其他 Hooks，否则将引起死循环，但是可以去执行访问 Dom，调用异步接口等等操作，所以才被称为副作用
 
-useEffect第二个接受一个数组，表示调用该Effect的依赖属性，当这些依赖属性发生变化的时候，就会调用当前effect。当然，依赖属性指的是props中的属性
+useEffect 第二个接受一个数组，表示调用该 Effect 的依赖属性，当这些依赖属性发生变化的时候，就会调用当前 effect。当然，依赖属性指的是 props 中的属性
 
-## 自定义Hooks
+## 自定义 Hooks
 
-自定义Hooks也是一个普通函数，在其中使用Hooks遵循一样的规则，只不过它的返回值完全由自己决定。我们约定所有的自定义Hooks都用use开头
+自定义 Hooks 也是一个普通函数，在其中使用 Hooks 遵循一样的规则，只不过它的返回值完全由自己决定。我们约定所有的自定义 Hooks 都用 use 开头
 
 ```js
-    function useEdit(props){
-        const { edit , setEdit} = useState(false)
-        const computedEdit = props.edit || edit
+function useEdit(props) {
+  const { edit, setEdit } = useState(false);
+  const computedEdit = props.edit || edit;
 
-        return [
-            computedEdit,
-            setEdit
-        ]
-    }
+  return [computedEdit, setEdit];
+}
 ```
 
-在自定义Hooks内部调用其内部定义的state hooks,也会引起外部组件的更新。更新同样不是通过diff data的，所以即使前后值一样，也会触发update
+在自定义 Hooks 内部调用其内部定义的 state hooks,也会引起外部组件的更新。更新同样不是通过 diff data 的，所以即使前后值一样，也会触发 update

@@ -274,7 +274,7 @@ module.exports = {
         {
           title: "配置",
           collapsable: false,
-          children: ["nvm.md"],
+          children: ["nvm.md", "node-sass安装"],
         },
         {
           title: "工具",

@@ -2,8 +2,9 @@
 title: promise and generator
 date: 2020-04-02
 categories:
-  - frontend
+  - 前端
 tags:
+  - js
   - promise
   - generator
 ---
@@ -38,3 +39,5 @@ spawn(function*() {
   }
 });
 ```
+
+<!-- more -->

@@ -21,6 +21,8 @@ const fn = () => {
 fn();
 ```
 
+<!-- more -->
+
 ### 无法通过 bind、call、apply 改变 this 的指向
 
 ```js

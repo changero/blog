@@ -2,7 +2,7 @@
 title: youtube-dl使用指南
 date: 2020-11-19
 categories:
-  - tool
+  - 工具
 ---
 
 ## 安装

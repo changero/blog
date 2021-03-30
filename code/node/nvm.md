@@ -2,7 +2,7 @@
 title: nvm
 date: 2020-12-19
 categories:
-  - node
+  - npm
 ---
 
 github 仓库地址：[https://github.com/creationix/nvm](https://github.com/creationix/nvm)

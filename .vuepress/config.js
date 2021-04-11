@@ -139,6 +139,7 @@ module.exports = {
             "tools/croc",
             "tools/VSCode插件自备",
             "tools/chrome插件",
+            "tools/windows包管理工具",
           ],
         },
         {

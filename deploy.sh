@@ -9,7 +9,7 @@ npm run build
 # 进入生成的文件夹
 cd ./.vuepress/dist
 
-npx surge --domain changero.surge.sh
+#npx surge --domain changero.surge.sh
 
 # 创建CNAME
 echo "blog.changero.win"> CNAME

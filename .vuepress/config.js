@@ -28,6 +28,14 @@ module.exports = {
         content: "width=device-width,initial-scale=1,user-scalable=no",
       },
     ],
+    [
+      "script",
+      {
+        defer: true,
+        src: `https://static.cloudflareinsights.com/beacon.min.js`,
+        "data-cf-beacon": '{"token": "d9b6c38544c04c558105cf38304c4277"}',
+      },
+    ],
   ],
   // evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill
   markdown: {
@@ -97,10 +105,14 @@ module.exports = {
         icon: "reco-date",
       },
       {
-        text: "好有券",
-        link: "http://quan.changero.win",
-        icon: "reco-other",
+        text: "资源导航",
+        link: "/navs/",
       },
+      // {
+      //   text: "好有券",
+      //   link: "http://quan.changero.win",
+      //   icon: "reco-other",
+      // },
       {
         // text: '📧 联系我',
         text: "联系我",
@@ -228,7 +240,16 @@ module.exports = {
             "创建scope包.md",
             "使用JS访问摄像头.md",
             "认识webworker和websocket",
-            "webpack的publicPath",
+            "全屏API-FullScreen",
+          ],
+        },
+        {
+          title: "webpack系列",
+          collapsable: true,
+          children: [
+            "webpack/webpack",
+            "webpack/如何编写一个webpack的loader",
+            "webpack/webpack的publicPath",
           ],
         },
         {
@@ -252,9 +273,13 @@ module.exports = {
           title: "react-native",
           collapsable: true,
           children: [
+            "react-native/windows下搭建rn开发环境.md",
             "react-native/mac搭建react-native开发环境.md",
             "react-native/mac下安卓开发环境搭建.md",
             "react-native/安卓调试.md",
+            "react-native/react-native项目各种基本要素.md",
+            "react-native/pod安装.md",
+            "react-native/CodePush.md",
           ],
         },
         {

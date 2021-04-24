@@ -2,6 +2,7 @@
 title: 关于publicPath
 date: 2021-01-26
 categories:
+  - 前端
 tags:
   - webpack
 lang: zh-cn

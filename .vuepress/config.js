@@ -241,6 +241,8 @@ module.exports = {
             "使用JS访问摄像头.md",
             "认识webworker和websocket",
             "全屏API-FullScreen",
+            "前端工程化-代码规范",
+            "css/css效果",
           ],
         },
         {
@@ -305,7 +307,7 @@ module.exports = {
         {
           title: "工具",
           collapsable: false,
-          children: ["lerna.md", "yargs.md"],
+          children: ["lerna.md", "yargs.md", "husky", "lint-staged"],
         },
       ],
       "/code/git/": [
@@ -363,6 +365,13 @@ module.exports = {
           title: "计算机网络",
           collapsable: false,
           children: ["图解计算机网络.md"],
+        },
+      ],
+      "/code/tools/": [
+        {
+          title: "工具",
+          collapsable: false,
+          children: ["/code/tools/", "Deno"],
         },
       ],
     },

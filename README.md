@@ -14,7 +14,7 @@ tagline: 路漫漫其修远兮，吾将上下而求索
 bgImageStyle: { height: "450px" }
 isShowTitleInHome: false
 actionText: 啊哒 →
-actionLink: /code/frontend/
+actionLink: /timeline/
 features:
   - title: 前端
     details: 这里会记录一些在学习前端的过程中遇到的有意思的工具和库

@@ -37,67 +37,76 @@ winget install package --rainbow # 彩虹进度条
 
 ### 安装列表
 
-- windows terminal
-- terminus
-- tencent(腾讯软件)
-- 7zip、winzip
-- jdk8、11、14、15、16
-- 1Password
-- kindle
-- anaconda3
-- wizTree
-- etcher(写镜像到 U 盘)、win32diskimager、rufus
-- Bandizip
-- clipboardFusion
-- displayFusion
-- bitwarden
-- listary
-- Brave browser
-- Potplayer
-- DropBox
-- EditPlus
-- EagleGet
-- clash for windows
-- wget for windows
-- Android Studio
-- Google Chrome(beta、dev)
-- Google Earth
-- jetbrains(webstorm)
-- jianguoyun
-- mactype(似苹果 Mac 系统下的字体渲染)
-- edge
+#### 编辑器
+
 - visual studio code(vscode)
+- atom
+- sublime
+- EditPlus
 - Notepad++
-- nodejs
-- virtualbox
-- picgo
-- ccleaner
-- postman
-- putty
-- python
-- quicklook
-- qv2ray
+
+#### 压缩工具
+
+- 7zip
+- winzip
+- Bandizip
 - winrar
-- vncviewer
-- league of legends(lol 外服)
-- beyond compare
-- free download Manager
-- teamviewer
-- telegram
-- typora
-- vmware
-- wireguard
-- wireshark
-- wox
-- Yarn
-- youdaonote
-- yuque
-- evernote
-- 12306-electron
-- dingtalk
-- shimo
-- wechat devtool
-- everything
+
+
+
+* windows terminal
+* terminus
+* tencent(腾讯软件)
+* jdk8、11、14、15、16
+* 1Password
+* kindle
+* anaconda3
+* wizTree
+* etcher(写镜像到 U 盘)、win32diskimager、rufus
+* bitwarden
+* listary
+* Brave browser
+* Potplayer
+* DropBox
+* EagleGet
+* clash for windows
+* wget for windows
+* Android Studio
+* Google Chrome(beta、dev)
+* Google Earth
+* jetbrains(webstorm)
+* jianguoyun
+* mactype(似苹果 Mac 系统下的字体渲染)
+* edge
+* nodejs
+* virtualbox
+* picgo
+* ccleaner
+* postman
+* putty
+* python
+* quicklook
+* qv2ray
+* vncviewer
+* league of legends(lol 外服)
+* beyond compare
+* free download Manager
+* teamviewer
+* telegram
+* typora
+* vmware
+* wireguard
+* wireshark
+* wox
+* Yarn
+* youdaonote
+* yuque
+* evernote
+* 12306-electron
+* dingtalk
+* shimo
+* wechat devtool
+* everything
 
 ## chocolatey
 

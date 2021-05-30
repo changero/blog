@@ -148,7 +148,7 @@ module.exports = {
           collapsable: false,
           children: [
             "tools/youtube-dl.md",
-            "tools/croc",
+            "tools/文件共享",
             "tools/VSCode插件自备",
             "tools/chrome插件",
             "tools/windows包管理工具",
@@ -176,7 +176,7 @@ module.exports = {
         },
       ],
 
-      "/code/android/": ["/code/android/", "问题集合"],
+      "/code/android/": ["/code/android/", "问题集合", "abd命令简介"],
       "/code/basic/": [
         {
           title: "基础",

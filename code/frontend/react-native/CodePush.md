@@ -12,11 +12,13 @@ lang: zh-cn
 
 ## react-native-code-push
 
-微软开发的中心化 codepush
+微软开发的中心化 codepush 服务，如今用 app center 替换，因为国内的访问速度的问题，一般都会用自建 code-push-server
 
 ## code-push-cli
 
 本地通过命令操作 codepush，相当于客户端，默认连接的是微软官方的服务
+
+连接自己的服务器，需要修改`react-native-code-push`包中`package.json`和`react-native.config.js`文件中`new CodePush`的内容，在`BuildConfig.DEBUG`后面添加一个参数，就是服务器地址
 
 <!-- mode -->
 
@@ -91,19 +93,26 @@ e.g
 ### 查看 Bundle 包
 
 > code-push deployment history rndemo-android Staging
+
 > code-push deployment history rndemo-android Production
 
 ### 回滚
 
 > code-push rollback MyApp Production // "MyApp"中"Production"部署执行回滚
+
 > code-push rollback MyApp Production --targetRelease v4 // "MyApp"中"Production"部署执行回滚，回滚到 v4 这个标签版本
-> code-push rollback GeekMathAppAndroid Production --targetRelease v50 // "MyApp"中"Production"部署执行回滚，回滚到 v4 这个标签版本
 
 ### react-native 打包命令
 
 > react-native bundle --entry-file index.js --bundle-output ./android/[path]/.jsbundle --platform android --dev false
 >
 > react-native bundle --entry-file index.js --bundle-output ./ios/[path]/.jsbundle --platform ios--dev false
+
+> --reset-cache 禁用 metro 缓存，因为未变化的文件会直接使用缓存的结果，加快构建速度。查看[链接](https://www.jianshu.com/p/52620bc4b728)
+
+### 查看生成的 APP key
+
+> code-push deployment ls [app-name] -k
 
 ### rn 中集成
 

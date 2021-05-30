@@ -138,6 +138,8 @@ lang: zh-cn
 
 :::
 
+<!-- more -->
+
 ## 边框效果
 
 <div id='draw-border'>
@@ -860,6 +862,35 @@ This text is not trimmed
   color: #fff;
 }
 </style>
+
+::: details 查看代码
+
+```html
+<div class="wrapper3">
+  <div class="sele">
+    <p>
+      This is default highlighting. Try it out.
+    </p>
+    <p class="custom-highlighting">
+      This is customized highlighting. Try it out.
+    </p>
+  </div>
+</div>
+
+<style>
+  .sele p {
+    font-size: 2rem;
+    font-family: sans-serif;
+  }
+
+  .custom-highlighting::selection {
+    background-color: #8e44ad;
+    color: #fff;
+  }
+</style>
+```
+
+:::
 
 ## 可缩放
 
@@ -1646,3 +1677,22 @@ input:out-of-range{
   font-size: 120px !important;
 }
 </style>
+
+::: details 查看代码
+
+```html
+<h1 class="tx">CSS IS AWESOME</h1>
+
+<style>
+  .tx {
+    background: blue url("https://picsum.photos/id/1015/200/300");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+    font-size: 120px !important;
+  }
+</style>
+```
+
+:::

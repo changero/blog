@@ -24,6 +24,7 @@ title: 前端常用资源及文档、网站收藏
 - [jack](https://jakearchibald.com/) 谷歌浏览器开发者
 - [deep javascript](https://exploringjs.com/deep-js/)
 - [JavaScript for impatient programmers](https://exploringjs.com/impatient-js/toc.html)
+- [how javascript works](https://blog.sessionstack.com/how-javascript-works/home)
 
 ## 社区
 

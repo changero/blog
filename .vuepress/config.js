@@ -278,10 +278,11 @@ module.exports = {
             "react-native/windows下搭建rn开发环境.md",
             "react-native/mac搭建react-native开发环境.md",
             "react-native/mac下安卓开发环境搭建.md",
-            "react-native/安卓调试.md",
             "react-native/react-native项目各种基本要素.md",
             "react-native/pod安装.md",
             "react-native/CodePush.md",
+            "react-native/MutilEnvironment.md",
+            "react-native/安卓打包RN出现资源重复的问题.md",
           ],
         },
         {

@@ -21,6 +21,8 @@ adb kill-server
 - **连接网易木木**：`adb connect 127.0.0.1:7555`。如果是在 macos 上，`adb connect 127.0.0.1:5555`
 - 列出所有设备：`adb devices`
 
+<!-- more -->
+
 ### 如果在连接有多台设备的情况下进行操作
 
 命令格式：adb -s 模拟器端口 其他命令，如：adb -s 127.0.0.1:7555 shell pm list package -3

@@ -8,7 +8,7 @@
     "start": "npm run dev",
     "dev": "vuepress dev .",
     "build": "vuepress build .",
-    "deploy:surge": "cd .vuepress/dist && npx surge --domain changero.surge.sh"
+    "deploy:surge": "./surge.sh .vuepress/dist/ "
   },
   "husky": {
     "hooks": {

@@ -9,3 +9,4 @@ do
     fi
 done
 
+npx surge --domain changero.surge.sh

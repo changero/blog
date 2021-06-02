@@ -31,3 +31,5 @@ doLast {
 ```
 
 然后在菜单中找到 Buile>clean Project，清理一下项目，重新构建
+
+<!-- more -->

@@ -24,6 +24,8 @@ e.g.
 cross-env APP_ENV=staging react-native start
 ```
 
+<!-- more -->
+
 #### 2、打包 bundle
 
 打包与开发时一样的，设置 APP_ENV 环境变量就可以了
@@ -185,10 +187,99 @@ console.log(RNConfig.env)
   }
   ```
 
-- 创建 SDK
+- 创建 SDK，[Android 原生模块 · React Native 中文网](https://reactnative.cn/docs/native-modules-android)
 
   - 创建 XXModule.java
-  - 创建 XXPackage.java
+
+    ```java
+    package com.your-app-name;
+
+    import android.widget.Toast;
+
+    import com.facebook.react.bridge.NativeModule;
+    import com.facebook.react.bridge.ReactApplicationContext;
+    import com.facebook.react.bridge.ReactContext;
+    import com.facebook.react.bridge.ReactContextBaseJavaModule;
+    import com.facebook.react.bridge.ReactMethod;
+
+    import java.util.Map;
+    import java.util.HashMap;
+
+    public class RNConfigModule extends ReactContextBaseJavaModule {
+      private static ReactApplicationContext reactContext;
+
+      public RNConfigModule(ReactApplicationContext context) {
+        super(context);
+        reactContext = context;
+      }
+
+      @Override
+      public String getName() {
+        return "RNConfig"; // js通过这个名字获取该模块
+      }
+
+      // 用于于提供一些常量
+      @Override
+      public Map<String, Object> getConstants() {
+        final Map<String, Integer> constants = new HashMap<>();
+        constants.put("env", BuildConfig.FLAVOR);
+        return constants;
+      }
+
+      @ReactMethod
+      public void show(String message, int duration) {
+        Toast.makeText(getReactApplicationContext(), message, duration).show();
+      }
+    }
+    ```
+
+* 创建 XXPackage.java
+
+  ```java
+  // RNConfigPackage.java
+
+  package com.your-app-name;
+
+  import com.facebook.react.ReactPackage;
+  import com.facebook.react.bridge.NativeModule;
+  import com.facebook.react.bridge.ReactApplicationContext;
+  import com.facebook.react.uimanager.ViewManager;
+
+  import java.util.ArrayList;
+  import java.util.Collections;
+  import java.util.List;
+
+  public class RNConfigPackage implements ReactPackage {
+
+    @Override
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+      return Collections.emptyList();
+    }
+
+    @Override
+    public List<NativeModule> createNativeModules(
+                                ReactApplicationContext reactContext) {
+      List<NativeModule> modules = new ArrayList<>();
+      modules.add(new RNConfigModule(reactContext));
+      return modules;
+    }
+  }
+  ```
+
+* 实现
+
+  - 回到`MainActivity.java`，引入这个 Package，在`getPackages`方法中添加自己的 Package
+
+    ```java
+    protected List<ReactPackage> getPackages() {
+      @SuppressWarnings("UnnecessaryLocalVariable")
+      List<ReactPackage> packages = new PackageList(this).getPackages();
+      // Packages that cannot be autolinked yet can be added manually here, for example:
+      // packages.add(new MyReactNativePackage());
+      packages.add(new CustomToastPackage()); // <-- 添加这一行，类名替换成你的Package类的名字 name.
+      return packages;
+    }
+    ```
 
 ### 其他参考
 

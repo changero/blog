@@ -244,6 +244,7 @@ module.exports = {
             "前端工程化-代码规范",
             "PromiseA+实现",
             "css/css效果",
+            "HTML技巧",
           ],
         },
         {

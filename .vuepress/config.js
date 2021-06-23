@@ -285,6 +285,7 @@ module.exports = {
             "react-native/CodePush.md",
             "react-native/MutilEnvironment.md",
             "react-native/安卓打包RN出现资源重复的问题.md",
+            "react-native/解决XCode12不兼容rn的问题",
           ],
         },
         {

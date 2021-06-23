@@ -16,6 +16,8 @@ lang: zh-cn
 <img src="image.jpg" loading="lazy" />
 ```
 
+<!-- more -->
+
 ### 电子邮件、电话和短信
 
 在 APP 上，我们能通过 Intent 或者 url schema 来打开系统功能。在网页中可以这样做

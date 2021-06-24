@@ -182,3 +182,7 @@ console.log(chalk.blue('hello v1.0.0'));
 console.log(chalk`{white.bold [1/3]} 🔍` + chalk`{default.bold Clone project into local path...}`);
 ```
 
+### 其他参考
+
+- [React可以写命令行，你知道吗？](https://zhuanlan.zhihu.com/p/67331073)
+

@@ -176,7 +176,12 @@ module.exports = {
         },
       ],
 
-      "/code/android/": ["/code/android/", "问题集合", "abd命令简介"],
+      "/code/android/": [
+        "/code/android/",
+        "问题集合",
+        "abd命令简介",
+        "Android手册",
+      ],
       "/code/basic/": [
         {
           title: "基础",

@@ -234,9 +234,12 @@ chocolatey 提供了一个地址来搜索软件
 
 [官方 wiki](https://github.com/lukesampson/scoop/wiki)
 
+> 修改scoop的安装位置，打开powershell，`$env:SCOOP='D:\software\scoop'`
+
 ### 安装
 
 1. 打开全局代理
+
 2. 关闭防火墙、杀毒软件
 3. 打开 powershell
 
@@ -248,6 +251,15 @@ iwr -useb get.scoop.sh | iex
 ```
 
 如果还是遇到网络问题，可能问题在于`raw.githubusercontent.com`DNS 污染无法解析，[参考](https://sspai.com/post/52710)，修改 hosts 文件`199.232.68.133 raw.githubusercontent.com`
+
+### 国内安装
+
+`https://get.scoop.sh`会重定向到`raw.githubusercontent.com`,自动下载scoop的仓库，但经常因为网络原因导致下载失败
+
+```bash
+$ iwr -useb https://changero.coding.cn/p/scoop-cn/d/scoop-cn/git/raw/master/install.ps1?download=false | iex
+$ iwr -useb https://scoop.bianqu.cf | iex
+```
 
 ### 使用
 

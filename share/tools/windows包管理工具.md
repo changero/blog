@@ -52,8 +52,6 @@ winget install package --rainbow # 彩虹进度条
 - Bandizip
 - winrar
 
-
-
 * windows terminal
 * terminus
 * tencent(腾讯软件)
@@ -234,7 +232,7 @@ chocolatey 提供了一个地址来搜索软件
 
 [官方 wiki](https://github.com/lukesampson/scoop/wiki)
 
-> 修改scoop的安装位置，打开powershell，`$env:SCOOP='D:\software\scoop'`
+> 修改 scoop 的安装位置，打开 powershell，`$env:SCOOP='D:\software\scoop'`
 
 ### 安装
 
@@ -254,7 +252,7 @@ iwr -useb get.scoop.sh | iex
 
 ### 国内安装
 
-`https://get.scoop.sh`会重定向到`raw.githubusercontent.com`,自动下载scoop的仓库，但经常因为网络原因导致下载失败
+因为`https://get.scoop.sh`会重定向到`raw.githubusercontent.com`,自动下载 scoop 的仓库，所以经常因为网络原因导致下载失败
 
 ```bash
 $ iwr -useb https://changero.coding.cn/p/scoop-cn/d/scoop-cn/git/raw/master/install.ps1?download=false | iex

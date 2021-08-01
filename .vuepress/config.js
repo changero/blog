@@ -250,6 +250,7 @@ module.exports = {
             "PromiseA+实现",
             "css/css效果",
             "HTML技巧",
+            "JS实现复制文字加版权",
           ],
         },
         {
@@ -316,7 +317,7 @@ module.exports = {
         {
           title: "配置",
           collapsable: false,
-          children: ["nvm.md", "node-sass安装"],
+          children: ["nvm.md", "node-sass安装", "Express"],
         },
         {
           title: "工具",

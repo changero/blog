@@ -22,6 +22,8 @@ document.oncopy = function() {
 };
 ```
 
+<!-- more -->
+
 ### 方式二
 
 ```js

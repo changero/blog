@@ -251,6 +251,7 @@ module.exports = {
             "css/css效果",
             "HTML技巧",
             "JS实现复制文字加版权",
+            "使用ShapeDetectionAPI完成人脸识别",
           ],
         },
         {
@@ -365,7 +366,11 @@ module.exports = {
         {
           title: "python",
           collapsable: false,
-          children: ["python如何安装第三方库.md", "python模块"],
+          children: [
+            "python如何安装第三方库.md",
+            "python模块",
+            "python文件操作手册",
+          ],
         },
       ],
       "/code/flutter/": [

@@ -365,7 +365,7 @@ module.exports = {
         {
           title: "python",
           collapsable: false,
-          children: ["python如何安装第三方库.md"],
+          children: ["python如何安装第三方库.md", "python模块"],
         },
       ],
       "/code/flutter/": [

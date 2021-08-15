@@ -12,7 +12,8 @@ cd ./.vuepress/dist
 #npx surge --domain changero.surge.sh
 
 # 创建CNAME
-echo "blog.changero.win"> CNAME
+# echo "blog.changero.win"> CNAME
+echo "blog.bianqu.cf"> CNAME
 
 
 # 如果是发布到自定义域名

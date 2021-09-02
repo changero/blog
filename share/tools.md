@@ -189,25 +189,19 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 |  autobootdisk   |  linux  |   [github](https://github.com/EvilSourcerer/AutoBootDisk)   |             [官网](https://www.simpodex.com/)             |  是   |    -     |
 |   isorecorder   | windows |                              -                              |       [官网](http://isorecorder.alexfeinman.com/#/)       |  是   |    -     |
 
-
-
 ## 在线视频
 
 - [五号站](http://www.wuhaozhan.net)
 
 - [两个 BT](http://www.bttwo.com)
 
-- [电影蜜蜂](https://www.dybee.tv)
-
 - [新版 6v 影院](https://www.66s.cc)
 
 - [哗嘀影视](https://www.mp4er.com/)
 
-- [酸枣电影网（66 影视）](https://www.suanzao.tv) 
+- [酸枣电影网（66 影视）](https://www.suanzao.tv)
 
 - [4K 屋](http://www.kkkkwu.net/)
-
-- [她的电影网](http://www.tadedy.com/)
 
 - [私人官网](http://shoujizhan.cn/)
 
@@ -232,12 +226,10 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 - [完美看看](https://www.wanmeikk.me/)
 - [Gimy TV 剧迷](https://gimy.tv/)
 - [91 美剧](https://91mjw.com/)
-- [美剧鸟](http://www.meijuniao.com/)
 - [韩剧集网](https://www.juji.tv/)
 - [Zzzfun](http://www.zzzfun.com/)
 - [妮可动漫](http://www.nicotv.me/)
 - [动漫岛](http://www.dmd55.com/)
-- [碟影视界](http://www.952780.com/)
 - [ADC 电影网](https://www.adcmove.com/)
 - [青鸟影视](https://www.qingniao.me/)
 

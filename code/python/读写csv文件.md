@@ -21,6 +21,8 @@ with open(path, 'r', encoding= 'utf-8') as f:
     print(row) # a list like ['1', '2']
 ```
 
+<!-- more -->
+
 ## 写入
 
 ```python

@@ -32,9 +32,9 @@ lang: zh-cn
 
 ## 资源
 
-### https://www.bilibili.com/video/BV1e7411j7T5
+- [https://www.bilibili.com/video/BV1e7411j7T5](https://www.bilibili.com/video/BV1e7411j7T5)
 
-### https://webpack.wuhaolin.cn/
+- [https://webpack.wuhaolin.cn/](https://webpack.wuhaolin.cn/)
 
 ## 工具链
 
@@ -472,7 +472,7 @@ lang: zh-cn
 
   - 优化打包速度
 
-    - HMR
+    - [HMR](./HMR)
 
       - 当更新某一个文件的时候，webpack 会重新打包所有模块，如果项目文件过多，每一次打包的时间都将很长
       - 只更新我们修改过的部分，而不会编译全部代码

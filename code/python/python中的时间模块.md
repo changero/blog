@@ -20,6 +20,8 @@ lang: zh-cn
 
   > 1630591830.0
 
+<!-- more -->
+
 - 将时间字符串转为时间元组 - `time.strptime('2021-09-02', '%Y-%m-%d')`
 
   > 结果同 localtime

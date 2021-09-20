@@ -131,7 +131,6 @@ module.exports = {
             "/share/",
             "cookie、session和token.md",
             "tools.md",
-            "阿里云盘资源目录",
             "how-to-create-github-pages.md",
             "node-commander.md",
             "partClub总结.md",
@@ -260,6 +259,9 @@ module.exports = {
             "javascript/JS实现复制文字加版权",
             "javascript/Object禁止对象扩展的方法比较.md",
             "javascript/PromiseA+实现",
+            "javascript/js沙箱",
+            "javascript/手写实现bind,apply方法",
+            "javascript/微前端基础架构实现",
           ],
         },
         {
@@ -288,6 +290,7 @@ module.exports = {
             "react/hooks.md",
             "react/stateless组件如何通过静态方法更新.md",
             "react/useCallBack和useMemo.md",
+            "react/React18.md",
           ],
         },
         {

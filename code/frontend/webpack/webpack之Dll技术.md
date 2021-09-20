@@ -25,6 +25,8 @@ external:{
  import jquery from 'jquery'
 ```
 
+<!-- more -->
+
 ### 实现 dll
 
 创建`webpack.dll.js`

@@ -141,6 +141,8 @@ module.exports = {
             "部署Heroku.md",
             "iterm2git别名.md",
             "一句话技巧",
+            "破解CSDN无法复制代码",
+            "editplus激活码",
           ],
         },
         {
@@ -152,6 +154,8 @@ module.exports = {
             "tools/VSCode插件自备",
             "tools/chrome插件",
             "tools/windows包管理工具",
+            "tools/百度网盘直链提取油猴脚本",
+            "tools/Rclone挂载网盘",
           ],
         },
         {
@@ -191,7 +195,13 @@ module.exports = {
         {
           title: "算法",
           collapsable: false,
-          children: ["线性表.md", "全排列算法.md", "二叉堆", "js实现一个栈"],
+          children: [
+            "线性表.md",
+            "全排列算法.md",
+            "二叉堆",
+            "js实现一个栈",
+            "JS实现中缀表达式转后缀表达式",
+          ],
         },
         {
           title: "加解密",
@@ -358,7 +368,7 @@ module.exports = {
         {
           title: "遇到过的问题",
           collapsable: false,
-          children: ["ubuntu容器设置启动脚本.md"],
+          children: ["docker安装及加速器和镜像", "ubuntu容器设置启动脚本.md"],
         },
       ],
       "/code/electron/": [
@@ -372,7 +382,12 @@ module.exports = {
         {
           title: "linux相关教程",
           collapsable: false,
-          children: ["史上最牛的Linux视频教程.md"],
+          children: [
+            "史上最牛的Linux视频教程.md",
+            "harbor搭建及证书生成",
+            "centos搭建k8s",
+            "portainer管理多台主机",
+          ],
         },
       ],
       "/code/python/": [

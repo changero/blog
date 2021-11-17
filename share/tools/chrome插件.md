@@ -15,11 +15,15 @@ categories:
 
 - [SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-ntp-icon)好用的代理工具。[github wiki](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
 
-分享一个几乎永久使用的节点: `https://www.copyplay.net:443`
-
 规则列表：`https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt`
 
 - [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=chrome-ntp-icon)谁用谁知道的插件，通过脚本扩展目标网站的功能。脚本的下载网址：[greasyfork](https://greasyfork.org/zh-CN/scripts)、[国外](http://userscripts-mirror.org/)。推荐[脚本](https://greasyfork.org/zh-CN/scripts/370811-2019%E5%B9%B44%E6%9C%8815%E6%97%A5%E6%9B%B4%E6%96%B0-%E7%BD%91%E7%9B%98%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99-%E8%87%AA%E5%8A%A8%E6%9F%A5%E8%AF%A2%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E7%9A%84%E6%8F%90%E5%8F%96%E7%A0%81-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E6%92%AD%E6%94%BE-%E5%85%A8%E7%BD%91%E4%BB%98%E8%B4%B9%E9%9F%B3%E4%B9%90%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD-%E6%B7%98%E5%AE%9D-%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%A4%A7%E9%A2%9D%E8%B4%AD%E7%89%A9%E4%BC%98%E6%83%A0%E5%88%B8%E9%A2%86%E5%8F%96-%E6%94%AF%E6%8C%81%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC%E6%9F%A5%E8%AF%A2),可以破解百度网盘的分享
+
+- bitwarden，好用的密码管理工具，还可以使用 docker 自建服务
+
+- globalspeed，视频速度管理，百度云可用
+
+- stylish，修改网页的 CSS，可以破解 CSDN 的复制
 
 - [octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?utm_source=chrome-ntp-icon)浏览 github 仓库的时候再也不用一层一层的去找文件了
 

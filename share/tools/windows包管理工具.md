@@ -230,7 +230,7 @@ chocolatey 提供了一个地址来搜索软件
 
 ## scoop
 
-[官方 wiki](https://github.com/lukesampson/scoop/wiki)
+[官方 wiki](https://github.com/lukesampson/scoop/wiki)，[安装参考](https://zhuanlan.zhihu.com/p/135278662)
 
 > 修改 scoop 的安装位置，打开 powershell，`$env:SCOOP='D:\software\scoop'`
 
@@ -266,6 +266,14 @@ $ iwr -useb https://scoop.bianqu.cf | iex
 ```
 scoop config proxy 127.0.0.1:1080
 ```
+
+### 恢复
+
+当重装系统之后，scoop 环境变量丢失，需要重新修复
+
+创建`SCOOP`环境变量，指向 scoop 的安装目录
+
+在`Path`变量中添加，scoop 安装目录中的`shims`文件夹，这个文件夹中包含了 scoop 命令本身，以及通过 scoop 安装的工具
 
 ### 软件列表
 

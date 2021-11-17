@@ -232,6 +232,8 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 - [动漫岛](http://www.dmd55.com/)
 - [ADC 电影网](https://www.adcmove.com/)
 - [青鸟影视](https://www.qingniao.me/)
+- [影视分享](https://www.ysfxba.com/)
+- [bdx100](https://www.bdx100.com/)
 
 ## 在线音乐
 

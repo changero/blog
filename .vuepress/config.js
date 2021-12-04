@@ -301,6 +301,7 @@ module.exports = {
             "react/stateless组件如何通过静态方法更新.md",
             "react/useCallBack和useMemo.md",
             "react/React18.md",
+            "react/hooks简易实现",
           ],
         },
         {

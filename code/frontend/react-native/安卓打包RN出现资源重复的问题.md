@@ -1,6 +1,6 @@
 ---
 title: 安卓打包RN出现资源重复的问题
-date: "2021-06-01 22:42:43"
+date: '2021-06-01 22:42:43'
 categories:
   - 前端
 tags:
@@ -12,7 +12,8 @@ lang: zh-cn
 
 找到`node_modules/react-native/react.gradle`文件，找到`doFirst`定义的地方，在后面添加
 
-```gradle
+```
+// gradle
 doLast {
     def moveFunc = { resSuffix ->
         File originalDir = file("$buildDir/generated/res/react/release/drawable-${resSuffix}");

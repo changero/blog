@@ -1,6 +1,6 @@
 ---
 title: Rclone挂载网盘
-date: "2021-11-17 21:16:15"
+date: '2021-11-17 21:16:15'
 lang: zh-cn
 ---
 
@@ -106,7 +106,7 @@ token = {"access_token":"redacted","token_type":"bearer","expiry":"2020-08-05T16
 
 首先执行
 
-> rclone rcd --rc-web-gui --rc-user=<user> --rc-pass=<pass>
+> rclone rcd --rc-web-gui --rc-user=[user] --rc-pass=[pass]
 
 开启访问:http://localhost:5572
 

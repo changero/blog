@@ -33,6 +33,8 @@ function useState(initiavValue) {
 }
 ```
 
+<!-- more -->
+
 看上去很像`getter`、`setter`对不对,只是在这里 state 的用法有点不像 getter,再用闭包改造一下，将`_val`和`useState`函数放在同一个闭包环境下
 
 ```js

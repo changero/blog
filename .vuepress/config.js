@@ -213,7 +213,7 @@ module.exports = {
         {
           title: "mongodb",
           collapsable: false,
-          children: ["mongodb/基础命令.md"],
+          children: ["mongodb/基础命令.md", "mongodb/操作符", "mongodb/联表查询"],
         },
         {
           title: "graphql",

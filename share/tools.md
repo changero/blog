@@ -192,48 +192,24 @@ curl -L qrgo.elsesiy.com/http://cblog.changero.win
 ## 在线视频
 
 - [五号站](http://www.wuhaozhan.net)
-
 - [两个 BT](http://www.bttwo.com)
-
 - [新版 6v 影院](https://www.66s.cc)
-
-- [哗嘀影视](https://www.mp4er.com/)
-
-- [酸枣电影网（66 影视）](https://www.suanzao.tv)
-
 - [4K 屋](http://www.kkkkwu.net/)
-
 - [私人官网](http://shoujizhan.cn/)
-
-- [全能影视](http://www.qnvod.net/)
-
-- [94 神马电影网](http://www.9rmb.com/)
-
 - [好恐怖](https://www.haokongbu1.com/)
-- [火鸟影视](http://huoniaoys.com/)
 - [片吧](https://www.pianba.net/)
-- [西瓜电影](https://www.xigua110.com/)
-- [人人影视](http://www.yyetss.com/)
+- [阿哥美剧](https://agmov.com/)
 - [速影 TV](https://suyingtv.com/)
 - [云播 TV](https://www.yunbtv.com/)
 - [奈非影视](https://www.nfmovies.com/)
 - [五杀电影院](https://www.lol5s.com/)
-- [蓝马影视](https://www.lanmays.com/)
-- [v 部落](http://www.vbuluo99.com/)
-- [钉子电影](http://www.dingziyc.com/)
 - [葡萄影视](https://www.putaoys.com/)
-- [太初电影](https://www.tcmove.com/)
-- [完美看看](https://www.wanmeikk.me/)
-- [Gimy TV 剧迷](https://gimy.tv/)
 - [91 美剧](https://91mjw.com/)
 - [韩剧集网](https://www.juji.tv/)
-- [Zzzfun](http://www.zzzfun.com/)
+- [Zzzfun 动漫](http://www.zzzfun.com/)
 - [妮可动漫](http://www.nicotv.me/)
-- [动漫岛](http://www.dmd55.com/)
-- [ADC 电影网](https://www.adcmove.com/)
-- [青鸟影视](https://www.qingniao.me/)
+- [青鸟影视-美剧](https://www.qingniao.me/)
 - [影视分享](https://www.ysfxba.com/)
-- [bdx100](https://www.bdx100.com/)
 
 ## 在线音乐
 

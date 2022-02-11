@@ -1,6 +1,6 @@
 ---
 title: husky
-date: "2021-05-09 00:05:51"
+date: '2021-05-09 00:05:51'
 categories:
   - node
 tags:
@@ -55,3 +55,27 @@ $ npx husky uninstall
 ```
 
 卸载之后之前添加的钩子文件还在，只是不会触发钩子的功能
+
+## 问题解决
+
+### 出现`husky add`和`husky set`不成功
+
+这种情况在 windows 上出现的，解决办法是手动去创建
+
+```bash
+# 创建文件
+touch .husky/pre-commit
+# 修改权限
+chmod 755 .husky/pre-commit
+```
+
+文件内容大致如下:
+
+```shell
+#! /bin/sh
+
+. "$(dirname "$0")/_/husky.sh"
+
+# 这里写要执行的命令
+npx lint-staged
+```

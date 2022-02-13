@@ -302,6 +302,7 @@ module.exports = {
             "react/useCallBack和useMemo.md",
             "react/React18.md",
             "react/hooks简易实现",
+            "react/新的react-jsx转换器",
           ],
         },
         {

@@ -1,10 +1,10 @@
 ---
 title: editplus激活码
-date: "2021-11-17 21:23:59"
+date: '2021-11-17 21:23:59'
 lang: zh-cn
 ---
 
-```text
+```
 用户名：Vovan
 
 注册码： 3AG46-JJ48E-CEACC-8E6EW-ECUAW

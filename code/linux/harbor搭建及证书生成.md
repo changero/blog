@@ -1,6 +1,6 @@
 ---
 title: harbor搭建及证书生成
-date: "2021-11-17 20:54:30"
+date: '2021-11-17 20:54:30'
 categories:
   - linux
 tags:
@@ -24,26 +24,26 @@ tar -xvf harbor-offline-installer-v2.3.4.tgz
 
 - 生成服务器私钥
 
-  ```text
+  ```
   openssl genrsa -des3 -out server.key 2048
   ```
 
 - 生成服务器签署申请文件
 
-  ```text
+  ```
   openssl req -new -out server.csr -key server.key -config /etc/ssl/openssl.cnf
   ```
 
 - ##### 从秘钥中删除 Passphrase
 
-  ```text
+  ```
   cp server.key server.key.org
   openssl rsa -in server.key.org -out server.key
   ```
 
 - 签名，生成一个 3650 天的临时证书
 
-  ```text
+  ```
   openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt
   ```
 

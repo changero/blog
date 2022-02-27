@@ -1,6 +1,6 @@
 ---
 title: centos搭建k8s
-date: "2021-11-17 20:56:07"
+date: '2021-11-17 20:56:07'
 categories:
   - linux
 tags:
@@ -20,7 +20,7 @@ vi /etc/sysconfig/network-scripts/ifcfg-***
 
 注意修改如下几行的信息：
 
-```text
+```
 BOOTPROTO=static
 ONBOOT=yes
 IPADDR=10.10.10.242
@@ -102,7 +102,7 @@ sed -i 's/.*swap.*/#&/g' /etc/fstab
 
 ## 调整内核参数
 
-```text
+```
 cat > kubernetes.conf <<EOF
 net.bridge.bridge-nf-call-iptables=1
 net.bridge.bridge-nf-call-ip6tables=1
@@ -240,7 +240,7 @@ kubeadm init \
 
 并得到加入节点的命令如下
 
-```text
+```
 kubeadm join 10.10.10.240:6443 --token 3zee4f.0wfbttfejdc7b9ag \
     --discovery-token-ca-cert-hash sha256:f3bd1ad6db205cbbc8218704c6d3aebb79b81040e72d9f749e55d3aa28d43aa5
 ```
@@ -249,7 +249,7 @@ kubeadm join 10.10.10.240:6443 --token 3zee4f.0wfbttfejdc7b9ag \
 
 使用默认配置生成配置文件
 
-```text
+```
 kubeadm config print init-defaults > k8s-init-master01.yaml
 ```
 
@@ -261,7 +261,7 @@ podSubnet: "10.244.0.0/16"
 
 最后在文件结尾添加
 
-```text
+```
 ---
 apiVersion :Kubeproxy.config.k8s.io/v1alpha1
 kind: KubeProxyConfiguration
@@ -272,7 +272,7 @@ mode: ipvs
 
 其他
 
-```text
+```
 kubeadm config print init-defaults
 kubeadm config print init-defaults --component-configs
 kubeadm config print join-defaults
@@ -281,13 +281,13 @@ kubeadm config print join-defaults --component-configs
 
 提前拉取镜像
 
-```text
+```
 kubeadm config images pull --config k8s-init-master01.yaml
 ```
 
 初始化安装
 
-```text
+```
 kubeadm init --config k8s-init-master01.yaml --experimental-upload-certs | tee kubeadm-init.log
 ```
 

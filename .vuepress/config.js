@@ -131,7 +131,6 @@ module.exports = {
             '/share/',
             'cookie、session和token.md',
             'tools.md',
-            'how-to-create-github-pages.md',
             'node-commander.md',
             'partClub总结.md',
             'gant-design小结.md',
@@ -146,8 +145,17 @@ module.exports = {
           ],
         },
         {
+          title: 'github',
+          collapsable: true,
+          children: [
+            'github/how-to-create-github-pages.md',
+            'github/github徽章',
+            'github/gpg',
+          ],
+        },
+        {
           title: '工具',
-          collapsable: false,
+          collapsable: true,
           children: [
             'tools/youtube-dl.md',
             'tools/文件共享',
@@ -160,7 +168,7 @@ module.exports = {
         },
         {
           title: 'openwrt',
-          collapsable: false,
+          collapsable: true,
           children: ['openwrt调教历程.md'],
         },
       ],

@@ -95,6 +95,10 @@ jobs:
 
 这样当我们提交代码以后就可以自动构建了
 
+构建完成以后也能得到一个徽标`https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_FILE>/badge.svg`
+
+或者通过[shields](https://shields.io/)平台搜索`actions`来获取，不过这种方式获取的徽章没有 github 的官方图标
+
 #### 问题
 
 这里在使用`actions`的环境下有一个 jest 的问题，如果我们通过`testPathIgnorePatterns`设置了要忽略的测试文件夹，会出现不能被忽略的问题。

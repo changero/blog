@@ -36,6 +36,8 @@ $ npm set-script prepare "husky install" && npm run prepare
 $ npx husky install .config/husky
 ```
 
+> 上述安装及初始化的过程也可以简化为`npx husky-init && npm install`
+
 ## 添加钩子
 
 ```bash

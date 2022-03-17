@@ -43,4 +43,7 @@ categories:
 - Eslint
 - Node.js Modules Intellisense，自动补全 import 语句中的 JavaScript 和 TypeScript 模块
 - React Extension Pack，比 nodejs extension pack 多一个包
+- Vue Volar Extention Pack
 - tabnine 智能提示
+- prettier-eslint
+- Lintel 可视化 eslint 编辑器

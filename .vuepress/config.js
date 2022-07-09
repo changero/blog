@@ -28,20 +28,20 @@ module.exports = {
         content: 'width=device-width,initial-scale=1,user-scalable=no',
       },
     ],
-    [
-      'script',
-      {
-        defer: true,
-        src: `https://static.cloudflareinsights.com/beacon.min.js`,
-        'data-cf-beacon': '{"token": "d9b6c38544c04c558105cf38304c4277"}',
-      },
-    ],
+    // [
+    //   'script',
+    //   {
+    //     defer: true,
+    //     src: `https://static.cloudflareinsights.com/beacon.min.js`,
+    //     'data-cf-beacon': '{"token": "d9b6c38544c04c558105cf38304c4277"}',
+    //   },
+    // ],
   ],
   // evergreen: true, // 禁止转译到ES5,并且不会添加IE的polyfill
   markdown: {
     lineNumbers: true,
   },
-  theme: 'reco',
+  // theme: 'reco',
   themeConfig: {
     type: 'blog',
     logo: '/hero.png',
@@ -59,11 +59,11 @@ module.exports = {
     startYear: '2019',
     author: 'Changero',
     huawei: false,
-    socialLinks: [
-      // 信息栏展示社交信息
-      { icon: 'reco-github', link: 'https://github.com/changero' },
-      { icon: 'reco-npm', link: 'https://www.npmjs.com/~reco_luan' },
-    ],
+    // socialLinks: [
+    //   // 信息栏展示社交信息
+    //   { icon: 'reco-github', link: 'https://github.com/changero' },
+    //   { icon: 'reco-npm', link: 'https://www.npmjs.com/~reco_luan' },
+    // ],
     friendLink: [
       // {
       //   title: "午后南杂",
@@ -99,20 +99,15 @@ module.exports = {
           },
         ],
       },
-      {
-        text: 'TimeLine',
-        link: '/timeline/',
-        icon: 'reco-date',
-      },
+      // {
+      //   text: 'TimeLine',
+      //   link: '/timeline/',
+      //   icon: 'reco-date',
+      // },
       {
         text: '资源导航',
         link: '/navs/',
       },
-      // {
-      //   text: "好有券",
-      //   link: "http://quan.changero.win",
-      //   icon: "reco-other",
-      // },
       {
         // text: '📧 联系我',
         text: '联系我',
@@ -182,8 +177,8 @@ module.exports = {
             '记录想说的话.md',
             '富爸爸穷爸爸.md',
             '《走吧，张小研》读后感.md',
-            'note.md',
             '2021离职感想',
+            '我叫MT',
           ],
         },
       ],
@@ -273,6 +268,7 @@ module.exports = {
             'HTML技巧',
             '使用ShapeDetectionAPI完成人脸识别',
             '微信小程序传递FormData格式的数据',
+            '文件系统',
           ],
         },
         {
@@ -285,6 +281,11 @@ module.exports = {
             'javascript/js沙箱',
             'javascript/手写实现bind,apply方法',
             'javascript/微前端基础架构实现',
+            'javascript/浏览器2020',
+
+            'javascript/运行时',
+            'javascript/v8引擎',
+            'javascript/内存管理-如何处理常见的内存泄露',
           ],
         },
         {
@@ -305,6 +306,11 @@ module.exports = {
             'typescript/收集的部分问题及解决方法.md',
             'typescript/生成d.ts.md',
           ],
+        },
+        {
+          title: 'vue',
+          collapsable: true,
+          children: ['vue/vue项目实战课笔记', 'vue/手写mini-vue'],
         },
         {
           title: 'react',
@@ -359,9 +365,29 @@ module.exports = {
           children: ['nvm.md', 'node-sass安装', 'Express'],
         },
         {
+          title: '消息服务器开发',
+          collapsable: true,
+          children: [
+            '/code/node/socket-server/',
+            'socket-server/net',
+            'socket-server/tcp双向通信',
+            'socket-server/简易聊天室',
+            'socket-server/socket.io入门',
+            'socket-server/socket.io自定义事件与认证',
+            'socket-server/socket命名空间',
+            'socket-server/消息推送',
+          ],
+        },
+        {
           title: '工具',
           collapsable: false,
-          children: ['lerna.md', 'yargs.md', 'husky', 'lint-staged'],
+          children: [
+            'lerna.md',
+            'yargs.md',
+            'husky',
+            'lint-staged',
+            'nexe介绍',
+          ],
         },
       ],
       '/code/git/': [
@@ -402,6 +428,7 @@ module.exports = {
             'harbor搭建及证书生成',
             'centos搭建k8s',
             'portainer管理多台主机',
+            'linux修改系统时区',
           ],
         },
       ],

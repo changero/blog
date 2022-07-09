@@ -24,7 +24,7 @@ export PATH="/usr/local/flutter/bin:$PATH"
 
 ### 检查
 
-```commandline
+```bash
 flutter doctor
 ```
 

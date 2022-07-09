@@ -38,7 +38,6 @@ wget https://bashupload.com/aDH9y/myfile.txt
 
 ```bash
 curl -L qrgo.elsesiy.com/test
-curl -L qrgo.elsesiy.com/http://cblog.changero.win
 ```
 
 ## 网站分享

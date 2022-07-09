@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <Item v-for="item in list" :data="item" />
+    <Item v-for="item in list" :key="item.url" :data="item" />
   </div>
 </template>
 
 <script>
-import Item from "./nav-item";
+import Item from './nav-item';
 export default {
   data: () => {
     return {
@@ -13,7 +13,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https://nav.bianqu.cf")
+    fetch('https://nav.bianqu.cf')
       .then((res) => res.json())
       .then((data) => {
         this.list = data;

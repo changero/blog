@@ -15,7 +15,17 @@ github 仓库地址：[https://github.com/creationix/nvm](https://github.com/cre
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.37.2/install.sh | bash
 # 或者
 wget -qO- https://cdn.jsdelivr.net/gh/creationix/nvm@v0.37.2/install.sh | bash
+# 或者
+wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 # 不过最后都是从github下载，其实也没多大区别
+```
+
+centos 下也可以通过 yum 安装
+
+```bash
+curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+
+yum install -y nodejs
 ```
 
 安装完成后执行下面的命令检查：

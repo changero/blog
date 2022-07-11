@@ -121,7 +121,7 @@ module.exports = {
       '/share/': [
         {
           title: '分享',
-          collapsable: false,
+          collapsable: true,
           children: [
             '/share/',
             'cookie、session和token.md',
@@ -138,6 +138,11 @@ module.exports = {
             '破解CSDN无法复制代码',
             'editplus激活码',
           ],
+        },
+        {
+          title: '白嫖的知识',
+          collapsable: true,
+          children: ['白嫖的知识/利用tunnel穿透家中的服务'],
         },
         {
           title: 'github',
@@ -170,7 +175,7 @@ module.exports = {
       '/read/': [
         {
           title: '记录',
-          collapsable: false,
+          collapsable: true,
           children: [
             '/read/',
             '学习的方法.md',
@@ -192,12 +197,12 @@ module.exports = {
       '/code/basic/': [
         {
           title: '基础',
-          collapsable: false,
+          collapsable: true,
           children: ['理解Unicode与UTF-8.md'],
         },
         {
           title: '算法',
-          collapsable: false,
+          collapsable: true,
           children: [
             '线性表.md',
             '全排列算法.md',
@@ -209,14 +214,14 @@ module.exports = {
         },
         {
           title: '加解密',
-          collapsable: false,
+          collapsable: true,
           children: ['basic_encryption'],
         },
       ],
       '/code/db/': [
         {
           title: 'mongodb',
-          collapsable: false,
+          collapsable: true,
           children: [
             'mongodb/基础命令.md',
             'mongodb/操作符',
@@ -225,7 +230,7 @@ module.exports = {
         },
         {
           title: 'graphql',
-          collapsable: false,
+          collapsable: true,
           children: ['graphql/认识graphql.md'],
         },
       ],
@@ -233,7 +238,7 @@ module.exports = {
         '/code/rxjs/',
         {
           title: '学习心得',
-          collapsable: false,
+          collapsable: true,
           children: ['creator.md', 'pipeable.md'],
         },
         {
@@ -341,7 +346,8 @@ module.exports = {
             'react-native/React-Native学习笔记',
             'react-native/RN第三方包',
             'react-native/上架苹果应用方式的对比',
-            'react-native/解决react-navigation4导航栏在安卓、IOS的兼容性问题',
+            'react-native/adb连接第三方模拟器',
+            'react-native/调试FAQ',
           ],
         },
         {
@@ -361,7 +367,7 @@ module.exports = {
       '/code/node/': [
         {
           title: '配置',
-          collapsable: false,
+          collapsable: true,
           children: ['nvm.md', 'node-sass安装', 'Express'],
         },
         {
@@ -380,7 +386,7 @@ module.exports = {
         },
         {
           title: '工具',
-          collapsable: false,
+          collapsable: true,
           children: [
             'lerna.md',
             'yargs.md',
@@ -393,7 +399,7 @@ module.exports = {
       '/code/git/': [
         {
           title: 'git经验分享',
-          collapsable: false,
+          collapsable: true,
           children: [
             'git常用命令.md',
             'git撤销操作.md',
@@ -408,21 +414,21 @@ module.exports = {
       '/code/docker/': [
         {
           title: '遇到过的问题',
-          collapsable: false,
+          collapsable: true,
           children: ['docker安装及加速器和镜像', 'ubuntu容器设置启动脚本.md'],
         },
       ],
       '/code/electron/': [
         {
           title: 'electron',
-          collapsable: false,
+          collapsable: true,
           children: ['解决electron下载问题.md'],
         },
       ],
       '/code/linux/': [
         {
           title: 'linux相关教程',
-          collapsable: false,
+          collapsable: true,
           children: [
             '史上最牛的Linux视频教程.md',
             'harbor搭建及证书生成',
@@ -435,7 +441,7 @@ module.exports = {
       '/code/python/': [
         {
           title: 'python',
-          collapsable: false,
+          collapsable: true,
           children: [
             'python如何安装第三方库.md',
             'python模块',
@@ -450,21 +456,21 @@ module.exports = {
       '/code/flutter/': [
         {
           title: 'flutter',
-          collapsable: false,
+          collapsable: true,
           children: ['mac下Flutter开发环境搭建.md'],
         },
       ],
       '/code/network/': [
         {
           title: '计算机网络',
-          collapsable: false,
+          collapsable: true,
           children: ['图解计算机网络.md'],
         },
       ],
       '/code/tools/': [
         {
           title: '工具',
-          collapsable: false,
+          collapsable: true,
           children: ['/code/tools/', 'Deno'],
         },
       ],

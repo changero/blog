@@ -1,6 +1,6 @@
 ---
 title: RN第三方包
-date: "2021-06-24 22:08:07"
+date: '2021-06-24 22:08:07'
 categories:
   - 前端
 tags:
@@ -8,9 +8,9 @@ tags:
 lang: zh-cn
 ---
 
-常用的react-native第三方工具
+常用的 react-native 第三方工具
 
-## RN第三方包
+## RN 第三方包
 
 - react-native-version-number
 - react-native-extra-dimensions-android
@@ -25,19 +25,18 @@ lang: zh-cn
 - react-native-gesture-handler
 - react-native-root-siblings
 - rn-fetch-blob
-- react-native-system-setting  系统音量亮度控制
+- react-native-system-setting 系统音量亮度控制
 - react-native-orientation **react-native-orientation-locker** 控制方向
 - react-native-video
 - react-native-silder
 - 导航 - `react-navigation`
 - 图标 - `react-native-vector-icons`
-- UI组件 - `react-native-paper`
-- 动画 
-   	- `react-native-reanimated`
-    - [`react-native-animatable`](https://github.com/oblador/react-native-animatable)
-    - `react-native-pose`
+- UI 组件 - `react-native-paper`、`[nativebase](https://docs.nativebase.io/installation)`
+- 动画 - `react-native-reanimated`
+  - [`react-native-animatable`](https://github.com/oblador/react-native-animatable)
+  - `react-native-pose`
 - 渐变 - `react-native-liner-gradient`
-- 启动页 
+- 启动页
   - `react-native-bootsplash`
   - `react-native-splash-screen`
 - 优化图片 - `react-native-fast-image`
@@ -47,8 +46,8 @@ lang: zh-cn
 - 图片剪切 - `react-native-image-crop-picker`
 - 设备信息 - `react-native-device-info`
 - webview - `react-native-webview`
-- app版本信息 - `react-native-version-number`
-- 安全区 -  `react-native-safe-area-context`
+- app 版本信息 - `react-native-version-number`
+- 安全区 - `react-native-safe-area-context`
 
 ### 社区组件
 

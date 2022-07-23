@@ -59,7 +59,7 @@ version 可以只不用指定具体的版本号，nvm 会自动下载指定版�
 通过设置环境变量
 
 ```bash
-NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirror/node/
+NVM_NODEJS_ORG_MIRROR=https://registry.npmmirror.com/-/binary/node
 ```
 
 #### 设置 npm 仓库镜像
@@ -67,7 +67,7 @@ NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirror/node/
 推荐 nrm 包，或者
 
 ```bash
-npm config set registry=https://registry.npm.taobao.org
+npm config set registry=https://registry.npmmirror.com/
 ```
 
 #### 自动版本切换
@@ -90,11 +90,11 @@ npm install avn avn-nvm
 
 配置 node 镜像
 
-> nvm node_mirror https://npm.taobao.org/mirror/node/
+> nvm node_mirror https://registry.npmmirror.com/-/binary/node
 
 配置 npm 镜像
 
-> nvm npm_mirror https://npm.taobao.org/mirror/npm/
+> nvm npm_mirror https://registry.npmmirror.com/-/binary/npm
 
 #### 查看可用安装
 

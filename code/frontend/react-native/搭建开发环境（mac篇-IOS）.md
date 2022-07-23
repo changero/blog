@@ -1,5 +1,5 @@
 ---
-title: mac搭建react-native开发环境
+title: 搭建开发环境（mac篇-IOS）
 date: 2020-07-07
 categories:
   - react-native
@@ -7,13 +7,13 @@ tags:
   - 配置
 ---
 
-## ios 端
+最新环境搭建[文档](https://www.react-native.cn/docs/environment-setup)
 
-#### 安装 homebrew
+## 安装 homebrew
 
 搜索按照官方命令直接安装
 
-#### 安装 nvm
+## 安装 nvm
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -25,19 +25,19 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 curl -o- https://cdn.jsdelivr.net/gh/nvm-sh/nvm@v0.35.3/install.sh | bash
 ```
 
-##### 配置环境变量
+### 配置环境变量
 
 ```bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
-##### 使用 nvm 安装 node
+### 使用 nvm 安装 node
 
 1、配置镜像
 
 ```bash
-export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node
+export NVM_NODEJS_ORG_MIRROR=https://registry.npmmirror.com/-/binary/node/
 ```
 
 2、查看可用版本
@@ -67,7 +67,7 @@ npm install react-native-cli
 
 _可选 yarn 替代 npm_
 
-#### 安装 watchman
+## 安装 watchman
 
 ```bash
 brew install watchman
@@ -75,11 +75,11 @@ brew install watchman
 all_proxy=socks5://127.0.0.1:1080 brew install watchman
 ```
 
-#### 安装 xocde 并配置 common Line tools
+## 安装 xocde 并配置 common Line tools
 
 启动 Xcode，并在`Xcode | Preferences | Locations`菜单中检查一下是否装有某个版本的`Command Line Tools`
 
-#### 安装 cocoapods
+## 安装 cocoapods
 
 [CocoaPods](https://cocoapods.org/)是用 Ruby 编写的包管理器。从 0.60 版本开始 react native 的 iOS 版本需要使用 CocoaPods 来管理依赖，可以使用 brew 安装，也可以使用 ruby 的包管理工具安装
 
@@ -89,13 +89,13 @@ sudo gem install cocoapods
 
 _可选配置 cocoapods 的中科大源_，[参考](https://mirrors.tuna.tsinghua.edu.cn/help/CocoaPods/)
 
-### 初始化项目
+## 初始化项目
 
 ```bash
 react-native init myrn
 ```
 
-### 启动
+## 启动
 
 建议在 ios 目录下通过 pod 先安装依赖
 
@@ -119,7 +119,7 @@ react-native run-ios
 
 来启动项目。此时会打开 ios 模拟器和一个终端
 
-### 可能出现的问题
+## 可能出现的问题
 
 在启动终端打开模拟器的时候，出现找不到 node 执行文件的情况。
 
@@ -130,45 +130,6 @@ ln -s $(which node) /usr/local/bin/node
 ```
 
 或者在 xcode 中配置，[参考](https://www.jianshu.com/p/4501ed597aba)
-
-## Android 端配置
-
-`brew`、`node`、`watchman`等安装配置参考上面。一定要备好梯子
-
-### 安装 JDK
-
-mac 一般自带 jdk，也可以手动安装，[下载地址](https://www.kagura.me/dev/20200424112618.html)
-
-然后配置环境变量
-
-```bash
-JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home
-PATH=$JAVA_HOME/bin:$PATH:.
-CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
-export JAVA_HOME
-export PATH
-export CLASSPATH
-```
-
-试试运行 javac
-
-### 安装 Android Studio
-
-可以在这个[网站](https://www.androiddevtools.cn/#)上下载，也可以去官网，备好梯子。
-
-#### SDK 的安装
-
-如果下载到没有 SDK 的版本，需要单独下载 SDK，[参考](https://testerhome.com/topics/19377)
-
-然后需要配置 sdk 环境变量
-
-```bash
-export ANDROID_HOME=$HOME/XXX
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/emulator
-```
 
 ### 启动项目
 

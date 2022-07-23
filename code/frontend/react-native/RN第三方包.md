@@ -19,7 +19,6 @@ lang: zh-cn
 - react-native-swiper
 - react-native-linear-gradient
 - react-native-shadow
-- react-native-svg
 - react-native-communications
 - react-native-scrollable-tab-view
 - react-native-gesture-handler
@@ -29,6 +28,7 @@ lang: zh-cn
 - react-native-orientation **react-native-orientation-locker** 控制方向
 - react-native-video
 - react-native-silder
+- svg - `react-native-svg`、`react-native-svg-transforms`、[`react-native-svg-transformer`](https://www.npmjs.com/package/react-native-svg-transformer)
 - 导航 - `react-navigation`
 - 图标 - `react-native-vector-icons`
 - UI 组件 - `react-native-paper`、`[nativebase](https://docs.nativebase.io/installation)`
@@ -48,6 +48,8 @@ lang: zh-cn
 - webview - `react-native-webview`
 - app 版本信息 - `react-native-version-number`
 - 安全区 - `react-native-safe-area-context`
+- 轮播 - `react-native-snap-carousel`
+- 日历 - [react-native-date-picker](https://www.npmjs.com/package/react-native-date-picker)
 
 ### 社区组件
 
@@ -56,3 +58,7 @@ lang: zh-cn
 - 存储 - `async-storage`
 - `masked-view`
 - `art`
+
+## 配置相关
+
+- 配置路径别名：[babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)。如果配置了 eslint-plugin-import 的 eslint 插件的规则，这个插件因为不识别@icons 这样的路径别名而会报错，这时候你可以装一个 eslint-import-resolver-babel-module 来避免别名路径被 eslint-plugin-import 报错;

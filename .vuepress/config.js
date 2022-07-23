@@ -132,7 +132,6 @@ module.exports = {
             '记又一次重装系统的历程.md',
             '破解wetool历程.md',
             'https证书.md',
-            '部署Heroku.md',
             'iterm2git别名.md',
             '一句话技巧',
             '破解CSDN无法复制代码',
@@ -142,7 +141,10 @@ module.exports = {
         {
           title: '白嫖的知识',
           collapsable: true,
-          children: ['白嫖的知识/利用tunnel穿透家中的服务'],
+          children: [
+            '白嫖的知识/利用tunnel穿透家中的服务',
+            '白嫖的知识/部署Heroku.md',
+          ],
         },
         {
           title: 'github',
@@ -333,10 +335,10 @@ module.exports = {
           title: 'react-native',
           collapsable: true,
           children: [
-            'react-native/windows下搭建rn开发环境.md',
-            'react-native/mac搭建react-native开发环境.md',
-            'react-native/mac下安卓开发环境搭建.md',
-            'react-native/react-native项目各种基本要素.md',
+            'react-native/搭建开发环境（windows篇）.md',
+            'react-native/搭建开发环境（mac篇-IOS）.md',
+            'react-native/搭建开发搭建（mac篇-安卓）.md',
+            'react-native/native必知必会.md',
             'react-native/pod安装.md',
             'react-native/CodePush.md',
             'react-native/MutilEnvironment.md',

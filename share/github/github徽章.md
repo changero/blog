@@ -42,7 +42,7 @@ npx codecov --token=<token>
 
 其他平台如：`coveralls`
 
-### 自动构建
+### 使用 workflow 自动构建
 
 自动构建的好处就不说了，通过 ci 我们可以自动将测试报告推送到`codecov`,例如: Travis, CircleCI, AppVeyor, Azure Pipelines 或者 GitHub Actions
 

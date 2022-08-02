@@ -34,6 +34,13 @@ yum install -y nodejs
 nvm --version
 ```
 
+配置环境变量
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
 <!-- more -->
 
 ### 基本用法

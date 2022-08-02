@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "husky": "^3.1.0",
     "vuepress": "^1.9.7"
   },
@@ -11,6 +12,6 @@
     "start": "npm run dev",
     "dev": "vuepress dev .",
     "build": "vuepress build .",
-    "deploy:surge": "./surge.sh .vuepress/dist/ "
+    "build:surge": "cross-env BUILD_ENV=surge vuepress build ."
   }
 }

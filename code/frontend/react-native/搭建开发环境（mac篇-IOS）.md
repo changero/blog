@@ -15,57 +15,7 @@ tags:
 
 ## 安装 nvm
 
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-```
-
-可以将以上 github 地址替换为`jsdelivr`CDN
-
-```bash
-curl -o- https://cdn.jsdelivr.net/gh/nvm-sh/nvm@v0.35.3/install.sh | bash
-```
-
-### 配置环境变量
-
-```bash
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-```
-
-### 使用 nvm 安装 node
-
-1、配置镜像
-
-```bash
-export NVM_NODEJS_ORG_MIRROR=https://registry.npmmirror.com/-/binary/node/
-```
-
-2、查看可用版本
-
-```bash
-nvm ls-remote --lts
-```
-
-3、安装
-
-```bash
-nvm install xx.xx.xx
-```
-
-4、安装镜像管理包 nrm
-
-```bash
-npm install nrm -g
-nrm use taobao
-```
-
-到这里就可以通过 npm 来安装`react-native-cli`工具了
-
-```bash
-npm install react-native-cli
-```
-
-_可选 yarn 替代 npm_
+[查看](/code/node/nvm.html)安装方法
 
 ## 安装 watchman
 

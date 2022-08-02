@@ -190,7 +190,6 @@ curl -L qrgo.elsesiy.com/test
 
 ## 在线视频
 
-- [五号站](http://www.wuhaozhan.net)
 - [两个 BT](http://www.bttwo.com)
 - [新版 6v 影院](https://www.66s.cc)
 - [4K 屋](http://www.kkkkwu.net/)

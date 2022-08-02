@@ -13,13 +13,13 @@ jobs:
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BUILD_SCRIPT: yarn && yarn build
+          BUILD_SCRIPT: yarn && yarn build && yarn build:surge
           BUILD_DIR: .vuepress/dist/
 
       - name: deploy to surge
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: "changero.surge.sh"
-          project: ".vuepress/dist/"
+          domain: 'changero.surge.sh'
+          project: '.vuepress/surge/'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}

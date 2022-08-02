@@ -3,4 +3,5 @@
 node_modules
 dist
 .vuepress/dist
+.vuepress/surge
 .vuepress/local-blog

@@ -114,7 +114,10 @@ module.exports = {
         {
           title: '白嫖的知识',
           collapsable: true,
-          children: ['白嫖的知识/利用tunnel穿透家中的服务'],
+          children: [
+            '白嫖的知识/利用tunnel穿透家中的服务',
+            '白嫖的知识/利用cloudflare+backblaze实现免费图库',
+          ],
         },
         {
           title: 'github',
@@ -246,6 +249,7 @@ module.exports = {
             '使用ShapeDetectionAPI完成人脸识别',
             '微信小程序传递FormData格式的数据',
             '文件系统',
+            '正则断言速记',
           ],
         },
         {
@@ -345,7 +349,11 @@ module.exports = {
         {
           title: '文章',
           collapsable: true,
-          children: ['post/node-commander'],
+          children: [
+            'post/node-commander',
+            'post/Nodejs+OBS直播服务器搭建总结',
+            'post/pm2入门指北',
+          ],
         },
         {
           title: '工具',

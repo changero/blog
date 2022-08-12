@@ -72,6 +72,7 @@ module.exports = {
           { text: 'python', link: '/code/python/' },
           { text: 'android', link: '/code/android/' },
           { text: 'flutter', link: '/code/flutter/' },
+          { text: '其他', link: '/code/other/' },
           { text: '数据库', link: '/code/db/' },
           { text: '计算机网络', link: '/code/network/' },
           {
@@ -117,6 +118,7 @@ module.exports = {
           children: [
             '白嫖的知识/利用tunnel穿透家中的服务',
             '白嫖的知识/利用cloudflare+backblaze实现免费图库',
+            '白嫖的知识/利用cloudflare实现微信认证',
           ],
         },
         {
@@ -353,6 +355,7 @@ module.exports = {
             'post/node-commander',
             'post/Nodejs+OBS直播服务器搭建总结',
             'post/pm2入门指北',
+            'post/yarn workspaces总结',
           ],
         },
         {
@@ -408,6 +411,13 @@ module.exports = {
           title: 'electron',
           collapsable: true,
           children: ['解决electron下载问题.md'],
+        },
+      ],
+      '/code/other/': [
+        {
+          title: '其他',
+          collapsable: true,
+          children: ['nginx配置spa'],
         },
       ],
       '/code/linux/': [

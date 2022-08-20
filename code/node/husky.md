@@ -1,6 +1,6 @@
 ---
 title: husky
-date: '2021-05-09 00:05:51'
+date: "2021-05-09 00:05:51"
 categories:
   - node
 tags:
@@ -15,7 +15,7 @@ lang: zh-cn
 ```bash
 $ npm install husky -D
 # 或者
-$ yarn husky -D
+$ yarn add husky -D
 ```
 
 ## 初始化

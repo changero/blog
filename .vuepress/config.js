@@ -357,6 +357,7 @@ module.exports = {
             "post/Nodejs+OBS直播服务器搭建总结",
             "post/pm2入门指北",
             "post/yarn workspaces总结",
+            "post/使用yarn搭建一个能同时跑vue2、vue3、react的monorepo项目",
             "post/关于nusage的说明",
             "post/什么是Bundless",
           ],

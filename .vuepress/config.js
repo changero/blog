@@ -76,8 +76,8 @@ module.exports = {
           { text: "数据库", link: "/code/db/" },
           { text: "计算机网络", link: "/code/network/" },
           {
-            text: "linux相关教程和笔记",
-            link: "/code/linux/史上最牛的Linux视频教程",
+            text: 'linux',
+            link: '/code/linux/linux学习笔记',
           },
         ],
       },
@@ -426,14 +426,21 @@ module.exports = {
       ],
       "/code/linux/": [
         {
-          title: "linux相关教程",
+          title: '学习笔记',
           collapsable: true,
           children: [
-            "史上最牛的Linux视频教程.md",
-            "harbor搭建及证书生成",
-            "centos搭建k8s",
-            "portainer管理多台主机",
-            "linux修改系统时区",
+            'linux学习笔记',
+            '史上最牛的Linux视频教程.md',
+          ],
+        },
+        {
+          title: '备忘录',
+          collapsable: true,
+          children: [
+            'harbor搭建及证书生成',
+            'centos搭建k8s',
+            'portainer管理多台主机',
+            'linux修改系统时区',
           ],
         },
       ],
@@ -451,6 +458,13 @@ module.exports = {
             "python中的时间模块",
           ],
         },
+        {
+          title: '相关库',
+          collapsable: true,
+          children: [
+            "numpy"
+          ]
+        }
       ],
       "/code/flutter/": [
         {

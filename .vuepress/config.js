@@ -462,7 +462,8 @@ module.exports = {
           title: '相关库',
           collapsable: true,
           children: [
-            "numpy"
+            "numpy",
+            "pandas"
           ]
         }
       ],

@@ -1,7 +1,6 @@
 {
-  "name": "blogg",
+  "name": "blog",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "cross-env": "^7.0.3",
@@ -10,8 +9,8 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "dev": "vuepress dev .",
-    "build": "vuepress build .",
-    "build:surge": "cross-env BUILD_ENV=surge vuepress build ."
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "build:surge": "cross-env BUILD_ENV=surge vuepress build docs"
   }
 }

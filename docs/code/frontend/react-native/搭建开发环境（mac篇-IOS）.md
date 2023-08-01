@@ -37,20 +37,46 @@ all_proxy=socks5://127.0.0.1:1080 brew install watchman
 sudo gem install cocoapods
 ```
 
+或者通过homebrew安装
+
+```bash
+brew install cocoapods
+```
+
+可以查看pod[安装](./pod安装)相关
+
 _可选配置 cocoapods 的中科大源_，[参考](https://mirrors.tuna.tsinghua.edu.cn/help/CocoaPods/)
 
 ## 初始化项目
 
 ```bash
-react-native init myrn
+npx react-native@latest init myrn --npm
 ```
+
+### 出现ruby版本过低的问题
+
+mac电脑上自带的ruby版本可能过低，需要手动重新安装。可以通过brew安装
+
+```bash
+brew search ruby
+
+brew install ruby@3.0
+```
+
+然后配置zsh配置文件
+
+```bash
+export PATH=/opt/homebrew/opt/ruby@3.1/bin:$PATH
+```
+
+最后执行`source ~/.zshrc`就可以了
 
 ## 启动
 
-建议在 ios 目录下通过 pod 先安装依赖
+如果在初始化过程中，pod相关的依赖都已经正确安装，否则建议在 ios 目录下通过 pod 先安装依赖
 
 ```bash
-cd myrn && pod install
+cd myrn/ios && pod install
 ```
 
 安装报错，可以[参考](https://www.jianshu.com/p/7b21254cbd77)
@@ -61,7 +87,9 @@ cd myrn && pod install
 export all_proxy=socks5://127.0.0.1:1080
 ```
 
-最后可以通过打开 ios 目录下的`.xcworkspace`文件直接导入到 XCODE 中运行，也可以执行：
+最后可以通过打开 ios 目录下的`.xcworkspace`文件直接导入到 XCODE 中运行，并等待xcode索引完成
+
+也可以执行：
 
 ```bash
 react-native run-ios

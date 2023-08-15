@@ -42,14 +42,18 @@ lang: zh-cn
 - 优化图片 - `react-native-fast-image`
 - 环境变量 - `react-native-dotenv`
 - 存储 - `react-native-async-storage/async-storage`
-- 相机 - `react-native-camera`
+- 相机 - `react-native-camera`、[`react-native-vision-camera`](https://github.com/mrousavy/react-native-vision-camera)
 - 图片剪切 - `react-native-image-crop-picker`
+- 系统相册 - [`react-native-image-picker`](https://github.com/react-native-image-picker/react-native-image-picker)
 - 设备信息 - `react-native-device-info`
 - webview - `react-native-webview`
 - app 版本信息 - `react-native-version-number`
 - 安全区 - `react-native-safe-area-context`
 - 轮播 - `react-native-snap-carousel`
 - 日历 - [react-native-date-picker](https://www.npmjs.com/package/react-native-date-picker)
+- 声音 - [`react-native-sound`](https://github.com/zmxv/react-native-sound)
+- 剪切板 - [`@react-native-clipboard/clipboard`](https://github.com/react-native-clipboard/clipboard)
+- 消息提示 - [`rn-overlay`](https://github.com/caoyongfeng0214/rn-overlay)
 
 ### 社区组件
 

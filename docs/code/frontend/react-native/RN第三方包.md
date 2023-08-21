@@ -23,7 +23,7 @@ lang: zh-cn
 - react-native-scrollable-tab-view
 - react-native-gesture-handler
 - react-native-root-siblings
-- rn-fetch-blob
+- rn-fetch-blob、[react-native-fetch-blob](https://github.com/wkh237/react-native-fetch-blob)
 - react-native-system-setting 系统音量亮度控制
 - react-native-orientation **react-native-orientation-locker** 控制方向
 - react-native-video
@@ -54,6 +54,15 @@ lang: zh-cn
 - 声音 - [`react-native-sound`](https://github.com/zmxv/react-native-sound)
 - 剪切板 - [`@react-native-clipboard/clipboard`](https://github.com/react-native-clipboard/clipboard)
 - 消息提示 - [`rn-overlay`](https://github.com/caoyongfeng0214/rn-overlay)
+- 分享 - [`react-native-share`](https://react-native-share.github.io/react-native-share/)
+- 系统通信录 - [react-native-contacts](https://www.npmjs.com/package/react-native-contacts)
+- wifi管理 - [react-native-wifi-reborn](https://www.npmjs.com/package/react-native-wifi-reborn)。
+> 需要修改`AndroidManifest.xml`
+> 1. 添加权限声明：`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
+> 2. 顶部manifest标签添加`xmlns:tools="http://schemas.android.com/tools"`
+> 3. application标签添加`tools:replace="android:label"`以及`tools:node="replace"`
+> [详见](https://stackoverflow.com/questions/28095703/manifest-merger-failed-error)
+- 权限管理 - [react-native-permissions](https://github.com/zoontek/react-native-permissions)
 
 ### 社区组件
 
@@ -62,6 +71,7 @@ lang: zh-cn
 - 存储 - `async-storage`
 - `masked-view`
 - `art`
+- 相册 - [@react-native-community/cameraroll](https://github.com/rescript-react-native/cameraroll)
 
 ## 配置相关
 

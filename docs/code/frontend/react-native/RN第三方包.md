@@ -63,6 +63,7 @@ lang: zh-cn
 > 3. application标签添加`tools:replace="android:label"`以及`tools:node="replace"`
 > [详见](https://stackoverflow.com/questions/28095703/manifest-merger-failed-error)
 - 权限管理 - [react-native-permissions](https://github.com/zoontek/react-native-permissions)
+- 二维码 - [https://www.npmjs.com/package/react-native-qrcode-svg](react-native-qrcode-svg)
 
 ### 社区组件
 

@@ -43,10 +43,27 @@ rating.dtypes
 
 1. filepath: csv文件的路径
 2. sep: 指定csv文件中数据的分隔符，默认是逗号
-3. header： 数据中的头部，可以设置为None
-4. names：自定义列名（"pdate",'pv', 'uv'）
-5. index_col：可以指定作为索引的列，或者索引的序号（0开始）
-6. parse_dates：可以通过数组指定要转换为时间对象的列，或者设置为True转换所有时间格式的字符串
+3. skiprows：跳过前面的几行
+4. nrows：读取前面的几行
+5. header： 数据中的头部，可以设置为None
+6. names：自定义列名（"pdate",'pv', 'uv'）
+7. index_col：可以指定作为索引的列，或者索引的序号（0开始）
+8. usecols：读取哪些列的数据，不指定的情况下，读取所有列
+9. parse_dates：可以通过数组指定要转换为时间对象的列，或者设置为True转换所有时间格式的字符串。如果有警告，可以添加一个`dayfirst` 参数为True
+10. error_bad_lines：设置为False跳过错误行的数据
+11. na_values：将数据中的出现该值的地方认为是空值
+
+### 属性和方法
+
+- shape
+- columns
+- index
+- dtypes
+- head()
+- tail()
+- sample(n = 3)，取随机三行
+- sample(frac=0.5) ，取随机50%的数据
+- describe()，描述数据，比如平均，总数
 
 ## DataFrame & Series
 
@@ -190,7 +207,52 @@ rolling用于在数据中滚动选值，也就是一个滑动窗口
 sr.rolling(5) # 指定一个5个数据大小的窗口
 ```
 
+指定`min_periods`参数补全空值
 
+### shift
+
+移位操作
+
+用法：`df['新的一列'] = df['旧的一列'].shift(1)` 
+
+解释：将旧的一列的数据向下移动一位，作为新的一列的数据。例如把昨天的收盘价，向下移动一位，之后作为新的列。这样在同一行中，就同时存在了昨天的收盘价和今天的收盘价，方便运算
+
+### diff
+
+计算本行数据与其他行数据的差值
+
+用法：`df['涨跌幅']=df['收盘价'].diff(-1)`
+
+用收盘价减去下一行数据的收盘价，作为本行的涨跌幅。如果要与上面行的数据比较，diff就要接收正数
+
+### pct_change
+
+与diff类似，不过求的结果是比值
+
+### cum的一类函数
+
+- cumsum：累加，比如成交量，`df['累计成交量'] = df['成交量'].cumsum()`
+- cumprod：累乘
+
+### rank
+
+输出排名信息
+
+用法：`df['排名']=df['收盘价'].rank(ascending=True)` 
+
+还可以指定pct参数，为True的情况下，将输出排名的百分比
+
+### value_counts
+
+统计某一列中，值出现的次数
+
+用法：`df['股票代码'].value_counts()`
+
+### expanding
+
+从前到后统计某一列的所有数据，结果是一个统计数据，可以调用其他方法
+
+例如：max()、min()、std()等等
 
 ### DataFrame
 
@@ -309,6 +371,8 @@ Intel Xeon W3550 @ 3.07GHz  3203  355.888889   9.0
 Intel Xeon X5647 @ 2.93GHz  4394  488.222222   9.0
 '''
 ```
+
+如果要查询的数据是表格中某一个单位数据，可以用`loc['index', 'column']`实现，此时也可以用at方法替代：`at['index', 'column']`。同样的与`iloc`对应的是`iat` 
 
 ### 调用函数查询
 
@@ -459,10 +523,13 @@ cpu_list['得分'].cov(cpu_list['价格'])
 cpu_list.dropna(axis='columns', how='all', inplace=True)
 # 删除所有值都为空的一行
 cpu_list.dropna(axis='index', how='all', inplace=True)
+# 只看某些列的值，any表示只有有一个值是空的就删除该行
+cpu_list.dropna(subset=['价格', '得分'], how='any', inplace=True)
 
 cpu_list.fillna({'价格': 0})
 # 等价于
 cpu_list.loc[:, '价格'] = cpu_list['价格'].fillna(0)
+cpu_list['价格'].fillna(0, inplace=True)
 
 # 使用前面的不为空的值填充
 cpu_list.loc[:, '价格'] = cpu_list['价格'].fillna(method='ffill') 
@@ -474,6 +541,8 @@ cpu_list.loc[:, '价格'] = cpu_list['价格'].fillna(method='bfill')
 
 ```python
 cpu_list.to_excel('./new.xlsx', index=False) # 不要索引列
+# 或者重置index
+cpu_list.reset_index(inplace=True)
 
 # 将索引列写入DataFrame
 cpu_list['cpu'] = pd.Series(list(cpu_list.index), index=cpu_list.index)
@@ -538,6 +607,13 @@ pd.concat([df1, df2], join='inner', ignore_index=True) # 忽略掉原有的index
 # 按列合并，也就是添加一个新的列
 pd.concat([df1, df2], axis =1)
 ```
+
+### 合并之后去重
+
+`df.drop_duplicates()` 
+
+- subset：指定根据哪类数据来判断是否重复
+- keep：去重时，保留上一行还是下一行，可选值：`first` 、`last`、`False(删除所有重复的行)` 
 
 ## 时间对象处理
 

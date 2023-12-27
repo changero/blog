@@ -11,9 +11,9 @@ module.exports = {
     build.rewriteCname(build.true.cname);
     if (buildWithSUrge) {
     } else if (isProduction) {
-      let publicPath = "/blog/";
-      publicPath = "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/";
-      config.output.publicPath(publicPath);
+      // let publicPath = "/blog/";
+      // publicPath = "https://cdn.jsdelivr.net/gh/changero/blog@gh-pages/";
+      // config.output.publicPath(publicPath);
     }
     config.plugin("copy").use(Copyplugin, [
       [

@@ -121,3 +121,22 @@ Jul 11 21:23:05 nas systemd[1]: Started cloudflared
 所以此后修改配置之后需要将文件复制到`/etc/cloudflared/config.yml`，也可以在`/etc/systemd/system/cloudflared.service`文件中修改配置文件的地址
 
 最后执行重启`systemctl restart cloudflared`。
+
+## 新版本
+
+在[文章](https://laosu.ml/2022/04/06/%E5%85%8D%E8%B4%B9%E7%9A%84Cloudflared%E5%AE%9E%E7%8E%B0%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE%E7%BE%A4%E6%99%96/)，有比较详细的关于 cloudflare 设置的部分，按步骤操作即可
+
+主要是记录 cloudflare 的`docker-compose.yml`文件
+
+```yml
+version: '3'
+
+services:
+  bitwarden:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflare
+    volumes:
+      - ./cloudflared:/etc/cloudflared
+    command: tunnel --config /etc/cloudflared/config.yaml --no-autoupdate run --token <token>
+    restart: unless-stopped
+```

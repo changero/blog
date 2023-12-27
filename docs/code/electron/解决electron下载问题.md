@@ -52,7 +52,18 @@ function getArtifactRemoteURL(details) {
 
 如果是全局安装，则需要找到 electron 的全局安装位置，修改其`node_modules下的@electron`，再`npm i`
 
-当然也可以不修改代码，查看[如何设置镜像](https://www.electronjs.org/docs/tutorial/installation#%E9%95%9C%E5%83%8F)
+### 也可以不修改代码
+
+查看[如何设置镜像](https://www.electronjs.org/docs/tutorial/installation#%E9%95%9C%E5%83%8F)
+
+其他镜像地址：
+
+```yaml
+electron_builder_binaries_mirror=https://npmmirror.com/mirrors/electron-builder-binaries/
+electron_mirror=https://cdn.npmmirror.com/binaries/electron/
+```
+
+
 
 ## 如何获得管理员权限
 

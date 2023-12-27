@@ -9,8 +9,8 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
     "build:surge": "cross-env BUILD_ENV=surge vuepress build docs"
   }
 }
